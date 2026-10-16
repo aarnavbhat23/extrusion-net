@@ -73,3 +73,17 @@ The next experiments are listed in the README. These rules hold for all of them:
 2. At least 3 seeds per setting. Report every run, including failures.
 3. **Stop rule.** If extrusion does not beat both attention variants and the one-arm ablation on the out-of-genomics generality tasks or on the real enhancer-gene benchmark, report that result and pause before adding mechanisms or tuning.
 4. No retuning of the extrusion parameterization after seeing test results on a new task without reporting the untuned result alongside.
+
+## 8. Generality and linear-variant experiments (rules written before any result)
+
+These runs started before this section was written, but it was written before any of them finished. The order deviates from section 7's list: generality (stage 3 in `ROADMAP.md`) was moved ahead of the stochastic-simulation test, because it decides whether extrusion is a general operator or a domain-specific one.
+
+**Tasks.** `task_dyck.py`: prefixes of two-bracket Dyck words with depth at most 6; label at every position is the innermost open bracket type (none, round, square). `task_recall.py`: up to 8 key-value pairs, then queries; label is the queried key's value. Same splits, lengths, backbone, training and selection as sections 2-4. All five mixers plus `extrusion_linear`, 3 seeds, 4000 sequences, 3 layers.
+
+**Linear variant.** `extrusion_linear` uses `W = beta D` without saturation, so it can be computed by the O(n) scan. Toy genome, 3 seeds, in the two settings where extrusion separated from the controls: 4000 sequences with 1 layer, and 300 sequences with 3 layers.
+
+**How results will be read.**
+1. *Dyck.* Extrusion is expected to struggle, since one motor cannot skip matched pairs (`ROADMAP.md`, A2). If it is below BiLSTM at length 512, the result is reported as a limitation, and loop traversal (A2) becomes the next mechanism to test. If it matches or beats BiLSTM, that is unexpected and will be checked for a shortcut before being claimed.
+2. *Recall.* Extrusion has no query-key matching and is expected to lose to attention. A loss is reported as a scope boundary and motivates A3. A win would be checked for a shortcut (for example, decoding a superposition of all pairs) before being claimed.
+3. *Linear variant.* If `extrusion_linear` stays within 1 point of `extrusion` at length 512 in both genome settings, the O(n) form is adopted for genome-scale work (A1). If it drops by more, saturation is kept and a chunked algorithm is needed.
+4. No hyperparameter changes for any mixer on these tasks, and no reruns except to replace a crashed run.

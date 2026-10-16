@@ -4,6 +4,7 @@ Checkpoint selection uses an in-distribution validation set only; the longer
 test lengths are never seen during training or selection.
 
     python train.py --mixer extrusion --seed 0
+    python train.py --task dyck --mixer bilstm --seed 1
 """
 
 import argparse
@@ -17,8 +18,11 @@ import torch
 import torch.nn.functional as F
 
 import task
+import task_dyck
+import task_recall
 from models import SequenceModel, n_params
 
+TASKS = {"genome": task, "dyck": task_dyck, "recall": task_recall}
 TRAIN_LENGTHS = [24, 32, 40, 48, 56, 64]
 TEST_LENGTHS = {64: (3, 300), 128: (4, 300), 256: (5, 200), 512: (6, 100)}
 
@@ -45,6 +49,7 @@ def accuracy(model, split, chunk=16):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--mixer", required=True)
+    ap.add_argument("--task", choices=sorted(TASKS), default="genome")
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--n-train", type=int, default=4000)
     ap.add_argument("--layers", type=int, default=3)
@@ -56,13 +61,14 @@ def main():
     args = ap.parse_args()
 
     torch.set_num_threads(2)
-    train = to_tensors(task.make_split(1, args.n_train, TRAIN_LENGTHS))
-    val = to_tensors(task.make_split(2, 600, TRAIN_LENGTHS))
-    tests = {n: to_tensors(task.make_split(s, k, [n])) for n, (s, k) in TEST_LENGTHS.items()}
+    data = TASKS[args.task]
+    train = to_tensors(data.make_split(1, args.n_train, TRAIN_LENGTHS))
+    val = to_tensors(data.make_split(2, 600, TRAIN_LENGTHS))
+    tests = {n: to_tensors(data.make_split(s, k, [n])) for n, (s, k) in TEST_LENGTHS.items()}
 
     torch.manual_seed(args.seed)
     rng = np.random.default_rng(100 + args.seed)
-    model = SequenceModel(args.mixer, layers=args.layers)
+    model = SequenceModel(args.mixer, vocab=len(data.TOKENS), n_classes=data.N_CLASSES, layers=args.layers)
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
     warmup = 100
     sched = torch.optim.lr_scheduler.LambdaLR(
@@ -81,7 +87,7 @@ def main():
         x, y = train[n]
         idx = torch.from_numpy(rng.choice(len(x), size=min(args.batch, len(x)), replace=False))
         logits = model(x[idx])
-        loss = F.cross_entropy(logits.reshape(-1, 4), y[idx].reshape(-1), ignore_index=task.IGNORE)
+        loss = F.cross_entropy(logits.reshape(-1, data.N_CLASSES), y[idx].reshape(-1), ignore_index=task.IGNORE)
         opt.zero_grad()
         loss.backward()
         torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
@@ -98,6 +104,7 @@ def main():
     if args.save:
         torch.save(best_state, args.save)
     result = {
+        "task": args.task,
         "mixer": args.mixer,
         "seed": args.seed,
         "n_train": args.n_train,

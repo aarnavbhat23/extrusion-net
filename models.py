@@ -44,6 +44,32 @@ def extrusion_log_contacts(log_load, a, b):
     return torch.maximum(upper, upper.transpose(-1, -2))
 
 
+def extrusion_linear_scan(load, pass_l, pass_r, v):
+    """sum_j D(i, j) v_j in O(n) with four linear recurrences, no n x n matrix.
+
+    D = L diag(load) R is a product of two one-sided transports, so mixing by it
+    is two cascaded scans per direction (the same structured-matrix family as
+    bidirectional SSMs). Only the unsaturated contact can be computed this way;
+    W = 1 - exp(-beta D) needs the full matrix. Shapes: (..., n) and (..., n, d).
+    """
+    n = load.shape[-1]
+    out = torch.zeros_like(v)
+    q = torch.zeros_like(v[..., 0, :])  # Q_k = v_k + pass_r_k Q_{k+1}
+    u = torch.zeros_like(q)  # U_i = load_{i+1} Q_{i+1} + pass_l_{i+1} U_{i+1}
+    for k in range(n - 1, -1, -1):
+        if k + 1 < n:
+            u = load[..., k + 1, None] * q + pass_l[..., k + 1, None] * u
+        out[..., k, :] = u
+        q = v[..., k, :] + pass_r[..., k, None] * q
+    g = torch.zeros_like(q)  # G_k = v_{k-1} + pass_l_{k-1} G_{k-1}
+    h = torch.zeros_like(q)  # H_i = load_i G_i + pass_r_{i-1} H_{i-1}
+    for i in range(1, n):
+        g = v[..., i - 1, :] + pass_l[..., i - 1, None] * g
+        h = load[..., i, None] * g + pass_r[..., i - 1, None] * h
+        out[..., i, :] = out[..., i, :] + h
+    return out
+
+
 def insulation_log_contacts(a, b):
     """Ablation: one arm launched from the query itself, stopped by barriers.
 
@@ -64,9 +90,9 @@ def insulation_log_contacts(a, b):
 class ExtrusionMixer(nn.Module):
     """Positions talk only through contacts made by simulated loop extrusion."""
 
-    def __init__(self, d, heads, two_arm=True):
+    def __init__(self, d, heads, two_arm=True, saturate=True):
         super().__init__()
-        self.heads, self.two_arm = heads, two_arm
+        self.heads, self.two_arm, self.saturate = heads, two_arm, saturate
         self.control = nn.Linear(d, 3 * heads)  # left stop, right stop, load
         self.value = nn.Linear(d, d)
         self.out = nn.Linear(d + heads, d)
@@ -84,6 +110,8 @@ class ExtrusionMixer(nn.Module):
         else:
             log_d = insulation_log_contacts(a, b)
         beta = F.softplus(self.beta_raw)[None, :, None, None] * 4.0
+        if not self.saturate:
+            return beta * log_d.exp()  # linear in D, so computable by extrusion_linear_scan
         return -torch.expm1(-beta * log_d.exp())  # Poisson: P(at least one motor)
 
     def forward(self, x):
@@ -154,6 +182,7 @@ class Block(nn.Module):
 
 MIXERS = {
     "extrusion": lambda d, H: ExtrusionMixer(d, H, two_arm=True),
+    "extrusion_linear": lambda d, H: ExtrusionMixer(d, H, two_arm=True, saturate=False),
     "one_arm": lambda d, H: ExtrusionMixer(d, H, two_arm=False),
     "attn_rope": lambda d, H: AttentionMixer(d, H, "rope"),
     "attn_alibi": lambda d, H: AttentionMixer(d, H, "alibi"),
