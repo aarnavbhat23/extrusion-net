@@ -32,13 +32,13 @@ A win here is a biology result, not a toy result, and it is the step most likely
 
 The current model has one motor at a time. In cells, motors meet: they block each other, or one passes another and forms a Z-loop. If an arm can step over a loop that is already complete, it skips matched pairs, which is exactly what a stack does. That could give context-free capability (brackets, syntax, RNA secondary structure) from a physical rule rather than a learned stack. A differentiable version would be iterative: each layer forms the innermost loops, then marks their anchors as passable for the next layer, so nesting depth costs layers rather than memory.
 
-Motivated if extrusion is weak on the Dyck test (it should need roughly one layer per nesting level). RNA secondary structure, which is also nested, is a natural real-data follow-up and connects to `rna-shift-bench`.
+Motivated by the Dyck result: extrusion reached 0.987 at length 512, above attention but 0.4 points below BiLSTM, and every model degraded on deeply nested material. Doubling layers did not help, so stacking is not a substitute for a skip rule. The decisive test is depth generalization: train with nesting depth at most 3, test at depths 4-8. A physical rule that steps over completed loops should not care about depth; learned stacks usually do. RNA secondary structure, which is also nested, is a natural real-data follow-up and connects to `rna-shift-bench`.
 
 ### A3. A "nuclear computer": extrusion plus condensates
 
 Extrusion has no lookup by content; it cannot match a query to an arbitrary key. The genome's other contact mechanism can: phase-separated condensates gather elements by shared binding affinity. A model with both mixers, extrusion for topology and condensates for content, would mirror the nucleus. The risk is that the condensate half collapses to attention. The testable claim is the combination: tasks that need both topology (insulation) and content (specificity), such as enhancer-promoter compatibility classes inside insulated neighborhoods (Zabidi et al., Nature 2015).
 
-Motivated if extrusion fails associative recall, which is expected.
+Motivated by the recall result: extrusion falls toward chance at length 512 while ALiBi attention stays at 0.99.
 
 ## Validation ladder (applies to every candidate)
 
@@ -49,10 +49,10 @@ Each stage has a pass condition decided before running it. Failing a stage means
 | 0. Mechanism | Is the math correct, and is the bio rule representable? | exactness tests pass | passed |
 | 1. Matched synthetic | Does the prior help where it should? | beats generic mixers at matched size | passed: length, data and step efficiency |
 | 2. Collapse | Does it reduce to a known operator? | an advantage over the nearest known operator survives | partly: linear part is quasiseparable; beats one-arm (SSM-like) at 1 layer and at low data |
-| 3. Generality | Where does it fail? | failure modes documented and explained | running: Dyck, recall |
+| 3. Generality | Where does it fail? | failure modes documented and explained | done: strong on nested brackets (0.4 points below BiLSTM), fails content lookup |
 | 4. Mechanism mismatch | Does it survive noisy, stochastic data? | advantage holds on simulated multi-motor data | not started |
 | 5. Real data | Does it beat domain baselines? | beats distance and ABC on held-out chromosomes | not started (A1) |
-| 6. Scale | Does it run at real sizes? | linear-time version keeps the advantage | partly: scan works; accuracy of linear variant is running |
+| 6. Scale | Does it run at real sizes? | linear-time version keeps the advantage | passed on toy data: within 0.9 points, 65,536 positions in 2 s |
 | 7. Independent check | Does someone else agree? | external critique and replication | not started |
 
 ## Where outside help fits

@@ -8,6 +8,8 @@ In the nucleus, cohesin motors load onto DNA and reel it into loops from both si
 
 On a toy genome task that follows the convergent-CTCF rule, the extrusion model trained on 4,000 sequences **keeps 99.8-100% accuracy at 8x its longest training sequence**. RoPE attention falls to 58%. With **300 training sequences** it reaches **98.4-99.0%**, while BiLSTM and the one-arm ablation reach 93.7-95.3% and attention 53-79%. Without being told which tokens are barriers, it **learned the CTCF orientation rule**.
 
+Outside genomics, it **generalizes on nested brackets** (98.7% at 512; BiLSTM 99.1%, attention 86-96%), but it **cannot look things up by content**: on associative recall it falls toward chance, as BiLSTM does, while ALiBi attention stays at 99%. Its linear part is a known structured-matrix type (2-quasiseparable), which gives an **O(n) version**: within 0.9 points of the full model, and able to mix 65,536 positions in 2 seconds on one CPU thread.
+
 ![Accuracy by test length](results/generalization.png)
 
 ## What happened
@@ -35,6 +37,31 @@ With **one layer** (4,000 sequences), two-arm extrusion scores 0.998 at length 5
 
 The model only ever saw promoter labels. In the released checkpoint, three of four first-layer motors learned that `>` stalls left-moving arms (0.995-0.999) but not right-moving ones (0.019-0.068). They also learned that `<` stalls right-moving arms (0.985-0.999) but not left-moving ones (0.005-0.023). That is the orientation rule found experimentally in real genomes. Loading is high at enhancers in all four motors (0.58-0.96), and in motors 2 and 4 also at forward sites (0.96-0.99). Motor 3 learned something else. Only this one checkpoint was inspected.
 
+## Beyond the genome task
+
+Two tasks the model was not designed for, with the same backbone, lengths, seeds and training. The rules for reading them were committed before any run finished ([`docs/PROTOCOL.md` §8](docs/PROTOCOL.md#8-generality-and-linear-variant-experiments-rules-written-before-any-result)).
+
+![Generality tasks](results/generality.png)
+
+| Mixer | Dyck, len 64 | Dyck, len 512 | Recall, len 64 | Recall, len 512 |
+|---|---:|---:|---:|---:|
+| Extrusion (two-arm) | 0.995 | 0.987 | 0.431 | 0.261 |
+| Extrusion, linear O(n) | 0.995 | 0.986 | 0.422 | 0.199 |
+| One-arm ablation | 0.998 | 0.980 | 0.421 | 0.178 |
+| Attention + RoPE | 0.994 | 0.861 | **1.000** | 0.649 |
+| Attention + ALiBi | 0.989 | 0.963 | **1.000** | **0.990** |
+| BiLSTM | **1.000** | **0.991** | 0.421 | 0.343 |
+
+- **Nested brackets (Dyck).** Each position must report the innermost open bracket, which often means skipping over matched pairs; simple rules score about 70%. Extrusion stays at 98.7% at 512, above both attention variants and the one-arm ablation but 0.4 points below BiLSTM. Under the committed rule, that counts as a limitation. Broken down by how deeply nested the skipped material is (`analyze_dyck.py`), every model is near-perfect through depth 1. Extrusion then falls to 95.5% at depth 3 and 76.1% at depth 5; BiLSTM falls to 99.0% and 85.1%. My guess that each layer peels off one level was wrong: a 6-layer extrusion model barely moved (95.7% and 80.9%). Deep skips are rare in the short training sequences (0.6% of training positions at depth 5 vs 2.1% at test), so the gap is at least partly data coverage. The next mechanism, loop traversal ([`docs/ROADMAP.md`](docs/ROADMAP.md), A2), should therefore be tested by training on shallow nesting and testing on deeper nesting.
+- **Associative recall.** Answering a query means finding the matching key anywhere earlier, which is lookup by content. Extrusion, its linear version, the one-arm ablation and BiLSTM all fall toward chance (12.5%) at length 512. ALiBi attention stays at 99%. This is the scope boundary: extrusion decides *which positions can reach each other*, not *which content matches*. It points toward pairing extrusion with a content mechanism ([`docs/ROADMAP.md`](docs/ROADMAP.md), A3).
+
+## Linear-time version
+
+Without the saturation step, the contact matrix factors as `L diag(l) R`: two one-sided transports chained through the load gate. Every block above the diagonal has rank at most 2, so the matrix is 2-quasiseparable. That is the same structured-matrix family used by bidirectional state-space models such as Hydra and Mamba-2, and it means mixing can be done with four linear scans instead of an n x n matrix ([derivation](docs/DERIVATION.md#structured-matrix-view-and-an-on-algorithm)).
+
+- **Accuracy.** The unsaturated `extrusion_linear` matches full extrusion with one layer (0.999 vs 0.998 at length 512) and is 0.90 points lower with 300 training sequences (0.977 vs 0.986). That is still above BiLSTM (0.940) and the one-arm ablation (0.937). It passes the 1-point rule committed beforehand.
+- **Scale.** `bench_scaling.py` mixes 65,536 positions in 2.0 seconds on one CPU thread with a plain Python loop. The dense matrix at that length would need 16 GB; up to 4,096 positions, where both run, the two agree within 4e-5 relative error ([`results/scaling.json`](results/scaling.json)).
+
 ## The mechanism
 
 For positions `i < j`, with load propensity `l`, left-arm stall `sL` and right-arm stall `sR`:
@@ -44,7 +71,7 @@ D(i, j) = sum_{k=i+1..j} l_k * prod_{m=i+1..k-1} (1 - sL_m) * prod_{m=k..j-1} (1
 W(i, j) = 1 - exp(-beta * D(i, j))
 ```
 
-Position `i` receives `sum_j W(i, j) v_j`. Prefix sums make this exact in O(n^2), the same order as attention. The derivation, numerics and exactness proof are in [`docs/DERIVATION.md`](docs/DERIVATION.md).
+Position `i` receives `sum_j W(i, j) v_j`. Prefix sums make this exact in O(n^2), the same order as attention; without saturation it is O(n) (above). The derivation, numerics, exactness proof and structured-matrix view are in [`docs/DERIVATION.md`](docs/DERIVATION.md).
 
 ## Reproduce
 
@@ -65,10 +92,12 @@ python predict.py "3..P..>..<..2..P"
 python train.py --mixer extrusion --seed 0                         # one row of the grid, about 10 CPU minutes
 python train.py --mixer one_arm --seed 0 --layers 1                # 1-layer setting
 python train.py --mixer bilstm --seed 0 --n-train 300              # low-data setting
+python train.py --task dyck --mixer extrusion_linear --seed 0      # generality tasks: dyck, recall
 python summarize.py && python inspect_learned.py && python plot.py
+python bench_scaling.py                                            # dense vs O(n) scan
 ```
 
-Mixers: `extrusion`, `one_arm`, `attn_rope`, `attn_alibi`, `bilstm`. Every run appends one line to `results/runs.jsonl`.
+Mixers: `extrusion`, `extrusion_linear`, `one_arm`, `attn_rope`, `attn_alibi`, `bilstm`. Tasks: `genome` (default), `dyck`, `recall`. Every run appends one line to `results/runs.jsonl`.
 
 ## Protocol
 
@@ -78,7 +107,9 @@ That document also says which choices were made after seeing results. The 1-laye
 
 ## Artifacts
 
-- `results/runs.jsonl`: all 36 runs, with validation curves.
+- `results/runs.jsonl`: all 78 runs (36 genome, 42 generality and linear-variant), with validation curves.
+- `results/scaling.json`: dense vs O(n) timing and agreement.
+- `results/checkpoints/dyck_*_s0.pt`, `results/dyck_skip_depth*.json`: seed-0 Dyck checkpoints (3 and 6 layers, retrained with `--save`) and their accuracy by nesting depth from `analyze_dyck.py`.
 - `results/RESULTS.md`: per-setting tables with seed ranges.
 - `results/extrusion_seed0.pt`: released extrusion checkpoint.
 - `results/replay.json`: its recorded test accuracy and layer-1 orientation motors.
@@ -87,22 +118,26 @@ That document also says which choices were made after seeing results. The 1-laye
 
 ## Prior work and credit
 
-Loop extrusion and the convergent-CTCF rule come from chromatin biology (Sanborn et al. 2015; Fudenberg et al. 2016; Rao et al. 2014; de Wit et al. 2015; Davidson et al. 2019; Kim et al. 2019). The closest machine-learning work is dLEM (2025), which makes extrusion differentiable to predict Hi-C contact maps, and stick-breaking attention (Tan et al., ICLR 2025), whose cumulative stopping resembles the one-arm ablation. Full comparison, and the searches not yet done, are in [`docs/PRIOR_WORK.md`](docs/PRIOR_WORK.md). No first-of-its-kind claim is made.
+Loop extrusion and the convergent-CTCF rule come from chromatin biology (Sanborn et al. 2015; Fudenberg et al. 2016; Rao et al. 2014; de Wit et al. 2015; Davidson et al. 2019; Kim et al. 2019). The closest machine-learning work is dLEM (2025), which makes extrusion differentiable to predict Hi-C contact maps, and stick-breaking attention (Tan et al., ICLR 2025), whose cumulative stopping resembles the one-arm ablation. The unsaturated operator belongs to the quasiseparable matrix family behind Hydra (Hwang et al., NeurIPS 2024) and Mamba-2 (Dao and Gu, ICML 2024); what is specific here is the physically constrained parameterization, not the matrix family. Full comparison, and the searches not yet done, are in [`docs/PRIOR_WORK.md`](docs/PRIOR_WORK.md). No first-of-its-kind claim is made.
 
 ## Limitations
 
 - **This is a toy task built on the mechanism's own rule**, like testing a convolution on translated images. It shows that the prior helps when data follow it, not that the model is better in general.
 - Labels are deterministic and symbolic. Real chromatin has leaky barriers, finite processivity, motor collisions and noisy measurements.
-- 3 seeds per setting; no significance tests. One checkpoint was inspected.
-- O(n^2) memory, like attention. Genome-scale inputs would need a banded version based on limited motor travel.
+- **No lookup by content.** Extrusion fails associative recall; it is a routing operator, not a replacement for attention.
+- **Slightly below BiLSTM on nested brackets.** One motor cannot skip completed loops.
+- 3 seeds per setting; no significance tests. One checkpoint was inspected for learned motors.
+- The saturated model needs O(n^2) memory, like attention. The O(n) version drops saturation; the scan is a Python loop, not yet a parallel kernel.
 
 ## Next experiments
 
-1. Labels generated by a stochastic multi-motor extrusion simulation, so the model is an approximation rather than an exact match.
-2. Tasks outside genomics with nested structure (Dyck languages, ListOps) under the same length protocol.
-3. Real data: enhancer-gene links from CRISPRi screens (the ENCODE-rE2G benchmark), using CTCF motif orientation, against distance and activity-by-contact baselines.
-4. Ablations: shared stall probability for both arms (no orientation), no Poisson saturation, no contact-mass channel.
+Ranked, with reasons and stop rules, in [`docs/ROADMAP.md`](docs/ROADMAP.md):
 
-Stop rules for these are fixed in [`docs/PROTOCOL.md`](docs/PROTOCOL.md#7-fixed-before-the-next-experiments).
+1. **Real data (A1):** enhancer-gene links from CRISPRi screens (ENCODE-rE2G), using the O(n) version over megabase windows, against distance and activity-by-contact baselines.
+2. **Loop traversal (A2):** let arms step over completed loops, aiming to close the nested-bracket gap with BiLSTM.
+3. **Extrusion plus condensates (A3):** add a content mechanism modeled on phase-separated condensates, for tasks that need both reach and content matching.
+4. Still pending from the first plan: labels from a stochastic multi-motor simulation, and ablations (shared stall probability, no contact-mass channel).
+
+Stop rules are fixed in [`docs/PROTOCOL.md`](docs/PROTOCOL.md#7-fixed-before-the-next-experiments).
 
 Built with AI assistance. All numbers above come from the recorded runs, not generated example outputs. Contributions that reproduce results or identify a failure are welcome; there is no independent review or adoption claim.

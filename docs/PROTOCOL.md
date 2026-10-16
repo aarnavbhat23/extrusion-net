@@ -87,3 +87,13 @@ These runs started before this section was written, but it was written before an
 2. *Recall.* Extrusion has no query-key matching and is expected to lose to attention. A loss is reported as a scope boundary and motivates A3. A win would be checked for a shortcut (for example, decoding a superposition of all pairs) before being claimed.
 3. *Linear variant.* If `extrusion_linear` stays within 1 point of `extrusion` at length 512 in both genome settings, the O(n) form is adopted for genome-scale work (A1). If it drops by more, saturation is kept and a chunked algorithm is needed.
 4. No hyperparameter changes for any mixer on these tasks, and no reruns except to replace a crashed run.
+
+### Outcome (written after the results)
+
+All 42 runs finished; none crashed or was rerun. Mean of 3 seeds at length 512:
+
+1. *Dyck.* Extrusion 0.987, BiLSTM 0.991, one-arm 0.980, ALiBi 0.963, RoPE 0.861. Extrusion is below BiLSTM (by 0.41 points), so per rule 1 this is reported as a limitation, and loop traversal is next. Simple rules ("last opener seen") score about 0.70 and 32-38% of positions require skipping matched pairs, so the high scores are not a shortcut. A per-depth breakdown is in `results/dyck_skip_depth.json` (seed-0 checkpoints retrained with `--save`, logged outside `runs.jsonl`).
+2. *Recall.* Extrusion 0.261, linear 0.199, one-arm 0.178, BiLSTM 0.343, RoPE 0.649, ALiBi 0.990. Extrusion loses to attention, as expected; per rule 2 this is the scope boundary that motivates A3. BiLSTM fails too.
+3. *Linear variant.* Gap to full extrusion: -0.07 points (1 layer) and 0.90 points (300 sequences). Both are within 1 point, so per rule 3 the O(n) form is adopted for genome-scale work.
+
+**Exploratory follow-up, decided after the Dyck results.** To check the guess that each layer peels off one nesting level, extrusion and one-arm were retrained with 6 layers (seed 0 only, `--save`, logged outside `runs.jsonl`). Accuracy by skip depth barely changed (extrusion at depth 3: 0.955 with 3 layers, 0.957 with 6; at depth 5: 0.761 and 0.809), so the guess is not supported. Training sequences contain few deep skips (depth 5 is 0.6% of training positions vs 2.1% at test), so the depth failures mix mechanism and data coverage. Results: `results/dyck_skip_depth.json`, `results/dyck_skip_depth_6layer.json`. This is one seed and is not used for any claim beyond "more layers did not help".
