@@ -140,4 +140,4 @@ Ranked, with reasons and stop rules, in [`docs/ROADMAP.md`](docs/ROADMAP.md):
 
 Stop rules are fixed in [`docs/PROTOCOL.md`](docs/PROTOCOL.md#7-fixed-before-the-next-experiments).
 
-Built with AI assistance. All numbers above come from the recorded runs, not generated example outputs. Contributions that reproduce results or identify a failure are welcome; there is no independent review or adoption claim.
+All numbers above come from the recorded runs, not generated example outputs. Contributions that reproduce results or identify a failure are welcome; there is no independent review or adoption claim.

@@ -57,7 +57,7 @@ Each stage has a pass condition decided before running it. Failing a stage means
 
 ## Where outside help fits
 
-- **Claude Science:** useful at stage 2 and 7. Give it the derivation and ask it to find prior work on chained bidirectional scans and traversal-based parsing, and to attack the claims.
+- **Independent technical review:** useful at stage 2 and 7. Give it the derivation and ask it to find prior work on chained bidirectional scans and traversal-based parsing, and to attack the claims.
 - **A mentor or lab:** needed at stage 5, to check the enhancer-gene data processing, and later for any wet-lab validation.
 
 ## Not claimed
