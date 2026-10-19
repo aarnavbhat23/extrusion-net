@@ -14,6 +14,9 @@ The [noisy-map follow-up](docs/NOISY_IDENTIFICATION_RESULTS.md) tests three sele
 rules beyond simple controls and retains their inconsistent results. A new
 [local stability analysis](docs/STABLE_CALIBRATION.md) separates exact identification
 from the intervention budget needed for stable recovery as chain length grows.
+A further [output-bound result](docs/COUNTERFACTUAL_OUTPUT_BOUNDS.md) gives sharp
+signed-message bounds and exact scalar extrema for a single intervened unsaturated
+mixer, including its log-mass feature. It does not cover the full nonlinear network.
 
 In the nucleus, cohesin motors load onto DNA and reel it into loops from both sides. Each side stalls at a CTCF protein facing the right way, so a forward site (`>`) followed by a reverse site (`<`) anchors a loop that insulates genes from enhancers outside it. This repository turns that process into a sequence model's only long-range operator. Every position predicts, from its local context alone, how likely a motor is to load there and how likely each arm is to stall there. Two positions exchange information only if a simulated motor brings them into the same loop. There is no positional encoding and no query-key product.
 

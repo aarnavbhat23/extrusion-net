@@ -76,7 +76,9 @@ loads and other gates unchanged. For a <= k < b,
 All right gates increase with u, so every affected contact decreases with u.
 The two feasible endpoint factorizations therefore give simultaneously sharp
 entrywise counterfactual bounds. They also bound any nonnegative weighted sum
-sharply. This does not establish sharp bounds for signed value-channel sums.
+sharply. The entrywise argument alone does not establish sharp bounds for signed value-channel sums.
+The [common-denominator follow-up](COUNTERFACTUAL_OUTPUT_BOUNDS.md) now proves
+sharp endpoint bounds for those signed sums and handles the log-mass output separately.
 Known-scale Poisson saturation preserves the ordering.
 
 Some counterfactuals are already identified without learning the gates. If both
