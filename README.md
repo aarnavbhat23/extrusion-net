@@ -4,6 +4,12 @@
 
 Can a neural network route information the way chromatin does?
 
+The current research direction is [identifiable routing and intervention calibration](docs/IDENTIFIABILITY.md).
+Three structural screens led to an exact free-gate equivalence family, sharp
+directional-intervention bounds, and a small calibration study across 80 synthetic
+mechanisms. This concerns the positive routing operator; it does not establish
+nonidentifiability of the shared neural controller or a new general learning rule.
+
 In the nucleus, cohesin motors load onto DNA and reel it into loops from both sides. Each side stalls at a CTCF protein facing the right way, so a forward site (`>`) followed by a reverse site (`<`) anchors a loop that insulates genes from enhancers outside it. This repository turns that process into a sequence model's only long-range operator. Every position predicts, from its local context alone, how likely a motor is to load there and how likely each arm is to stall there. Two positions exchange information only if a simulated motor brings them into the same loop. There is no positional encoding and no query-key product.
 
 On a toy genome task that follows the convergent-CTCF rule, the extrusion model trained on 4,000 sequences **keeps 99.8-100% accuracy at 8x its longest training sequence**. RoPE attention falls to 58%. With **300 training sequences** it reaches **98.4-99.0%**, while BiLSTM and the one-arm ablation reach 93.7-95.3% and attention 53-79%. Without being told which tokens are barriers, it **learned the CTCF orientation rule**.
