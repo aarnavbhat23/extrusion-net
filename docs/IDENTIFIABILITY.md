@@ -168,3 +168,10 @@ results/identification_study.json for all singular values, cases and noise level
 Render the figure with `python plot_identification.py`; its left panel is a
 separately seeded illustrative length-16 mechanism, and its right panel uses
 the retained eighty-mechanism study.
+
+## Noisy-map follow-up
+
+The exact-map selection gains above do not generalize consistently when the
+baseline map is also noisy. See [all three follow-up rounds](NOISY_IDENTIFICATION_RESULTS.md)
+and the resulting [local calibration-budget bound](STABLE_CALIBRATION.md).
+A fitted family is not a confidence region for a noisy contact map.
