@@ -83,3 +83,9 @@ W1(i, j) = prod_{m=j+1..i-1} (1 - sL_m)   for j < i
 ```
 
 A single such layer cannot represent the convergent rule. Whether a `<` blocks the path from `i` to `j` depends on whether a `>` lies between `i` and that `<`, but a per-position stall probability can't depend on where the query is. Depth can work around this: later layers see features computed by earlier ones. That is what the 1-layer vs 3-layer results show. The form is close to stick-breaking attention with per-position rather than per-pair break probabilities.
+
+## Execution status and saturation approximation
+
+The complete `extrusion_linear` forward path now uses the scan. Adding a constant value channel gives `sum_j D(i,j)` alongside messages, with the same learned beta scaling. Output and all parameter/input gradients match the dense reference in float64. Stacked recurrence states avoid repeatedly writing slices of a full output tensor during automatic differentiation.
+
+The elementwise saturated matrix is still dense in the standard model. [POLYNOMIAL_SCAN.md](POLYNOMIAL_SCAN.md) derives a tested symmetric-power approximation with an explicit bounded-argument remainder. The note records prior overlap, state growth, floating-point limitations, and a large-argument failure; it does not claim an exact scan for the full saturated kernel.

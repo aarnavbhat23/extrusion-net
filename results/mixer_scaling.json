@@ -1,0 +1,190 @@
+{
+  "torch": "2.14.1",
+  "python": "3.14.6",
+  "machine": "arm64",
+  "threads": 1,
+  "rows": [
+    {
+      "length": 128,
+      "mode": "scan",
+      "backward": false,
+      "median_seconds": 0.0021577500010607764,
+      "seconds": [
+        0.0021600000000034925,
+        0.0021577500010607764,
+        0.002145416998246219
+      ],
+      "saved_tensor_logical_bytes": 0,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 128,
+      "mode": "dense",
+      "backward": false,
+      "median_seconds": 0.0012210829991090577,
+      "seconds": [
+        0.0012586670018208679,
+        0.0012210829991090577,
+        0.001205208001920255
+      ],
+      "saved_tensor_logical_bytes": 0,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 512,
+      "mode": "scan",
+      "backward": false,
+      "median_seconds": 0.00877766600024188,
+      "seconds": [
+        0.008975333999842405,
+        0.00877766600024188,
+        0.008557375000236789
+      ],
+      "saved_tensor_logical_bytes": 0,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 512,
+      "mode": "dense",
+      "backward": false,
+      "median_seconds": 0.0183831670001382,
+      "seconds": [
+        0.0183831670001382,
+        0.019258457999967504,
+        0.018198917001427617
+      ],
+      "saved_tensor_logical_bytes": 0,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 1024,
+      "mode": "scan",
+      "backward": false,
+      "median_seconds": 0.01675750000140397,
+      "seconds": [
+        0.01675750000140397,
+        0.01673629200013238,
+        0.016900665999855846
+      ],
+      "saved_tensor_logical_bytes": 0,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 1024,
+      "mode": "dense",
+      "backward": false,
+      "median_seconds": 0.07850958299968624,
+      "seconds": [
+        0.08096987499811803,
+        0.07850958299968624,
+        0.076475665999169
+      ],
+      "saved_tensor_logical_bytes": 0,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 4096,
+      "mode": "scan",
+      "backward": false,
+      "median_seconds": 0.06789933400068549,
+      "seconds": [
+        0.06874004200290074,
+        0.06721104200187256,
+        0.06789933400068549
+      ],
+      "saved_tensor_logical_bytes": 0,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 128,
+      "mode": "scan",
+      "backward": true,
+      "median_seconds": 0.012856167002610164,
+      "seconds": [
+        0.012856167002610164,
+        0.012640750002901768,
+        0.0129272089980077
+      ],
+      "saved_tensor_logical_bytes": 213280,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 128,
+      "mode": "dense",
+      "backward": true,
+      "median_seconds": 0.0033864170000015292,
+      "seconds": [
+        0.003098500001215143,
+        0.0033864170000015292,
+        0.0035741659994528163
+      ],
+      "saved_tensor_logical_bytes": 1049616,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 512,
+      "mode": "scan",
+      "backward": true,
+      "median_seconds": 0.056365916003414895,
+      "seconds": [
+        0.05100449999736156,
+        0.05765550000069197,
+        0.056365916003414895
+      ],
+      "saved_tensor_logical_bytes": 827680,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 512,
+      "mode": "dense",
+      "backward": true,
+      "median_seconds": 0.047282500003348105,
+      "seconds": [
+        0.047657500002969755,
+        0.04716320899751736,
+        0.047282500003348105
+      ],
+      "saved_tensor_logical_bytes": 15574032,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 1024,
+      "mode": "scan",
+      "backward": true,
+      "median_seconds": 0.11752999999953317,
+      "seconds": [
+        0.11164891600128612,
+        0.11752999999953317,
+        0.12114708300214261
+      ],
+      "saved_tensor_logical_bytes": 1646880,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 1024,
+      "mode": "dense",
+      "backward": true,
+      "median_seconds": 0.19906916699983412,
+      "seconds": [
+        0.20885774999987916,
+        0.19906916699983412,
+        0.19615366700236336
+      ],
+      "saved_tensor_logical_bytes": 61547536,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    },
+    {
+      "length": 4096,
+      "mode": "scan",
+      "backward": true,
+      "median_seconds": 0.644289417003165,
+      "seconds": [
+        0.5818519170024956,
+        0.644289417003165,
+        0.6545955000001413
+      ],
+      "saved_tensor_logical_bytes": 6562080,
+      "note": "Saved tensor bytes count logical views repeatedly; this is not peak resident memory."
+    }
+  ]
+}

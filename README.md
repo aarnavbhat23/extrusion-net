@@ -8,7 +8,7 @@ In the nucleus, cohesin motors load onto DNA and reel it into loops from both si
 
 On a toy genome task that follows the convergent-CTCF rule, the extrusion model trained on 4,000 sequences **keeps 99.8-100% accuracy at 8x its longest training sequence**. RoPE attention falls to 58%. With **300 training sequences** it reaches **98.4-99.0%**, while BiLSTM and the one-arm ablation reach 93.7-95.3% and attention 53-79%. Without being told which tokens are barriers, it **learned the CTCF orientation rule**.
 
-Outside genomics, it **generalizes on nested brackets** (98.7% at 512; BiLSTM 99.1%, attention 86-96%), but it **cannot look things up by content**: on associative recall it falls toward chance, as BiLSTM does, while ALiBi attention stays at 99%. Its linear part is a known structured-matrix type (2-quasiseparable), which gives an **O(n) version**: within 0.9 points of the full model, and able to mix 65,536 positions in 2 seconds on one CPU thread.
+Outside genomics, it **generalizes on nested brackets** (98.7% at 512; BiLSTM 99.1%, attention 86-96%), but it **cannot look things up by content**: on associative recall it falls toward chance, as BiLSTM does, while ALiBi attention stays at 99%. Its linear part is a known structured-matrix type (2-quasiseparable), which gives an **O(n) version**: within 0.9 points of the full model, with a standalone recurrence measured at 65,536 positions. The complete unsaturated mixer now executes through the scan in both forward and backward; see the [execution and control study](results/SCAN_RESULTS.md).
 
 ![Accuracy by test length](results/generalization.png)
 
@@ -29,7 +29,7 @@ With **one layer** (4,000 sequences), two-arm extrusion scores 0.998 at length 5
 1. **Length generalization.** Extrusion and BiLSTM stay near-perfect at 512. RoPE attention collapses; ALiBi plateaus around 93%.
 2. **Sample efficiency.** With 300 sequences, at every test length, extrusion's worst seed beats every other model's best seed.
 3. **The two-arm mechanism matters.** One extrusion layer can represent the convergent rule exactly ([proof](docs/DERIVATION.md#exactness-for-the-convergent-ctcf-rule)); one one-arm layer cannot. With 3 layers the ablation catches up through depth.
-4. **With enough data, it ties BiLSTM.** The rule can be checked by a left-to-right scan, which suits recurrent models. Extrusion's advantage over BiLSTM here is data efficiency and parallel evaluation, not peak accuracy.
+4. **With enough data, it ties BiLSTM.** The rule can be checked by a left-to-right scan, which suits recurrent models. Extrusion's advantage over BiLSTM here is the measured inductive bias and data efficiency; the current scan uses sequential Python recurrences.
 
 ## What the model learned
 
@@ -57,7 +57,7 @@ Two tasks the model was not designed for, with the same backbone, lengths, seeds
 
 ## Linear-time version
 
-Without the saturation step, the contact matrix factors as `L diag(l) R`: two one-sided transports chained through the load gate. Every block above the diagonal has rank at most 2, so the matrix is 2-quasiseparable. That is the same structured-matrix family used by bidirectional state-space models such as Hydra and Mamba-2, and it means mixing can be done with four linear scans instead of an n x n matrix ([derivation](docs/DERIVATION.md#structured-matrix-view-and-an-on-algorithm)).
+Without the saturation step, the contact matrix factors as `L diag(l) R`: two one-sided transports chained through the load gate. Every separated block strictly above the diagonal has rank at most 2, so the matrix is 2-quasiseparable. That is the same structured-matrix family used by bidirectional state-space models such as Hydra and Mamba-2, and it means mixing can be done with four linear scans instead of an n x n matrix ([derivation](docs/DERIVATION.md#structured-matrix-view-and-an-on-algorithm)).
 
 - **Accuracy.** The unsaturated `extrusion_linear` matches full extrusion with one layer (0.999 vs 0.998 at length 512) and is 0.90 points lower with 300 training sequences (0.977 vs 0.986). That is still above BiLSTM (0.940) and the one-arm ablation (0.937). It passes the 1-point rule committed beforehand.
 - **Scale.** `bench_scaling.py` mixes 65,536 positions in 2.0 seconds on one CPU thread with a plain Python loop. The dense matrix at that length would need 16 GB; up to 4,096 positions, where both run, the two agree within 4e-5 relative error ([`results/scaling.json`](results/scaling.json)).
@@ -94,10 +94,13 @@ python train.py --mixer one_arm --seed 0 --layers 1                # 1-layer set
 python train.py --mixer bilstm --seed 0 --n-train 300              # low-data setting
 python train.py --task dyck --mixer extrusion_linear --seed 0      # generality tasks: dyck, recall
 python summarize.py && python inspect_learned.py && python plot.py
-python bench_scaling.py                                            # dense vs O(n) scan
+python bench_scaling.py                                            # isolated recurrence
+python bench_mixer.py                                              # complete forward/backward scaling
+python audit_scan_pilot.py                                         # replay all nine short-pilot checkpoints
+python study_polynomial.py                                         # bounded saturation-approximation check
 ```
 
-Mixers: `extrusion`, `extrusion_linear`, `one_arm`, `attn_rope`, `attn_alibi`, `bilstm`. Tasks: `genome` (default), `dyck`, `recall`. Every run appends one line to `results/runs.jsonl`.
+Mixers: `extrusion`, `extrusion_linear`, `cascaded_scan`, `one_arm`, `attn_rope`, `attn_alibi`, `bilstm`. Tasks: `genome` (default), `dyck`, `recall`. Every run appends one line to `results/runs.jsonl`.
 
 ## Protocol
 
@@ -141,3 +144,11 @@ Ranked, with reasons and stop rules, in [`docs/ROADMAP.md`](docs/ROADMAP.md):
 Stop rules are fixed in [`docs/PROTOCOL.md`](docs/PROTOCOL.md#7-fixed-before-the-next-experiments).
 
 All numbers above come from the recorded runs, not generated example outputs. Contributions that reproduce results or identify a failure are welcome; there is no independent review or adoption claim.
+
+## Execution correction and stronger control
+
+The earlier `extrusion_linear` training path still constructed dense contacts despite the standalone scan. It now scans both values and a constant mass channel, and its complete outputs and parameter/input gradients match the dense reference. Seventeen tests cover the original invariants, matrix-free execution, activation scaling, and the experimental polynomial operator. The saturated model is unchanged.
+
+A fixed 500-update pilot compares physical gate tying with an untied two-stage scan and ALiBi attention. At length 512, mean accuracies across three seeds are 95.26%, 92.84%, and 70.17%. Physical extrusion loses to the cascade on seed 0. This is evidence about a constraint on a matching synthetic task, not a new model class or a general benchmark win. All nine checkpoints and token predictions are released separately from the original 78-run grid. [Protocol](docs/SCAN_STUDY.md), [results](results/SCAN_RESULTS.md).
+
+An [experimental lifted scan](docs/POLYNOMIAL_SCAN.md) computes polynomial approximations of saturation with an explicit exact-arithmetic error bound. It works in a weak-contact numerical example and fails badly for large arguments; the released checkpoint does not satisfy the useful demonstrated regime. It is not enabled in the trained mixer. Tensor lifting and polynomial kernel approximation are established techniques.

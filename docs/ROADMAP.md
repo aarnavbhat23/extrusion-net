@@ -15,7 +15,7 @@ Many nature-inspired ideas look new but turn out to be a known algorithm in disg
 | Transcription supercoiling (Liu and Wang, PNAS 1987) | signed, directional twist spreading to barriers | signed bidirectional state-space scan | collapses |
 | Morphogen gradients | source, diffusion, decay | convolution / state-space scan | collapses |
 | **Loop extrusion, one motor** (this repo) | contact via a load site and two oriented arms | linear part is 2-quasiseparable; saturation and parameterization are not standard | **partly**: measurable advantages survived |
-| **Loop traversal** (motors passing each other's loops; Kim et al., Nature 2020) | arms skip over completed loops | stack-like matching; no known operator family | **open** |
+| **Loop traversal** (motors passing each other's loops; Kim et al., Nature 2020) | arms skip over completed loops | stack-like matching and structured parsing; existing differentiable stacks are close | **open, high overlap risk** |
 | **Condensates with a nucleation threshold** (phase separation; Shin and Brangwynne, Science 2017) | content-based grouping that forms only above a quorum, with competition for a limited scaffold | slot attention, plus a threshold that may be new | **open, high collapse risk** |
 
 The candidates still standing come from the same biological system: how the nucleus decides which parts of the genome touch. Cells use two independent mechanisms for that: loop extrusion and compartmental segregation (Schwarzer et al., Nature 2017; Nuebler et al., PNAS 2018). That points to a family of operators rather than a single one.
@@ -32,7 +32,7 @@ A win here is a biology result, not a toy result, and it is the step most likely
 
 The current model has one motor at a time. In cells, motors meet: they block each other, or one passes another and forms a Z-loop. If an arm can step over a loop that is already complete, it skips matched pairs, which is exactly what a stack does. That could give context-free capability (brackets, syntax, RNA secondary structure) from a physical rule rather than a learned stack. A differentiable version would be iterative: each layer forms the innermost loops, then marks their anchors as passable for the next layer, so nesting depth costs layers rather than memory.
 
-Motivated by the Dyck result: extrusion reached 0.987 at length 512, above attention but 0.4 points below BiLSTM, and every model degraded on deeply nested material. Doubling layers did not help, so stacking is not a substitute for a skip rule. The decisive test is depth generalization: train with nesting depth at most 3, test at depths 4-8. A physical rule that steps over completed loops should not care about depth; learned stacks usually do. RNA secondary structure, which is also nested, is a natural real-data follow-up and connects to `rna-shift-bench`.
+Motivated by the Dyck result: extrusion reached 0.987 at length 512, above attention but 0.4 points below BiLSTM, and every model degraded on deeply nested material. Doubling layers did not help, so stacking is not a substitute for a skip rule. The decisive test is depth generalization: train with nesting depth at most 3, test at depths 4-8. Depth extrapolation must be tested against established differentiable stacks and nondeterministic pushdown models; the physical analogy supplies no guarantee. RNA secondary structure, which is also nested, is a natural real-data follow-up and connects to `rna-shift-bench`.
 
 ### A3. A "nuclear computer": extrusion plus condensates
 
@@ -48,11 +48,11 @@ Each stage has a pass condition decided before running it. Failing a stage means
 |---|---|---|---|
 | 0. Mechanism | Is the math correct, and is the bio rule representable? | exactness tests pass | passed |
 | 1. Matched synthetic | Does the prior help where it should? | beats generic mixers at matched size | passed: length, data and step efficiency |
-| 2. Collapse | Does it reduce to a known operator? | an advantage over the nearest known operator survives | partly: linear part is quasiseparable; beats one-arm (SSM-like) at 1 layer and at low data |
+| 2. Collapse | Does it reduce to a known operator? | an advantage over the nearest known operator survives | partly: quasiseparable; a short untied-cascade control is now tested, with one seed losing; full structured-model comparisons remain |
 | 3. Generality | Where does it fail? | failure modes documented and explained | done: strong on nested brackets (0.4 points below BiLSTM), fails content lookup |
 | 4. Mechanism mismatch | Does it survive noisy, stochastic data? | advantage holds on simulated multi-motor data | not started |
 | 5. Real data | Does it beat domain baselines? | beats distance and ABC on held-out chromosomes | not started (A1) |
-| 6. Scale | Does it run at real sizes? | linear-time version keeps the advantage | passed on toy data: within 0.9 points, 65,536 positions in 2 s |
+| 6. Scale | Does it run at real sizes? | linear-time version keeps the advantage | complete unsaturated forward/backward now verified; 65,536-position number was the standalone recurrence |
 | 7. Independent check | Does someone else agree? | external critique and replication | not started |
 
 ## Where outside help fits
@@ -63,3 +63,7 @@ Each stage has a pass condition decided before running it. Failing a stage means
 ## Not claimed
 
 None of this is a route to general intelligence, and "the next neural network" is a goal, not a result. The defensible claim today: a chromatin-inspired routing operator with measured advantages on tasks with extrusion-like structure, a linear-time form, and a documented relationship to known operators.
+
+## Current gate after the execution/control study
+
+Do not treat a correct scan as architectural novelty. The short tied/untied pilot supports a narrow inductive-bias hypothesis, with seed variability. The saturation approximation has a severe large-argument limitation. Before a traversal mechanism is built, compare its formal rule against [differentiable stacks](https://arxiv.org/abs/1506.02516) and [nondeterministic stack models](https://arxiv.org/abs/2010.04674). A stack under a biological name does not establish a new learning rule. Next evidence should come from a matched structured-model comparison or an appropriate biological task with controls, not additional analogies.
