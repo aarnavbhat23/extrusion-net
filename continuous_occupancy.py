@@ -10,7 +10,7 @@ def down(x):return np.nextafter(x,-np.inf)
 def up(x):return np.nextafter(x,np.inf)
 
 
-def interval_snapshot(low,high,gamma=.3,removal_factor=1.):
+def interval_snapshot(low,high,gamma=.3,removal_factor=1.,aggregate=False):
     """Outward elementary operations, with nonnegativity and simplex constraints."""
     low=np.atleast_2d(low);high=np.atleast_2d(high);count=len(low)
     if np.any(low>high) or np.any(low[:,[0,3]]<=0) or np.any(low[:,1:3]<0) or np.any(high[:,1:3]>1):
@@ -46,6 +46,10 @@ def interval_snapshot(low,high,gamma=.3,removal_factor=1.):
     rl=rl.reshape(count,81);ru=ru.reshape(count,81);sl=np.zeros(count);su=np.zeros(count)
     for i in range(81):sl=np.maximum(0.,down(sl+rl[:,i]));su=up(su+ru[:,i])
     lower=np.c_[rl,np.maximum(0.,down(1-su))];upper=np.c_[ru,np.minimum(1.,up(1-sl))]
+    if aggregate:
+        from capture_survival import absence_bounds
+        al,au=absence_bounds(low,high,gamma,removal_factor)
+        lower[:,-1]=np.maximum(lower[:,-1],al);upper[:,-1]=np.minimum(upper[:,-1],au)
     return np.maximum(0.,lower),np.minimum(1.,upper)
 
 
@@ -57,17 +61,17 @@ def calibration_intervals(counts,assays=2):
     return np.maximum(0.,low-1e-12),np.minimum(1.,high+1e-12)
 
 
-def enclose(observations,max_boxes=4096,max_refinements=32,precision=.02):
+def enclose(observations,max_boxes=4096,max_refinements=32,precision=.02,aggregate=False):
     low=DOMAIN_LOW[None].copy();high=DOMAIN_HIGH[None].copy();trace=[]
     intervals=[(gamma,*calibration_intervals(counts,len(observations))) for gamma,counts in observations]
     for iteration in range(max_refinements+1):
         keep=np.ones(len(low),bool)
         for gamma,observed_low,observed_high in intervals:
-            predicted_low,predicted_high=interval_snapshot(low,high,gamma)
+            predicted_low,predicted_high=interval_snapshot(low,high,gamma,aggregate=aggregate)
             keep&=np.all((predicted_low<=observed_high)&(predicted_high>=observed_low),axis=1)
         low=low[keep];high=high[keep]
         if not len(low):return {'rejected':True,'attained':False,'trace':trace},low,high
-        tl,tu=interval_snapshot(low,high,.3,2.);lower=tl.min(axis=0);upper=tu.max(axis=0)
+        tl,tu=interval_snapshot(low,high,.3,2.,aggregate=aggregate);lower=tl.min(axis=0);upper=tu.max(axis=0)
         width=float(np.max(upper-lower));trace.append({'iteration':iteration,'retained_boxes':len(low),'max_target_width':width})
         if width<=precision or len(low)>=max_boxes or iteration==max_refinements:break
         split_count=min(len(low),512,max_boxes-len(low))
