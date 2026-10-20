@@ -1,0 +1,106 @@
+{
+  "scope": "Exploratory explanation after failed retrieval gate; query first eight keys of nested prefixes.",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "rows": [
+    {
+      "seed": 0,
+      "bindings": 8,
+      "mean_compatible_values": 1.03125,
+      "all_values_compatible_fraction": 0.0,
+      "lambda_min_at_least_two_fraction": 0.0,
+      "largest_score_increase_from_previous": null
+    },
+    {
+      "seed": 0,
+      "bindings": 16,
+      "mean_compatible_values": 1.3984375,
+      "all_values_compatible_fraction": 0.0,
+      "lambda_min_at_least_two_fraction": 0.0,
+      "largest_score_increase_from_previous": -0.0005388395015213376
+    },
+    {
+      "seed": 0,
+      "bindings": 32,
+      "mean_compatible_values": 3.302734375,
+      "all_values_compatible_fraction": 0.044921875,
+      "lambda_min_at_least_two_fraction": 0.001953125,
+      "largest_score_increase_from_previous": -0.007334065166380355
+    },
+    {
+      "seed": 0,
+      "bindings": 64,
+      "mean_compatible_values": 6.90625,
+      "all_values_compatible_fraction": 0.576171875,
+      "lambda_min_at_least_two_fraction": 0.236328125,
+      "largest_score_increase_from_previous": -0.024604706114525976
+    },
+    {
+      "seed": 1,
+      "bindings": 8,
+      "mean_compatible_values": 1.01953125,
+      "all_values_compatible_fraction": 0.0,
+      "lambda_min_at_least_two_fraction": 0.0,
+      "largest_score_increase_from_previous": null
+    },
+    {
+      "seed": 1,
+      "bindings": 16,
+      "mean_compatible_values": 1.349609375,
+      "all_values_compatible_fraction": 0.00390625,
+      "lambda_min_at_least_two_fraction": 0.0,
+      "largest_score_increase_from_previous": -0.0002831102062583746
+    },
+    {
+      "seed": 1,
+      "bindings": 32,
+      "mean_compatible_values": 3.119140625,
+      "all_values_compatible_fraction": 0.0390625,
+      "lambda_min_at_least_two_fraction": 0.0,
+      "largest_score_increase_from_previous": -0.0020734846409689034
+    },
+    {
+      "seed": 1,
+      "bindings": 64,
+      "mean_compatible_values": 6.86328125,
+      "all_values_compatible_fraction": 0.576171875,
+      "lambda_min_at_least_two_fraction": 0.22265625,
+      "largest_score_increase_from_previous": -0.02797686650589082
+    },
+    {
+      "seed": 2,
+      "bindings": 8,
+      "mean_compatible_values": 1.029296875,
+      "all_values_compatible_fraction": 0.0,
+      "lambda_min_at_least_two_fraction": 0.0,
+      "largest_score_increase_from_previous": null
+    },
+    {
+      "seed": 2,
+      "bindings": 16,
+      "mean_compatible_values": 1.33203125,
+      "all_values_compatible_fraction": 0.0,
+      "lambda_min_at_least_two_fraction": 0.0,
+      "largest_score_increase_from_previous": -0.0005273755386119294
+    },
+    {
+      "seed": 2,
+      "bindings": 32,
+      "mean_compatible_values": 3.279296875,
+      "all_values_compatible_fraction": 0.04296875,
+      "lambda_min_at_least_two_fraction": 0.001953125,
+      "largest_score_increase_from_previous": -0.0019116435671092669
+    },
+    {
+      "seed": 2,
+      "bindings": 64,
+      "mean_compatible_values": 6.88671875,
+      "all_values_compatible_fraction": 0.57421875,
+      "lambda_min_at_least_two_fraction": 0.240234375,
+      "largest_score_increase_from_previous": -0.024535292624773386
+    }
+  ]
+}

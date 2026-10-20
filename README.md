@@ -42,6 +42,14 @@ failures. A [causal shared-clock learning prototype](docs/CAUSAL_CLOCK_RESULTS.m
 failed its matched architectural screen; its additional cost did not solve
 content retrieval. These identification and learning outcomes are separate.
 
+A [content-retrieval follow-up](docs/MOMENT_MEMORY_RESULTS.md) specifies a
+query-conditioned value-moment read and tests 21 operator runs plus 12 causal
+text runs. **It fails the frozen continuation gate:** recall falls from 98.4%
+at eight bindings to 72.4% at 32, and text quality is unchanged at substantially
+higher cost. Positive writes can only enlarge its compatible-value set, explaining
+the loss of certification. This is retained negative evidence, not an architecture
+advance; its conditional atom check cannot establish key presence.
+
 Related results: [fixed-source ambiguity](docs/IDENTIFIABILITY.md),
 [inconsistent noisy intervention selection](docs/NOISY_IDENTIFICATION_RESULTS.md),
 [calibration stability](docs/STABLE_CALIBRATION.md), and
