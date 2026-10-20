@@ -2,21 +2,36 @@
 
 [![Reproduction checks](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml/badge.svg)](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml)
 
+**Can a model learn directional transport from a few controlled probes?**
+
+The current research direction is [learning transport through loading probes](docs/LOAD_PROBES.md).
+**Two known loading patterns exactly identify every directional gate of the fixed
+two-arm operator from local contacts.** With independent contact noise, the
+recovery variance per gate stays constant with length. One fixed loading pattern
+leaves an exact ambiguity even when its whole map is observed.
+
+A new vector-response screen goes further: four responses provide only O(n)
+observed scalars. Their local inverse-information variance stays roughly flat
+from 8 to 64 loads in 40 synthetic mechanisms, while two responses become poorly
+conditioned. An eight-parameter shared controller trained on 68 noisy response
+scalars transfers to unseen length-64 feature contexts; random and alternating
+loading both improve on repeated uniform loading. Random loading wins on average
+gate error, so informative probing is the hypothesis to pursue. These are
+exploratory synthetic results; stable recovery in general and task-learning
+benefits remain open. [Derivation, controls, results and next tests](docs/LOAD_PROBES.md).
+
+The preceding [identification study](docs/IDENTIFIABILITY.md),
+[inconsistent noisy-map selection results](docs/NOISY_IDENTIFICATION_RESULTS.md),
+[local calibration-budget analysis](docs/STABLE_CALIBRATION.md), and
+[sharp single-mixer counterfactual bounds](docs/COUNTERFACTUAL_OUTPUT_BOUNDS.md)
+explain why observational fit, mechanism identification and stable intervention
+prediction must be tested separately. The linear operator belongs to a known
+structured-matrix family; the candidate contribution concerns what observations
+teach its mechanism.
+
+## Original prediction study
+
 Can a neural network route information the way chromatin does?
-
-The current research direction is [identifiable routing and intervention calibration](docs/IDENTIFIABILITY.md).
-Three structural screens led to an exact free-gate equivalence family, sharp
-directional-intervention bounds, and a small calibration study across 80 synthetic
-mechanisms. This concerns the positive routing operator; it does not establish
-nonidentifiability of the shared neural controller or a new general learning rule.
-
-The [noisy-map follow-up](docs/NOISY_IDENTIFICATION_RESULTS.md) tests three selection
-rules beyond simple controls and retains their inconsistent results. A new
-[local stability analysis](docs/STABLE_CALIBRATION.md) separates exact identification
-from the intervention budget needed for stable recovery as chain length grows.
-A further [output-bound result](docs/COUNTERFACTUAL_OUTPUT_BOUNDS.md) gives sharp
-signed-message bounds and exact scalar extrema for a single intervened unsaturated
-mixer, including its log-mass feature. It does not cover the full nonlinear network.
 
 In the nucleus, cohesin motors load onto DNA and reel it into loops from both sides. Each side stalls at a CTCF protein facing the right way, so a forward site (`>`) followed by a reverse site (`<`) anchors a loop that insulates genes from enhancers outside it. This repository turns that process into a sequence model's only long-range operator. Every position predicts, from its local context alone, how likely a motor is to load there and how likely each arm is to stall there. Two positions exchange information only if a simulated motor brings them into the same loop. There is no positional encoding and no query-key product.
 

@@ -1,5 +1,20 @@
 # Roadmap: from one nature-inspired operator to a model worth scaling
 
+## Current selection: learn transport through observable probes
+
+The [loading-probe screen](LOAD_PROBES.md) is now the primary learning-research
+direction. Two controlled source patterns remove the free-gate ambiguity;
+four vector responses offer a promising O(n)-observation route to stable local
+recovery. Shared-controller fits transfer to new feature contexts, with random
+input design a strong control. Next establish probe complexity under difficult
+gates and misspecification, then test external-response learning and held-out
+interventions. A constant-probe stability theorem and a useful learning advantage
+are open targets, not established results.
+
+The biological prediction track below remains useful for external validation.
+The older architecture candidates are retained as hypotheses, not selected
+implementations. Their analogies alone do not justify development.
+
 ## The lens: does it collapse?
 
 Many nature-inspired ideas look new but turn out to be a known algorithm in disguise once written as math. Each candidate here was screened by writing its computation down and asking what it reduces to:
@@ -22,7 +37,7 @@ The candidates still standing come from the same biological system: how the nucl
 
 ## Candidate directions, ranked
 
-### A1. Extrusion at genome scale on real enhancer-gene data (highest priority)
+### A1. Biological validation: real enhancer-gene data
 
 The linear-time scan (`extrusion_linear_scan`) handles 65,536 positions on one CPU thread. That makes the real question testable: does extrusion predict which enhancers regulate which genes better than distance and activity-by-contact (ABC) baselines? Data: CRISPRi enhancer-gene screens collected in the ENCODE-rE2G benchmark (Fulco et al., Nature Genetics 2019; Gschwind et al., bioRxiv 2023). Inputs: binned 1-2 Mb windows with CTCF motif orientation and strength, enhancer activity (DNase, H3K27ac) and gene TSS positions. Split by chromosome.
 
