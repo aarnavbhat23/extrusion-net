@@ -58,6 +58,13 @@ three bands identify unequal step/removal rate ratios under a continuous-time
 reach model. That extra flexibility fails its moderate-noise improvement gate;
 measured biological transfer and general sequence-learning gains remain open.
 
+An [independent event-engine study](docs/EXTERNAL_ENGINE_RESULTS.md) now tests
+the restricted reach model in unmodified `lefsim`: 18/18 matched cases pass and
+6/6 tested mismatches reject, with simultaneous sampling-error accounting.
+This is simulator transfer with known gate locations and a controlled source.
+[dLEM already provides learnable loop-extrusion models](docs/BIOLOGICAL_NOVELTY_AUDIT.md);
+architecture novelty and experimental chromatin prediction remain unestablished.
+
 Related results: [fixed-source ambiguity](docs/IDENTIFIABILITY.md),
 [inconsistent noisy intervention selection](docs/NOISY_IDENTIFICATION_RESULTS.md),
 [calibration stability](docs/STABLE_CALIBRATION.md), and
@@ -143,7 +150,7 @@ Python 3.13 or 3.14 on a CPU. The recorded runs used an Apple M3, 2 threads per 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt -r requirements-external.txt
 python -m unittest discover -s tests -v
 python replay.py
 python predict.py "3..P..>..<..2..P"
