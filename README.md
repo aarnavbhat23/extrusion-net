@@ -35,6 +35,13 @@ existing fixed-state linear scan. A clean local-band identity identifies the
 clock under its stated assumptions; noisy identification and measured-data
 transfer remain open. All failures and extra measurement costs are retained.
 
+The [noisy clock-recovery follow-up](docs/CLOCK_IDENTIFICATION.md) reduces
+held-out message RMSE from .04346 to .00202 at band noise SD .001 under the
+shared-clock family, with conservative uncertainty bounds and retained mismatch
+failures. A [causal shared-clock learning prototype](docs/CAUSAL_CLOCK_RESULTS.md)
+failed its matched architectural screen; its additional cost did not solve
+content retrieval. These identification and learning outcomes are separate.
+
 Related results: [fixed-source ambiguity](docs/IDENTIFIABILITY.md),
 [inconsistent noisy intervention selection](docs/NOISY_IDENTIFICATION_RESULTS.md),
 [calibration stability](docs/STABLE_CALIBRATION.md), and
