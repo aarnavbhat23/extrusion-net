@@ -13,7 +13,9 @@ SHA256='35fcb75676f895d22e801520be9ae21001a172b66bcbbc2ef36ccfe17e94d290'
 def fetch():
     path=ROOT/'external/netdlem2.py';path.parent.mkdir(exist_ok=True)
     if not path.exists():
-        data=urllib.request.urlopen(URL,context=ssl.create_default_context(cafile='/etc/ssl/cert.pem')).read()
+        certificate=Path('/etc/ssl/cert.pem')
+        context=ssl.create_default_context(cafile=str(certificate) if certificate.exists() else None)
+        data=urllib.request.urlopen(URL,context=context).read()
         if hashlib.sha256(data).hexdigest()!=SHA256:raise ValueError('Published source hash mismatch')
         path.write_bytes(data)
     return path

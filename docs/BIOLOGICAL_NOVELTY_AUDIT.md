@@ -1,4 +1,4 @@
-# Biological-modeling novelty: the dLEM comparison is mandatory
+# Biological-modeling novelty: scope and the published comparator
 
 **Learnable loop extrusion is already an established research direction.** It
 cannot itself be the novelty claim for this project. The strongest present
@@ -22,7 +22,7 @@ A targeted primary-source audit on 2026-10-20 checked:
 - The [paper](https://doi.org/10.1101/2025.10.17.682904) was located, but its
   full-text endpoint returned HTTP 403. This audit relies on authors' code and
   descriptions; it does not establish that a capability is absent from the full
-  paper. No dLEM performance comparison was run.
+  paper. At the initial audit no dLEM performance comparison had been run.
 
 The two codebases have different readouts and gate semantics. Extrusion's
 current controlled experiments use expected cross-arm reach, while dLEM models
@@ -37,6 +37,18 @@ The external [event-engine study](EXTERNAL_ENGINE_RESULTS.md) is a restricted
 validation of a reach-model bridge. It is not evidence of beating dLEM, predicting
 experimental Hi-C, or replacing neural networks or transformers. The general
 content-retrieval candidate [failed its gates](MOMENT_MEMORY_RESULTS.md).
+
+## Subsequent matched-observable test
+
+The [random-delay snapshot study](OCCUPANCY_RESULTS.md) now defines a controlled
+observable for which the unchanged authors' netdlem2 forward has an exact
+resolvent mapping. Our memoryless recurrence agrees numerically with it. The
+hidden-capture fit's 1.93× primary intervention-error improvement fails its 2×
+gate. This compares one pinned forward module with all effective step rates
+fitted, not the complete deep prediction pipeline or all dLEM variants. The
+repository also contains a stalling module, not benchmarked here. A competitive
+claim on measured contact maps remains unestablished. The comparison strengthens
+the prior-art boundary rather than removing it.
 
 ## Research decision
 

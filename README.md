@@ -65,6 +65,18 @@ This is simulator transfer with known gate locations and a controlled source.
 [dLEM already provides learnable loop-extrusion models](docs/BIOLOGICAL_NOVELTY_AUDIT.md);
 architecture novelty and experimental chromatin prediction remain unestablished.
 
+A [common-observable follow-up](docs/OCCUPANCY_RESULTS.md) now maps the unchanged
+authors' dLEM forward to controlled random-delay anchor snapshots. It agrees
+exactly with our memoryless Markov recurrence. Retaining hidden capture states
+reduces median intervention RMSE by 1.93× across 21 simulator cases, just below
+the frozen 2× gate. A finite-bank acquisition rule also fails its cost gate and
+excludes off-grid targets. [Continuous-domain enclosures](docs/CONTINUOUS_OCCUPANCY_RESULTS.md)
+retain all six fresh generating mechanisms but miss useful precision. A survival
+identity tightens them; independently checked feasible pairs still disagree by
+3.0–4.7 points on intervention absence while satisfying every chosen calibration
+constraint. These are conditional mechanistic diagnostics, not a new learning
+paradigm, general dLEM superiority or measured biological validation.
+
 Related results: [fixed-source ambiguity](docs/IDENTIFIABILITY.md),
 [inconsistent noisy intervention selection](docs/NOISY_IDENTIFICATION_RESULTS.md),
 [calibration stability](docs/STABLE_CALIBRATION.md), and
@@ -151,6 +163,7 @@ Python 3.13 or 3.14 on a CPU. The recorded runs used an Apple M3, 2 threads per 
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt -r requirements-external.txt
+python dlem_comparator.py
 python -m unittest discover -s tests -v
 python replay.py
 python predict.py "3..P..>..<..2..P"
