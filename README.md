@@ -27,6 +27,14 @@ wins. These results concern mechanism recovery and synthetic transfer; general
 task-learning advantages remain unestablished. The linear operator belongs to
 a known structured-matrix family, and color probing has established precedent.
 
+A [finite-lifetime transfer screen](docs/KINETIC_TRANSFER.md) now exposes a
+physical-model boundary: independent arm lifetimes preserve recovery, while a
+shared removal clock causes held-out prediction failures. The shared-clock
+family has an exact arbitrary-rank cross-block witness, placing it beyond the
+existing fixed-state linear scan. A clean local-band identity identifies the
+clock under its stated assumptions; noisy identification and measured-data
+transfer remain open. All failures and extra measurement costs are retained.
+
 Related results: [fixed-source ambiguity](docs/IDENTIFIABILITY.md),
 [inconsistent noisy intervention selection](docs/NOISY_IDENTIFICATION_RESULTS.md),
 [calibration stability](docs/STABLE_CALIBRATION.md), and
