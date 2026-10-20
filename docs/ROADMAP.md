@@ -3,13 +3,18 @@
 ## Current selection: learn transport through observable probes
 
 The [loading-probe screen](LOAD_PROBES.md) is now the primary learning-research
-direction. Two controlled source patterns remove the free-gate ambiguity;
+direction. The follow-up [global recovery theorem](COLORED_RECOVERY.md) now gives
+a length-independent sufficient response budget for every fixed gate ceiling
+below one, with a projected recovery algorithm and a posteriori noise bound.
+It retains an explicit source-invariance counterexample and held-out validation
+test. Next reduce the transparency-dependent response cost using local barrier
+conditions and test mechanism transfer beyond the matched simulator.
+
+The earlier screen established that two controlled source patterns remove the free-gate ambiguity;
 four vector responses offer a promising O(n)-observation route to stable local
 recovery. Shared-controller fits transfer to new feature contexts, with random
-input design a strong control. Next establish probe complexity under difficult
-gates and misspecification, then test external-response learning and held-out
-interventions. A constant-probe stability theorem and a useful learning advantage
-are open targets, not established results.
+input design a strong control. The new results settle a restricted operator
+recovery question; a useful general learning advantage remains an open target.
 
 The biological prediction track below remains useful for external validation.
 The older architecture candidates are retained as hypotheses, not selected

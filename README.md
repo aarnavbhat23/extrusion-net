@@ -4,30 +4,33 @@
 
 **Can a model learn directional transport from a few controlled probes?**
 
-The current research direction is [learning transport through loading probes](docs/LOAD_PROBES.md).
-**Two known loading patterns exactly identify every directional gate of the fixed
-two-arm operator from local contacts.** With independent contact noise, the
-recovery variance per gate stays constant with length. One fixed loading pattern
-leaves an exact ambiguity even when its whole map is observed.
+**A length-independent number of controlled vector responses globally identifies
+every directional gate**, for known loading, source-invariant unsaturated
+transport and any fixed pass-probability ceiling below one. The
+[recovery theorem](docs/COLORED_RECOVERY.md) gives a globally convergent matrix-free
+iteration and a computable noise-error bound. The sufficient response budget
+grows with transparency: 14/24/86/492 responses at ceilings .2/.5/.8/.95.
+A [four-response theorem](docs/DETERMINISTIC_PROBES.md) applies when every gate
+is below approximately .087. All proofs, assumptions and costs are explicit.
 
-A new vector-response screen goes further: four responses provide only O(n)
-observed scalars. Their local inverse-information variance stays roughly flat
-from 8 to 64 loads in 40 synthetic mechanisms, while two responses become poorly
-conditioned. An eight-parameter shared controller trained on 68 noisy response
-scalars transfers to unseen length-64 feature contexts; random and alternating
-loading both improve on repeated uniform loading. Random loading wins on average
-gate error, so informative probing is the hypothesis to pursue. These are
-exploratory synthetic results; stable recovery in general and task-learning
-benefits remain open. [Derivation, controls, results and next tests](docs/LOAD_PROBES.md).
+The recovery study tests 60 mechanisms at 32/128/512 loads, with noiseless and
+noisy responses, plus near-transparent stress cases and held-out gate cuts.
+A constructed source-dependent mechanism matches every calibration response but
+fails on a new source. A held-out validation test detects larger shifts and
+misses smaller ones: identifying a fixed mechanism does not establish its
+invariance across untested inputs.
 
-The preceding [identification study](docs/IDENTIFIABILITY.md),
-[inconsistent noisy-map selection results](docs/NOISY_IDENTIFICATION_RESULTS.md),
-[local calibration-budget analysis](docs/STABLE_CALIBRATION.md), and
-[sharp single-mixer counterfactual bounds](docs/COUNTERFACTUAL_OUTPUT_BOUNDS.md)
-explain why observational fit, mechanism identification and stable intervention
-prediction must be tested separately. The linear operator belongs to a known
-structured-matrix family; the candidate contribution concerns what observations
-teach its mechanism.
+The [earlier loading-probe study](docs/LOAD_PROBES.md) derives exact local gate
+recovery from two known source patterns and fits a shared controller from 68
+noisy response scalars. It retains the strong random-loading control and its
+wins. These results concern mechanism recovery and synthetic transfer; general
+task-learning advantages remain unestablished. The linear operator belongs to
+a known structured-matrix family, and color probing has established precedent.
+
+Related results: [fixed-source ambiguity](docs/IDENTIFIABILITY.md),
+[inconsistent noisy intervention selection](docs/NOISY_IDENTIFICATION_RESULTS.md),
+[calibration stability](docs/STABLE_CALIBRATION.md), and
+[sharp single-mixer output bounds](docs/COUNTERFACTUAL_OUTPUT_BOUNDS.md).
 
 ## Original prediction study
 
