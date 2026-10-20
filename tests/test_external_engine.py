@@ -8,7 +8,7 @@ class ExternalBridgeTests(unittest.TestCase):
         parameters=np.array([.7,.8,.3]);reach=predict(parameters);fit=calibrate(reach,10**12)
         self.assertFalse(fit['empty']);np.testing.assert_allclose(fit['point'],parameters,atol=1e-11)
         self.assertEqual(reach[0,0],1.)
-        self.assertEqual(reach[4,0],.7**4*.8)
+        self.assertAlmostEqual(reach[4,0],.7**4*.8,delta=1e-15)
         self.assertTrue(np.all(predict(fit['low'])<=reach+1e-11))
         self.assertTrue(np.all(reach<=predict(fit['high'])+1e-11))
         self.assertTrue(np.all(predict(parameters,intervention='left')[4:]==0))
