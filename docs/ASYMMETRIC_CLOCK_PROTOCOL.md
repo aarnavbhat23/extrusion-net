@@ -1,4 +1,4 @@
-# Four-band recovery of unequal clock speeds: theory-driven follow-up
+# Recovery of unequal clock speeds through distance four: theory-driven follow-up
 
 Added after the equal-speed development screen passed; freeze before testing
 unequal-speed outcomes. This is a separate exploratory follow-up, not independent
@@ -18,3 +18,6 @@ Continue only if noiseless inversion matches exact ratios and gates to 1e-9,
 and mean message RMSE at SD .001 is at least twofold smaller than the forced
 equal-speed inversion on the unequal-speed cases. This supports further
 falsification, not measured biological validity or a new general architecture.
+
+Terminology clarification: distances 2, 3 and 4 are three contact bands;
+“through distance four” does not mean four observed bands.

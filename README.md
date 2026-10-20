@@ -50,6 +50,14 @@ higher cost. Positive writes can only enlarge its compatible-value set, explaini
 the loss of certification. This is retained negative evidence, not an architecture
 advance; its conditional atom check cannot establish key presence.
 
+The [asynchronous-transfer study](docs/ASYNCHRONOUS_RESULTS.md) proves that two
+timing mechanisms can match every distance-two/three observation yet disagree
+under interventions. A distance-four band resolves this ambiguity and reduces
+moderate-noise held-out error threefold in the development screen. The same
+three bands identify unequal step/removal rate ratios under a continuous-time
+reach model. That extra flexibility fails its moderate-noise improvement gate;
+measured biological transfer and general sequence-learning gains remain open.
+
 Related results: [fixed-source ambiguity](docs/IDENTIFIABILITY.md),
 [inconsistent noisy intervention selection](docs/NOISY_IDENTIFICATION_RESULTS.md),
 [calibration stability](docs/STABLE_CALIBRATION.md), and
