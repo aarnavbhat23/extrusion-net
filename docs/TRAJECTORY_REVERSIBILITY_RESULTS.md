@@ -23,7 +23,10 @@ Development tertiles in micrometres are [.303498653, .503330422] unfiltered and
 [-.0113203, .0174551, .0174230] and [-.0168242, .0012831, -.00811984]. All
 16,384 joint acquisition-date orientation flips are enumerated; the maximum
 across lags gives the reported multiplicity-adjusted p-values. Tracks and frames
-are not independent replicates. Acquisition-date independence itself is an
+are not independent replicates. Standardization uses the conditional orientation-
+randomization standard deviation sqrt(sum_date score_date squared); the frozen
+zero-variance wording refers to this variance (all scores zero), not to empirical
+sample variance across dates. Acquisition-date independence itself is an
 assumption, not a verified biological-replicate design.
 
 ## What the conditional guarantee says

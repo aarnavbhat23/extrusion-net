@@ -8,7 +8,6 @@ from pathlib import Path
 import re
 from collections import defaultdict
 import numpy as np
-import pandas as pd
 
 EX=Path(__file__).resolve().parent
 report={}
