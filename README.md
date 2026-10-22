@@ -17,8 +17,11 @@ alternative. Balanced schedules cancel the null but suppress useful signal:
 contribution is an explicit assumption check and bias/power tradeoff; no learned
 architecture advance or measured biological mechanism is claimed.
 A [public-trajectory feasibility audit](docs/TRAJECTORY_DATA_FEASIBILITY.md) verifies
-small files from two independent live-cell studies; no model has been fit to
-those outcomes, and the existing BILD inference method is an explicit precedent.
+small files from two independent live-cell studies. A subsequent
+[held-out trajectory reversibility screen](docs/TRAJECTORY_REVERSIBILITY_RESULTS.md)
+on one release does not reject its specified reversible subclass (adjusted
+p=.224 on 14 acquisition dates); it supplies no evidence of a distinct active
+mechanism. The second study remains unevaluated, and BILD is an explicit precedent.
 
 **Can a model learn directional transport from a few controlled probes?**
 

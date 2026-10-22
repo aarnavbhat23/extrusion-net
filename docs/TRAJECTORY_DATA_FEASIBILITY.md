@@ -68,3 +68,11 @@ comparison and independent validation, not another name for state estimation.
 ```bash
 python fetch_trajectory_pilot.py
 ```
+
+## Subsequent bounded screen
+
+The [reversibility screen](TRAJECTORY_REVERSIBILITY_RESULTS.md) now evaluates the
+first study baseline, with outcomes held out by acquisition date. It fails its
+detection gate. The metadata-only statements above describe the earlier audit;
+the baseline is no longer an untouched outcome cohort. The second study remains
+unevaluated. No learned motor-state rule has been fit.
