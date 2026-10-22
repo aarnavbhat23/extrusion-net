@@ -2,6 +2,14 @@
 
 [![Reproduction checks](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml/badge.svg)](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml)
 
+**Measured-data update:** a [frozen single-molecule encounter screen](docs/MEASURED_ENCOUNTER_RESULTS.md)
+now tests 203 encounters from 167 molecule identifiers across eight held-out
+experimental batches. The loop-size/elapsed-time candidate is **11.3% worse**
+than the published exponential force-law family in mean log loss and fails its
+continuation gate. Full ordered trajectories are needed before claiming learned
+history-dependent dynamics; the current public encounter summaries do not
+establish that mechanism.
+
 **Can a model learn directional transport from a few controlled probes?**
 
 **A length-independent number of controlled vector responses globally identifies
