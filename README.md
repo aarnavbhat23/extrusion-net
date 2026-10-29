@@ -2,6 +2,14 @@
 
 [![Reproduction checks](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml/badge.svg)](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml)
 
+**Identification update:** an [explicit one-clock inverse](docs/CAPTURE_IDENTIFIABILITY.md)
+identifies the four-parameter capture family from exact snapshot probabilities,
+with an irrelevant-parameter exception when capture is absent. Finite data remain
+limiting: a [joint likelihood reanalysis](docs/JOINT_LIKELIHOOD_RESULTS.md) excludes
+the old witnesses but verifies new 2.12–5.64-point intervention ambiguities in all
+six existing datasets. This separates structural identification from useful
+precision; it does not establish a new learned mechanism or biological validity.
+
 **Measured-data update:** a [frozen single-molecule encounter screen](docs/MEASURED_ENCOUNTER_RESULTS.md)
 now tests 203 encounters from 167 molecule identifiers across eight held-out
 experimental batches. The loop-size/elapsed-time candidate is **11.3% worse**
