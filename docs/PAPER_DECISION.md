@@ -1,5 +1,10 @@
 # Paper decision after the finite-data calibration round
 
+**2026-10-29 continuation:** full manuscript work remains deferred. The
+[competing-loss direction](LOSS_PERTURBATION_RESULTS.md) passes exact-data
+feasibility, but does not yet change the grades below. Keep theory notes as
+research records; prioritize finite-data and observation-model validation.
+
 Date: 2026-10-28. **Write a short internal theory draft; do not submit yet.**
 Do not frame this as a replacement for neural networks or attention. Current
 results support a precise question about information lost by an observation
