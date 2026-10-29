@@ -2,6 +2,15 @@
 
 [![Reproduction checks](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml/badge.svg)](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml)
 
+**Calibration decision:** a [72-fit finite-data screen](docs/CLOCK_CALIBRATION_RESULTS.md)
+fails the two-clock continuation gate. At 20,000 initiated episodes, median
+intervention absence error is **2.018 percentage points** with separated clocks
+versus **.118 points** when absences are retained. All 48 two-clock speed
+intervals are unbounded above. The [observation-contract theorem](docs/NORMALIZED_SNAPSHOT_THEORY.md)
+explains the normalization ambiguity and exact recovery alternatives; practical
+precision and biological transfer remain separate requirements. The
+[paper decision](docs/PAPER_DECISION.md) prioritizes a focused theory working draft.
+
 **Identification update:** an [explicit one-clock inverse](docs/CAPTURE_IDENTIFIABILITY.md)
 identifies the four-parameter capture family from exact snapshot probabilities,
 with an irrelevant-parameter exception when capture is absent. Finite data remain
