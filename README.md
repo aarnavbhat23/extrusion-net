@@ -2,12 +2,14 @@
 
 [![Reproduction checks](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml/badge.svg)](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml)
 
-**Research direction:** a [competing-loss calibration screen](docs/LOSS_PERTURBATION_RESULTS.md)
-separates regulated turnover from unaffected observation loss. Speed perturbations
-and two clocks alone retain explicit ambiguities; a three-condition exact inverse
-recovers the relevant seven parameters in all declared cases. This passes a
-structural feasibility gate, with finite-data usefulness and biological validation
-still open. Full manuscript work remains deferred.
+**Finite-data decision:** the [90-fit competing-loss study](docs/FINITE_LOSS_RESULTS.md)
+fails the normalized three-condition prediction gate. At 24,000 initiated episodes,
+median intervention absence error is **2.501 percentage points**, versus **0.312**
+with retained absences and **0.298** with scheduled timestamps. The latter controls
+pass all three matched mechanisms. Incorrect perturbation strength degrades every
+method. Independent generator replay checks all 270 optimizer starts and saved
+outcomes. Exact identification remains a structural result; useful predictive
+uncertainty and biological validation are open. Full manuscript work is deferred.
 
 **Calibration decision:** a [72-fit finite-data screen](docs/CLOCK_CALIBRATION_RESULTS.md)
 fails the two-clock continuation gate. At 20,000 initiated episodes, median

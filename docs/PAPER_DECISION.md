@@ -1,9 +1,25 @@
-# Paper decision after the finite-data calibration round
+# Paper decision after the competing-loss finite-data round
 
-**2026-10-29 continuation:** full manuscript work remains deferred. The
-[competing-loss direction](LOSS_PERTURBATION_RESULTS.md) passes exact-data
-feasibility, but does not yet change the grades below. Keep theory notes as
-research records; prioritize finite-data and observation-model validation.
+**2026-10-29 latest decision:** full manuscript work remains deferred. The
+[90-fit competing-loss follow-up](FINITE_LOSS_RESULTS.md) fails the normalized
+design's point-accuracy gate (1/3 mechanisms); retained absences and scheduled
+timestamps pass 3/3 in the matched model. Wrong perturbation strength degrades
+all designs. All matched generating parameters belong to split-likelihood sets,
+but useful certified prediction widths have not been established. Preserve the
+theory and negative results. Prioritize target-specific identification under
+uncertain intervention strength/loading, then certified uncertainty and a
+validated external observable. The grades below remain unchanged; technical
+verification has improved without establishing new capability or priority.
+
+An [exact-data internal-calibration inverse](UNKNOWN_PERTURBATION_THEORY.md)
+now identifies an unknown perturbation multiplier when captured/free susceptibility
+differs. Its equal-susceptibility boundary has a sharp intervention ambiguity.
+This post-screen theory selects a narrower finite-data question; it does not
+rescue the failed normalized design or establish originality.
+
+The following 2026-10-28 plan is retained as history. The timestamp comparison
+and two dropout/perturbation stresses are now completed as above; their remaining
+limitations include equal-cost comparison, uncertain loading and biology.
 
 Date: 2026-10-28. **Write a short internal theory draft; do not submit yet.**
 Do not frame this as a replacement for neural networks or attention. Current
