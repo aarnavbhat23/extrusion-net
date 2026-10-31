@@ -1,5 +1,14 @@
 # Paper decision after the competing-loss finite-data round
 
+**2026-10-30 attribution follow-up:** [the six-step screen](OPTICAL_MEMORY_RESULTS.md)
+also fails the pulse-order power gate (3/6, required 4/6). A hidden optical
+state can reproduce the complete primary observation law, and an uncalibrated
+second reporter does not resolve the interpretation. The direct reporter control
+is stronger for this toy discrimination task. Stop generic pulse-order claims;
+focus on an achievable reference measurement and independently justified
+cross-talk/selectivity bounds. The [prior-art audit](OPTICAL_MEMORY_PRIOR_ART.md)
+finds substantial overlap. Grades and the decision to defer submission remain.
+
 **2026-10-30 measured-data decision:** continue targeted research; defer submission.
 The [measured iFRAP screen](MEASURED_IFRAP_RESULTS.md) fails its strong-control
 gate: the raw-contrast candidate gains 1.11% MSE against an ordinary mixture,

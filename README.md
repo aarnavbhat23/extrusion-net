@@ -1,5 +1,13 @@
 # Extrusion Net
 
+**Biological versus optical memory:** an [all-schedule counterexample](docs/OPTICAL_MEMORY_THEORY.md)
+shows that a pulse-order signal alone cannot attribute a hidden state to binding.
+The [frozen calibrated-reporter screen](docs/OPTICAL_MEMORY_RESULTS.md) reaches
+80% power in only three of six order cases; a simpler direct reporter separates
+the toy mechanisms more effectively. Optical cross-talk defeats the extra channel
+unless independently constrained. [Prior-work comparison](docs/OPTICAL_MEMORY_PRIOR_ART.md)
+rules out presenting this as a new pulse-order principle or learning architecture.
+
 **Measured fluorescence decision:** the [frozen iFRAP transfer screen](docs/MEASURED_IFRAP_RESULTS.md)
 tests six reserved movies across five conditions. Raw-contrast fitting improves
 MSE 13.93% over the empirical mean but only 1.11% over an ordinary mixture,
