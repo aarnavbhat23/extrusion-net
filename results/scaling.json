@@ -1,0 +1,33 @@
+[
+ {
+  "length": 256,
+  "scan_seconds": 0.006,
+  "dense_seconds": 0.003,
+  "max_rel_diff": 1.1444064966781298e-06,
+  "dense_matrix_mb": 0.2
+ },
+ {
+  "length": 1024,
+  "scan_seconds": 0.027,
+  "dense_seconds": 0.047,
+  "max_rel_diff": 6.039918389433296e-06,
+  "dense_matrix_mb": 4.0
+ },
+ {
+  "length": 4096,
+  "scan_seconds": 0.107,
+  "dense_seconds": 0.781,
+  "max_rel_diff": 3.867780105792917e-05,
+  "dense_matrix_mb": 64.0
+ },
+ {
+  "length": 16384,
+  "scan_seconds": 0.453,
+  "dense_matrix_mb": 1024.0
+ },
+ {
+  "length": 65536,
+  "scan_seconds": 2.048,
+  "dense_matrix_mb": 16384.0
+ }
+]

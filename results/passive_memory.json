@@ -1,0 +1,370 @@
+{
+  "scope": "two independent passive Ornstein-Uhlenbeck modes, signed one-dimensional observation",
+  "initial_mode_covariance": "identity in both preparations; stationary covariance under noise sqrt(2*A)",
+  "cases": [
+    {
+      "slow": 0.1,
+      "fast": 1.5,
+      "times": [
+        0.0,
+        1.9343215722158644,
+        3.868643144431729
+      ],
+      "preparation_A_means": [
+        0.0,
+        0.769184028926971,
+        0.6761646518358027
+      ],
+      "preparation_B_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "both_initial_visible_variances": 2.0,
+      "both_later_visible_variances": 2.0,
+      "passive_mean_difference_at_peak": 0.769184028926971,
+      "recurrence_residual": 0.0,
+      "constant_offset_residual": 0.33242284260921817,
+      "extra_passive_mode_residual": -0.05819155763726591,
+      "temporal_observability_determinant": -0.769184028926971,
+      "two_time_initial_mean_recovery": [
+        1.0,
+        -1.0
+      ],
+      "independent_matrix_exponential_means": [
+        0.0,
+        0.769184028926971,
+        0.6761646518358027
+      ],
+      "passive_envelope": [
+        4.000000000000001,
+        3.296502981115591,
+        2.7167329761259933
+      ]
+    },
+    {
+      "slow": 0.1,
+      "fast": 3.0,
+      "times": [
+        0.0,
+        1.1728266833317778,
+        2.3456533666635555
+      ],
+      "preparation_A_means": [
+        0.0,
+        0.8596893120979758,
+        0.7900357625310418
+      ],
+      "preparation_B_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "both_initial_visible_variances": 2.0,
+      "both_later_visible_variances": 2.0,
+      "passive_mean_difference_at_peak": 0.8596893120979758,
+      "recurrence_residual": -1.1102230246251565e-16,
+      "constant_offset_residual": 0.21477117675144974,
+      "extra_passive_mode_residual": -0.05969997241582292,
+      "temporal_observability_determinant": -0.8596893120979758,
+      "two_time_initial_mean_recovery": [
+        1.0,
+        -1.0
+      ],
+      "independent_matrix_exponential_means": [
+        0.0,
+        0.8596893120979758,
+        0.7900357625310418
+      ],
+      "passive_envelope": [
+        4.000000000000001,
+        3.557335084543349,
+        3.163658225930758
+      ]
+    },
+    {
+      "slow": 0.1,
+      "fast": 10.0,
+      "times": [
+        0.0,
+        0.4651687056553628,
+        0.9303374113107256
+      ],
+      "preparation_A_means": [
+        0.0,
+        0.9450029720952158,
+        0.9110716398398777
+      ],
+      "preparation_B_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "both_initial_visible_variances": 2.0,
+      "both_later_visible_variances": 2.0,
+      "passive_mean_difference_at_peak": 0.9450029720952158,
+      "recurrence_residual": -1.1102230246251565e-16,
+      "constant_offset_residual": 0.09003537266540507,
+      "extra_passive_mode_residual": -0.03750983629409199,
+      "temporal_observability_determinant": -0.9450029720952158,
+      "two_time_initial_mean_recovery": [
+        1.0,
+        -1.0
+      ],
+      "independent_matrix_exponential_means": [
+        0.0,
+        0.9450029720952158,
+        0.9110716398398777
+      ],
+      "passive_envelope": [
+        4.000000000000001,
+        3.818193826647337,
+        3.644651024461958
+      ]
+    },
+    {
+      "slow": 0.3,
+      "fast": 1.5,
+      "times": [
+        0.0,
+        1.3411982603617503,
+        2.6823965207235005
+      ],
+      "preparation_A_means": [
+        0.0,
+        0.5349922439811376,
+        0.42932505167995966
+      ],
+      "preparation_B_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "both_initial_visible_variances": 2.0,
+      "both_later_visible_variances": 2.0,
+      "passive_mean_difference_at_peak": 0.5349922439811376,
+      "recurrence_residual": 5.551115123125783e-17,
+      "constant_offset_residual": 0.5739087062565709,
+      "extra_passive_mode_residual": -0.011387667472124607,
+      "temporal_observability_determinant": -0.5349922439811376,
+      "two_time_initial_mean_recovery": [
+        1.0,
+        -1.0
+      ],
+      "independent_matrix_exponential_means": [
+        0.0,
+        0.5349922439811376,
+        0.42932505167995966
+      ],
+      "passive_envelope": [
+        4.000000000000001,
+        2.6749612199056885,
+        1.7888543819998324
+      ]
+    },
+    {
+      "slow": 0.3,
+      "fast": 3.0,
+      "times": [
+        0.0,
+        0.8528092937014984,
+        1.7056185874029968
+      ],
+      "preparation_A_means": [
+        0.0,
+        0.6968373144130144,
+        0.5934894078157517
+      ],
+      "preparation_B_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "both_initial_visible_variances": 2.0,
+      "both_later_visible_variances": 2.0,
+      "passive_mean_difference_at_peak": 0.6968373144130144,
+      "recurrence_residual": 0.0,
+      "constant_offset_residual": 0.4165167481653089,
+      "extra_passive_mode_residual": -0.011701115616189695,
+      "temporal_observability_determinant": -0.6968373144130144,
+      "two_time_initial_mean_recovery": [
+        1.0,
+        -1.0
+      ],
+      "independent_matrix_exponential_means": [
+        0.0,
+        0.6968373144130144,
+        0.5934894078157517
+      ],
+      "passive_envelope": [
+        4.000000000000001,
+        3.0970547307245093,
+        2.3979370012757646
+      ]
+    },
+    {
+      "slow": 0.3,
+      "fast": 10.0,
+      "times": [
+        0.0,
+        0.36150081415669916,
+        0.7230016283133983
+      ],
+      "preparation_A_means": [
+        0.0,
+        0.8703068296668414,
+        0.804285564018238
+      ],
+      "preparation_B_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "both_initial_visible_variances": 2.0,
+      "both_later_visible_variances": 2.0,
+      "passive_mean_difference_at_peak": 0.8703068296668414,
+      "recurrence_residual": 0.0,
+      "constant_offset_residual": 0.20002012076267706,
+      "extra_passive_mode_residual": -0.0076036621509036895,
+      "temporal_observability_determinant": -0.8703068296668414,
+      "two_time_initial_mean_recovery": [
+        0.9999999999999999,
+        -0.9999999999999999
+      ],
+      "independent_matrix_exponential_means": [
+        0.0,
+        0.8703068296668414,
+        0.804285564018238
+      ],
+      "passive_envelope": [
+        4.000000000000001,
+        3.5888941429560477,
+        3.2200402923360554
+      ]
+    },
+    {
+      "slow": 1.0,
+      "fast": 1.5,
+      "times": [
+        0.0,
+        0.8109302162163288,
+        1.6218604324326575
+      ],
+      "preparation_A_means": [
+        0.0,
+        0.14814814814814814,
+        0.10973936899862825
+      ],
+      "preparation_B_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "both_initial_visible_variances": 2.0,
+      "both_later_visible_variances": 2.0,
+      "passive_mean_difference_at_peak": 0.14814814814814814,
+      "recurrence_residual": 1.3877787807814457e-17,
+      "constant_offset_residual": 0.7818930041152266,
+      "extra_passive_mode_residual": 0.05268815756928402,
+      "temporal_observability_determinant": -0.14814814814814814,
+      "two_time_initial_mean_recovery": [
+        1.0,
+        -1.0
+      ],
+      "independent_matrix_exponential_means": [
+        0.0,
+        0.14814814814814814,
+        0.10973936899862825
+      ],
+      "passive_envelope": [
+        4.000000000000001,
+        1.7777777777777781,
+        0.7901234567901236
+      ]
+    },
+    {
+      "slow": 1.0,
+      "fast": 3.0,
+      "times": [
+        0.0,
+        0.5493061443340549,
+        1.0986122886681098
+      ],
+      "preparation_A_means": [
+        0.0,
+        0.38490017945975047,
+        0.2962962962962963
+      ],
+      "preparation_B_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "both_initial_visible_variances": 2.0,
+      "both_later_visible_variances": 2.0,
+      "passive_mean_difference_at_peak": 0.38490017945975047,
+      "recurrence_residual": 0.0,
+      "constant_offset_residual": 0.6826215043832198,
+      "extra_passive_mode_residual": 0.05955149220251266,
+      "temporal_observability_determinant": -0.38490017945975047,
+      "two_time_initial_mean_recovery": [
+        0.9999999999999999,
+        -0.9999999999999999
+      ],
+      "independent_matrix_exponential_means": [
+        0.0,
+        0.38490017945975047,
+        0.2962962962962963
+      ],
+      "passive_envelope": [
+        4.000000000000001,
+        2.3094010767585034,
+        1.3333333333333335
+      ]
+    },
+    {
+      "slow": 1.0,
+      "fast": 10.0,
+      "times": [
+        0.0,
+        0.2558427881104495,
+        0.511685576220899
+      ],
+      "preparation_A_means": [
+        0.0,
+        0.6968373144130144,
+        0.5934894078157517
+      ],
+      "preparation_B_means": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "both_initial_visible_variances": 2.0,
+      "both_later_visible_variances": 2.0,
+      "passive_mean_difference_at_peak": 0.6968373144130144,
+      "recurrence_residual": 0.0,
+      "constant_offset_residual": 0.4165167481653089,
+      "extra_passive_mode_residual": 0.04508048525299546,
+      "temporal_observability_determinant": -0.6968373144130144,
+      "two_time_initial_mean_recovery": [
+        1.0,
+        -1.0
+      ],
+      "independent_matrix_exponential_means": [
+        0.0,
+        0.6968373144130144,
+        0.5934894078157517
+      ],
+      "passive_envelope": [
+        4.000000000000001,
+        3.0970547307245093,
+        2.3979370012757646
+      ]
+    }
+  ],
+  "no_post_preparation_active_force": true,
+  "biological_validation": false,
+  "new_architecture": false,
+  "conclusion": "same present observation law does not imply same passive future law"
+}

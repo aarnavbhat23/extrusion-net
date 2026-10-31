@@ -1,0 +1,115 @@
+{
+  "seed": 20261018,
+  "dtype": "float64",
+  "rows": [
+    {
+      "length": 32,
+      "degree": 1,
+      "max_argument": 0.4533098501134003,
+      "argument_upper_bound": 0.6453819096767704,
+      "max_message_abs_error": 0.2690522306820109,
+      "message_error_bound_exact_arithmetic": 5.734660122073368,
+      "scan_seconds": 0.008715583000594052,
+      "dense_seconds": 0.015165250002610264
+    },
+    {
+      "length": 32,
+      "degree": 2,
+      "max_argument": 0.4533098501134003,
+      "argument_upper_bound": 0.6453819096767704,
+      "max_message_abs_error": 0.029214744017755367,
+      "message_error_bound_exact_arithmetic": 1.2336819669769774,
+      "scan_seconds": 0.001006708997010719,
+      "dense_seconds": 0.015165250002610264
+    },
+    {
+      "length": 32,
+      "degree": 4,
+      "max_argument": 0.4533098501134003,
+      "argument_upper_bound": 0.6453819096767704,
+      "max_message_abs_error": 0.0002681930987493697,
+      "message_error_bound_exact_arithmetic": 0.025692525515254434,
+      "scan_seconds": 0.002005667000048561,
+      "dense_seconds": 0.015165250002610264
+    },
+    {
+      "length": 32,
+      "degree": 6,
+      "max_argument": 0.4533098501134003,
+      "argument_upper_bound": 0.6453819096767704,
+      "max_message_abs_error": 1.2138944811557195e-06,
+      "message_error_bound_exact_arithmetic": 0.00025479510580893685,
+      "scan_seconds": 0.0031985839996195864,
+      "dense_seconds": 0.015165250002610264
+    },
+    {
+      "length": 32,
+      "degree": 8,
+      "max_argument": 0.4533098501134003,
+      "argument_upper_bound": 0.6453819096767704,
+      "max_message_abs_error": 3.2332079236141453e-09,
+      "message_error_bound_exact_arithmetic": 1.4739819347443227e-06,
+      "scan_seconds": 0.004718332998891128,
+      "dense_seconds": 0.015165250002610264
+    },
+    {
+      "length": 256,
+      "degree": 1,
+      "max_argument": 0.46795170141457965,
+      "argument_upper_bound": 0.6525862338376723,
+      "max_message_abs_error": 0.5649733057548358,
+      "message_error_bound_exact_arithmetic": 43.326426924667814,
+      "scan_seconds": 0.03075929199985694,
+      "dense_seconds": 0.003066167002543807
+    },
+    {
+      "length": 256,
+      "degree": 2,
+      "max_argument": 0.46795170141457965,
+      "argument_upper_bound": 0.6525862338376723,
+      "max_message_abs_error": 0.06771953219611637,
+      "message_error_bound_exact_arithmetic": 9.424743257470698,
+      "scan_seconds": 0.0067926249976153485,
+      "dense_seconds": 0.003066167002543807
+    },
+    {
+      "length": 256,
+      "degree": 4,
+      "max_argument": 0.46795170141457965,
+      "argument_upper_bound": 0.6525862338376723,
+      "max_message_abs_error": 0.0004931042529610075,
+      "message_error_bound_exact_arithmetic": 0.2006852015785804,
+      "scan_seconds": 0.013399084000411676,
+      "dense_seconds": 0.003066167002543807
+    },
+    {
+      "length": 256,
+      "degree": 6,
+      "max_argument": 0.46795170141457965,
+      "argument_upper_bound": 0.6525862338376723,
+      "max_message_abs_error": 1.9520076475210146e-06,
+      "message_error_bound_exact_arithmetic": 0.0020348943925676496,
+      "scan_seconds": 0.019875917001627386,
+      "dense_seconds": 0.003066167002543807
+    },
+    {
+      "length": 256,
+      "degree": 8,
+      "max_argument": 0.46795170141457965,
+      "argument_upper_bound": 0.6525862338376723,
+      "max_message_abs_error": 5.014054227370224e-09,
+      "message_error_bound_exact_arithmetic": 1.203608358361077e-05,
+      "scan_seconds": 0.02756233299805899,
+      "dense_seconds": 0.003066167002543807
+    }
+  ],
+  "large_argument_failure": {
+    "length": 32,
+    "degree": 8,
+    "beta": 4.0,
+    "argument_upper_bound": 124.0,
+    "max_message_abs_error": 5128589148630.8545,
+    "scope": "Deliberately outside the useful bounded regime; not a usable saturated mixer."
+  },
+  "scope": "Operator consistency and approximation only. No new trained model or task improvement."
+}

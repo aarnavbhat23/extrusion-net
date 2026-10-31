@@ -1,0 +1,16 @@
+{
+  "extrusion": [
+    {
+      "file": "Rad21_0_hr.unfiltered.tagged_set.tsv",
+      "confirmation_dates": 14,
+      "adjusted_p": 0.2242431640625,
+      "source_and_scores_verified": true
+    },
+    {
+      "file": "Rad21_0_hr.tagged_set.tsv",
+      "confirmation_dates": 14,
+      "adjusted_p": 0.7635498046875,
+      "source_and_scores_verified": true
+    }
+  ]
+}
