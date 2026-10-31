@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "source_reaggregation": true,
+  "saved_prediction_rows": 7350,
+  "maximum_replay_error": 1.27675647831893e-15,
+  "model_refitting": false,
+  "independent_biology": false
+}

@@ -1,6 +1,18 @@
 # Paper decision after the competing-loss finite-data round
 
-**2026-10-29 latest decision:** full manuscript work remains deferred. The
+**2026-10-30 measured-data decision:** continue targeted research; defer submission.
+The [measured iFRAP screen](MEASURED_IFRAP_RESULTS.md) fails its strong-control
+gate: the raw-contrast candidate gains 1.11% MSE against an ordinary mixture,
+winning two of five conditions, and has no advantage over the plateau control
+on aggregate error. Its objective is conventional weighted least squares.
+An [explicit raw-observation ambiguity](MEASURED_OBSERVATION_THEORY.md) shows
+why fitting fluorescence alone cannot establish selective biological intervention
+predictions. The next contribution needs a justified observation operator and
+useful uncertainty under unknown perturbation strength, plus a separate measured
+constraint on the optical/reference nuisance. A new architecture paper is not
+supported by this evidence.
+
+**2026-10-29 previous decision:** full manuscript work remains deferred. The
 [90-fit competing-loss follow-up](FINITE_LOSS_RESULTS.md) fails the normalized
 design's point-accuracy gate (1/3 mechanisms); retained absences and scheduled
 timestamps pass 3/3 in the matched model. Wrong perturbation strength degrades

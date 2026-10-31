@@ -35,6 +35,11 @@ weights [.25,.75] for mixtures. Least-squares, at most 1500 evaluations/start.
 Retain optimizer failures. Select the lowest objective among converged starts;
 if none converge, report failure rather than an omitted movie.
 
+Implementation clarification recorded 2026-10-30: the mixture bounds apply to
+the optimized slow-rate and gap coordinates separately; their sum can in
+principle reach 10/minute. All selected nominal mixture fast rates are below
+2.22/minute. No outcomes were used to change these implemented bounds.
+
 The raw-contrast objective equals Z^2-weighted squared error on Y. It is a
 measurement-aware control, not a new architecture or inference principle.
 Verify this identity numerically. Its interpretation assumes the numerator

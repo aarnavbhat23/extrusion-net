@@ -1,5 +1,15 @@
 # Extrusion Net
 
+**Measured fluorescence decision:** the [frozen iFRAP transfer screen](docs/MEASURED_IFRAP_RESULTS.md)
+tests six reserved movies across five conditions. Raw-contrast fitting improves
+MSE 13.93% over the empirical mean but only 1.11% over an ordinary mixture,
+winning two of five conditions against the latter; the usefulness gate fails.
+[Source acquisition and curation](datasets/ifr_v01/README.md) are reproducible.
+A [measurement-operator counterexample](docs/MEASURED_OBSERVATION_THEORY.md)
+explains why identical raw fluorescence can conceal different intervention
+responses. It is a restricted structural result, not a new architecture or
+established biological validation. Submission remains deferred.
+
 [![Reproduction checks](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml/badge.svg)](https://github.com/aarnavbhat23/extrusion-net/actions/workflows/reproduce.yml)
 
 **Finite-data decision:** the [90-fit competing-loss study](docs/FINITE_LOSS_RESULTS.md)
