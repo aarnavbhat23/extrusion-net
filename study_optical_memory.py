@@ -132,7 +132,7 @@ def run(output):
     np.savez_compressed(output/'optical_memory_counts.npz', **saved)
     (output/'optical_memory.json').write_text(json.dumps(result, indent=2, allow_nan=False)+'\n')
     with (output/'optical_memory_summary.csv').open('w') as stream:
-        writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator='\n')
         writer.writeheader(); writer.writerows(rows)
     print(json.dumps({k:v for k,v in result.items() if k != 'settings'}, indent=2))
 
