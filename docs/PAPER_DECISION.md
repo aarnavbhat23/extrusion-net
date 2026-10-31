@@ -1,5 +1,14 @@
 # Paper decision after the competing-loss finite-data round
 
+**2026-10-30 direction selection:** a [bounded passive-memory screen](PASSIVE_MEMORY_DIRECTIONS.md)
+constructs nine examples with identical current visible laws and different
+post-preparation futures under entirely passive dynamics. Extra passive modes
+and optical offsets defeat a restricted recurrence signature. Prioritize the
+minimum extra observation needed to exclude a calibrated passive uncertainty
+class; compare simple temporal observations before proposing new markers.
+Existing BILD/Rouse and predictive-state precedents remain strong controls.
+No new biological outcome was evaluated, so grades and submission decision stay.
+
 **2026-10-30 attribution follow-up:** [the six-step screen](OPTICAL_MEMORY_RESULTS.md)
 also fails the pulse-order power gate (3/6, required 4/6). A hidden optical
 state can reproduce the complete primary observation law, and an uncalibrated

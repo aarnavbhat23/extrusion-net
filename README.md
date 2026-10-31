@@ -1,5 +1,14 @@
 # Extrusion Net
 
+**Next-direction audit:** a [passive-memory counterexample](docs/PASSIVE_MEMORY_DIRECTIONS.md)
+shows that equal current observations can precede different futures without any
+ongoing active force. A two-mode contrast is defeated by an extra passive mode
+or measurement offset. The recommended question is which additional observation
+can exclude an independently bounded passive-relaxation explanation after a
+controlled depletion. Nine algebraic cases and competing artifacts are checked;
+public held-out perturbation data remain untouched. This selects a research
+question; it does not establish an activity detector or a new architecture.
+
 **Biological versus optical memory:** an [all-schedule counterexample](docs/OPTICAL_MEMORY_THEORY.md)
 shows that a pulse-order signal alone cannot attribute a hidden state to binding.
 The [frozen calibrated-reporter screen](docs/OPTICAL_MEMORY_RESULTS.md) reaches
