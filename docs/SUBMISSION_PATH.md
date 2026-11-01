@@ -1,5 +1,11 @@
 # Extrusion submission path — 2026-11-01
 
+Follow-up: [counted-reference uncertainty](COUNTED_LOADING_RESULTS.md) is now
+executed. Its [sensitivity counterexample and priority boundary](COUNTED_LOADING_THEORY.md)
+make independent reporter calibration and a narrower originality claim necessary.
+The [outside-review packet](INDEPENDENT_REVIEW_PACKET.md) is prepared; no outside
+feedback or eligible biological calibration cohort has been obtained.
+
 Progress: [the target-bound round](LOADING_RESEARCH_RESULTS.md) now supplies sharp
 interval images, finite-count uncertainty, a loading-drift failure and reference-
 calibration follow-up in the restricted h=1 class. General state-dependent loss,

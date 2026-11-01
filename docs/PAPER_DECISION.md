@@ -1,5 +1,15 @@
 # Paper decision after the competing-loss finite-data round
 
+**2026-11-01 counted-reference follow-up:** [finite reference counts](COUNTED_LOADING_RESULTS.md)
+now propagate into the target interval with 21,600 additional optimizer-free
+certificate checks. The primary simulated coverage/precision gates pass, and
+uncontrolled reporter sensitivity yields an exact counterexample and a retained
+coverage failure. The [priority check](COUNTED_LOADING_THEORY.md) identifies the
+scalar reciprocal curve as Stern–Volmer shaped; the identity alone cannot carry
+the novelty claim. Use [the review packet](INDEPENDENT_REVIEW_PACKET.md) before
+writing around a narrow calibrated-target contribution. Biological calibration
+and outside mathematical/priority feedback remain open.
+
 **2026-11-01 executed target-bound round:** [sharp loading/ratio target bounds](LOADING_RESEARCH_RESULTS.md)
 now have constructive endpoint mechanisms, finite-count intervals, a strong
 timestamp refinement and 23,460 replayed LP certificates. Matched common-loading

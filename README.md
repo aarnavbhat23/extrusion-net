@@ -1,5 +1,15 @@
 # Extrusion Net
 
+**Current paper core:** [counted-reference calibration](docs/COUNTED_LOADING_RESULTS.md)
+replaces a supplied loading-ratio interval with finite reference counts. The
+frozen simulation passes coverage and precision gates; a 10% unmodeled reporter
+sensitivity change can reduce coverage to 47%. An exact counterexample explains
+that failure even with unlimited counts. The [theory/priority note](docs/COUNTED_LOADING_THEORY.md)
+recognizes the scalar curve's classical Stern–Volmer functional form. The
+contribution must be a calibrated target protocol and its failure boundaries,
+with scope reviewed independently. See the [outside-review packet](docs/INDEPENDENT_REVIEW_PACKET.md).
+No measured biological cohort currently meets that calibration contract.
+
 **Target-specific uncertainty update:** a [loading-uncertain intervention study](docs/LOADING_RESEARCH_RESULTS.md)
 derives sharp interval images for a restricted survival target and checks them
 with endpoint mechanisms and LP dual certificates. Unknown common loading can

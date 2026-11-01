@@ -1,0 +1,1768 @@
+{
+  "protocol_commit": "ccca9f1",
+  "seed": 2026110105,
+  "mechanisms": [
+    [
+      0.2,
+      0.2,
+      0.75
+    ],
+    [
+      0.4,
+      0.1,
+      0.85
+    ],
+    [
+      0.65,
+      0.12,
+      0.95
+    ]
+  ],
+  "retention_episodes_per_arm": 24000,
+  "reference_episodes_per_arm": [
+    500,
+    2000,
+    8000,
+    32000
+  ],
+  "settings": [
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.17365503636625151,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.11790438118653401,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08725245287126299,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07238698268540156,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.1534425941516449,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.11132450353776208,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08351855038045808,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06975804421883508,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.11927627210151992,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08128082004128884,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.0683668916299866,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.061455803713346635,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.09589135625311201,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07387421308154285,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06280243351754311,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.057757001582114775,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.09320298698987234,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07228883007240888,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.062164192253677586,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.056062426303922885,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08556599687474026,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06438675542331651,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.05644788292355912,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.05240937922602845,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06349466208514581,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04777722073849949,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04209755283279587,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.039172478150950873,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06121929380235508,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04769627689643807,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04200181933931224,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.03916138833881805,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.0539085542730533,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04470209516532403,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.039200415880868755,
+      "fallbacks": 0
+    },
+    {
+      "stress": false,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.03728075915022677,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.18149038981069548,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 500,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.19557873752797883,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.13895121343239114,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 2000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.16873841999579875,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 95,
+      "repetitions": 100,
+      "coverage": 0.95,
+      "coverage_wilson": [
+        0.8882495307680808,
+        0.9784563208456319
+      ],
+      "median_width": 0.1002544082033946,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 8000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.13336062626757683,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 70,
+      "repetitions": 100,
+      "coverage": 0.7,
+      "coverage_wilson": [
+        0.6041514536665332,
+        0.7810511470506724
+      ],
+      "median_width": 0.08038058964302486,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.8,
+      "budget": 32000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.11556843817044166,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.17331677918935778,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 500,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.18263157077578634,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 99,
+      "repetitions": 100,
+      "coverage": 0.99,
+      "coverage_wilson": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "median_width": 0.13270403173150624,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 2000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.16338880988023868,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 89,
+      "repetitions": 100,
+      "coverage": 0.89,
+      "coverage_wilson": [
+        0.8136870349691969,
+        0.9374580364293543
+      ],
+      "median_width": 0.09603298405097455,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 8000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.12978830778705225,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 63,
+      "repetitions": 100,
+      "coverage": 0.63,
+      "coverage_wilson": [
+        0.5322052958094291,
+        0.7181763946567546
+      ],
+      "median_width": 0.0770882972424593,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 0.9,
+      "budget": 32000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.11276566609714117,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.15096524585134163,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 500,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.15137442927814154,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 99,
+      "repetitions": 100,
+      "coverage": 0.99,
+      "coverage_wilson": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "median_width": 0.12603723673580886,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 2000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.1339483005656789,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 88,
+      "repetitions": 100,
+      "coverage": 0.88,
+      "coverage_wilson": [
+        0.8018790057328857,
+        0.9300059356298052
+      ],
+      "median_width": 0.0918070804325738,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 8000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.11363392933610844,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 47,
+      "repetitions": 100,
+      "coverage": 0.47,
+      "coverage_wilson": [
+        0.3751081795934127,
+        0.5671114302990063
+      ],
+      "median_width": 0.07417950260387601,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 0,
+      "ratio": 1.0,
+      "budget": 32000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.10406036838498028,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.14169091352380925,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 500,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.14169091352380925,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.10415180991658318,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 2000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.10939398953755824,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08105883992841773,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 8000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.09583903446413922,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 97,
+      "repetitions": 100,
+      "coverage": 0.97,
+      "coverage_wilson": [
+        0.9154806357094724,
+        0.9897454759759611
+      ],
+      "median_width": 0.06935612664862184,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.8,
+      "budget": 32000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08947676551865924,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.13712568034269923,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 500,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.13712568034269923,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.0999313189469655,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 2000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.10871150042428612,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 99,
+      "repetitions": 100,
+      "coverage": 0.99,
+      "coverage_wilson": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "median_width": 0.07774581085504184,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 8000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.09399515758228044,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 99,
+      "repetitions": 100,
+      "coverage": 0.99,
+      "coverage_wilson": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "median_width": 0.06681805255094375,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 0.9,
+      "budget": 32000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08775559592461885,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.1280518485058577,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 500,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.1280518485058577,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.09502635314266616,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 2000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.10143322641011587,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 98,
+      "repetitions": 100,
+      "coverage": 0.98,
+      "coverage_wilson": [
+        0.929988209271456,
+        0.9944980324498376
+      ],
+      "median_width": 0.07462116655440793,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 8000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08858474846946207,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 98,
+      "repetitions": 100,
+      "coverage": 0.98,
+      "coverage_wilson": [
+        0.929988209271456,
+        0.9944980324498376
+      ],
+      "median_width": 0.06459718749304255,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 1,
+      "ratio": 1.0,
+      "budget": 32000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08309422028210789,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.09578161273923663,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 500,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.09578161273923663,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07399358480988322,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 2000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07531826679315712,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.061147258433979446,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 8000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06617789789987344,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 99,
+      "repetitions": 100,
+      "coverage": 0.99,
+      "coverage_wilson": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "median_width": 0.05498020757627348,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.8,
+      "budget": 32000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06232010324451154,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08856496426577459,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 500,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08856496426577459,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07105244135597011,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 2000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07392330642045353,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.05922973526857228,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 8000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06521875145751427,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.053307086176092866,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 0.9,
+      "budget": 32000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06126508703912181,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 500,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08918777010826001,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 500,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.08918777010826001,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 2000,
+      "method": "common_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.0680329698375825,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 2000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07206962614002144,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 8000,
+      "method": "common_sensitivity",
+      "covered": 99,
+      "repetitions": 100,
+      "coverage": 0.99,
+      "coverage_wilson": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "median_width": 0.057240718524387224,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 8000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06457629560667899,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 32000,
+      "method": "common_sensitivity",
+      "covered": 99,
+      "repetitions": 100,
+      "coverage": 0.99,
+      "coverage_wilson": [
+        0.9455138038212946,
+        0.9982325679358593
+      ],
+      "median_width": 0.051820344102998794,
+      "fallbacks": 0
+    },
+    {
+      "stress": true,
+      "mechanism": 2,
+      "ratio": 1.0,
+      "budget": 32000,
+      "method": "bounded_sensitivity",
+      "covered": 100,
+      "repetitions": 100,
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06195928777682136,
+      "fallbacks": 0
+    }
+  ],
+  "gates": {
+    "primary_coverage": true,
+    "primary_width": true,
+    "bounded_sensitivity_coverage": true
+  },
+  "simulated_reference_counts": true,
+  "measured_biological_calibration": false,
+  "zero_false_positive_assumption": true,
+  "details_file": "counted_loading_details.json.gz",
+  "details_sha256": "5fd145c28fbd1b2b2b52618602836ea2609d566ccf5efd570e0cf21f14eb9bc4"
+}
