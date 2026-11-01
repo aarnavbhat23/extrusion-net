@@ -40,6 +40,9 @@ Assume h=1: all loaded states have total loss a=mu+delta at baseline and
 a+(f-1)*mu under calibration intervention f>1. Let the target g=3 use baseline
 loading and the same gamma=.3. Rates mu,delta are nonnegative; ell lies in
 [ell_min,ell_max] with ell_max<=1. Let R0,R1 be absolute presence probabilities.
+The new parameter class has nonnegative hazards without the earlier numerical
+optimizer's finite rate box. Sharp endpoint mechanisms need not belong to that
+older fitting box; imposing it would require extra constraints and a new image.
 Under common loading,
 
     U=1/R0=(gamma+a)/(ell*gamma),
