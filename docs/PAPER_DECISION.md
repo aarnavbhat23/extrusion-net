@@ -1,5 +1,12 @@
 # Paper decision after the competing-loss finite-data round
 
+**2026-11-01 submission path:** the [focused evidence ledger](SUBMISSION_PATH.md)
+selects normalized-snapshot intervention information as the strongest current
+paper candidate. Finish a substantial target-specific identification/uncertainty
+result and compare fairly with retention/timestamps before writing the full
+manuscript. Passive-memory exploration remains separate. A 7.5-8 target is
+plausible conditionally; no new result or grade upgrade follows from this plan.
+
 **2026-10-30 direction selection:** a [bounded passive-memory screen](PASSIVE_MEMORY_DIRECTIONS.md)
 constructs nine examples with identical current visible laws and different
 post-preparation futures under entirely passive dynamics. Extra passive modes
