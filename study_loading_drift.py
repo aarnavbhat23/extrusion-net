@@ -31,7 +31,7 @@ def run():
                 low, high = result['interval']
                 rows.append(dict(key=key, mechanism=index, ratio=ratio, method=method, target=target,
                                  interval=[float(low), float(high)], covered=bool(low <= target <= high),
-                                 width=float(high-low), exact_identified_width=float(exact['interval'][1]-exact['interval'][0]),
+                                 width=float(high-low), exact_identified_width=None if exact['status'] != 'ok' else float(exact['interval'][1]-exact['interval'][0]),
                                  exact_status=exact['status'], status=result['status']))
                 certificates.append(dict(key=key, method=method, ratio_contract=contract, **result))
     summaries = []

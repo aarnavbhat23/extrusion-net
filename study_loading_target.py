@@ -30,7 +30,9 @@ def run():
         time_means = [loading*np.exp(-rate*t) for loading, rate in [(ell, mu+delta), (treated_loading, 2*mu+delta)]
                       for t in [1/.3, 2/.3]]
         target = 1-ell*.3/(.3+3*mu+delta)
-        exact = snapshot_bounds([(p, p) for p in means])['interval']
+        exact_results = dict(absolute_uncertain=snapshot_bounds([(p, p) for p in means]),
+                             absolute_known_factor=snapshot_bounds([(p, p) for p in means], factor=(2., 2.)),
+                             timestamp_outer=timestamp_bounds([(p, p) for p in time_means]))
         for repeat in range(100):
             x = rng.binomial(n//2, means)
             y = rng.binomial(n//4, time_means)
@@ -48,9 +50,12 @@ def run():
             naive = 1-.3/(.3+assumed_a+2*(assumed_c-assumed_a))
             for method, result in methods.items():
                 low, high = result['interval']
+                exact = exact_results[method]
+                exact_width = None if exact['status'] != 'ok' else float(exact['interval'][1]-exact['interval'][0])
                 rows.append(dict(key=key, stress=stress, n=n, mechanism=index, repeat=repeat, method=method,
                                  target=target, interval=[float(low), float(high)], covered=bool(low <= target <= high),
-                                 width=float(high-low), exact_identified_width=float(exact[1]-exact[0]), status=result['status'],
+                                 width=float(high-low), exact_identified_width=exact_width,
+                                 exact_status=exact['status'], status=result['status'],
                                  fixed_loading_plugin_absolute_error=float(abs(naive-target))))
                 certificates.append(dict(key=key, method=method, **result))
     summaries = []
@@ -64,6 +69,7 @@ def run():
                               coverage=covered/len(selected), coverage_wilson=wilson(covered, len(selected)),
                               median_width=float(np.median([r['width'] for r in selected])),
                               exact_identified_width=selected[0]['exact_identified_width'],
+                              exact_status=selected[0]['exact_status'],
                               incompatible=sum(r['status'] != 'ok' for r in selected),
                               median_fixed_loading_plugin_error=float(np.median([r['fixed_loading_plugin_absolute_error'] for r in selected]))))
     gates = {}
