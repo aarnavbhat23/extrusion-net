@@ -49,8 +49,8 @@ def run():
             for method, result in methods.items():
                 low, high = result['interval']
                 rows.append(dict(key=key, stress=stress, n=n, mechanism=index, repeat=repeat, method=method,
-                                 target=target, interval=[low, high], covered=low <= target <= high,
-                                 width=high-low, exact_identified_width=exact[1]-exact[0], status=result['status'],
+                                 target=target, interval=[float(low), float(high)], covered=bool(low <= target <= high),
+                                 width=float(high-low), exact_identified_width=float(exact[1]-exact[0]), status=result['status'],
                                  fixed_loading_plugin_absolute_error=float(abs(naive-target))))
                 certificates.append(dict(key=key, method=method, **result))
     summaries = []

@@ -61,6 +61,23 @@ class LoadingTargetTests(unittest.TestCase):
         result = snapshot_bounds([interval, (.1, .2)])
         self.assertEqual(result['interval'], [0., 1.])
 
+    def test_loading_gauge_preserves_full_snapshots_only_at_calibration_clock(self):
+        ell, gamma = .7, .3
+        p = np.array([1.1, .9, .25, .4, .7, 1., .1])
+        scale = 1/ell
+        other = p.copy()
+        other[[0, 1, 2]] *= scale
+        other[6] = scale*(p[6]+gamma)-gamma
+        for factor in [1., 2., 3.]:
+            first = ell*reference(tuple(p), factor, gamma)[:-1]
+            second = reference(tuple(other), factor, gamma)[:-1]
+            np.testing.assert_allclose(first, second, atol=1e-12)
+        first = ell*reference(tuple(p), 3., .1)[:-1]
+        second = reference(tuple(other), 3., .1)[:-1]
+        expected = abs(ell*.1/(.1+3*p[2]+p[6])-.1/(.1+3*other[2]+other[6]))
+        self.assertAlmostEqual(abs(first.sum()-second.sum()), expected, places=12)
+        self.assertNotAlmostEqual(first.sum(), second.sum(), places=6)
+
 
 if __name__ == '__main__':
     unittest.main()
