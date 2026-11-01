@@ -82,3 +82,37 @@ def witness(parameters, loading_max=1., gamma=.3, target=3.):
     factor = None if mu == 0 else 1+(v-u)*loading_max*gamma/mu
     return dict(loading=loading_max, mu=mu, delta=a-mu, factor=factor,
                 target_absence=1-loading_max*gamma/(gamma+a+(target-1)*mu))
+
+
+def drift_bounds(intervals, ratio=(.8, 1.), factor=(1.8, 2.2), loading_max=1., target=3.):
+    if not 0 < ratio[0] <= ratio[1] <= 1:
+        raise ValueError('The endpoint construction requires loading ratio <=1')
+    if any(lo <= 0 for lo, _ in intervals):
+        return dict(interval=[0., 1.], status='zero_probability_lower', certificates=[])
+    ul, uu = 1/intervals[0][1], 1/intervals[0][0]
+    vl, vu = 1/intervals[1][1], 1/intervals[1][0]
+    tl, tu = (target-1)/(factor[1]-1), (target-1)/(factor[0]-1)
+    # U,V,J,W; J=kappa*V, with linear ratio and hazard constraints.
+    matrix = [[0., ratio[0], -1., 0.], [0., -ratio[1], 1., 0.],
+              [1., 0., -1., 0.], [-tl, 0., tl, -1.],
+              [tu, 0., -tu, 1.], [-(target-1), 0., 0., 1.]]
+    rhs = [0., 0., 0., 0., 0., -(target-1)/loading_max]
+    bounds = [(max(ul, 1/loading_max), uu), (vl, vu), (0., None), (0., None)]
+    if bounds[0][0] > bounds[0][1]:
+        return dict(interval=[0., 1.], status='incompatible', certificates=[])
+    c = np.array([1., 0., 0., 1.])
+    lower = linear_extreme(c, matrix, rhs, bounds)
+    upper = linear_extreme(-c, matrix, rhs, bounds)
+    if lower is None or upper is None:
+        return dict(interval=[0., 1.], status='incompatible', certificates=[])
+    zl, zu = lower['value'], -upper['value']
+    return dict(interval=[max(0., 1-1/zl), min(1., 1-1/zu)], status='ok',
+                problem=dict(matrix=matrix, rhs=rhs, bounds=bounds),
+                certificates=[dict(objective=c.tolist(), **lower), dict(objective=(-c).tolist(), **upper)])
+
+
+def drift_witness(parameters, loading_max=1., gamma=.3, target=3.):
+    u, v, j, w = parameters
+    result = witness([u, j, w], loading_max, gamma, target)
+    result['loading_ratio'] = j/v
+    return result

@@ -1,10 +1,31 @@
 import unittest
 import numpy as np
 from finite_loss import reference, TIMES
-from loading_target import snapshot_bounds, timestamp_bounds, witness, binomial_interval
+from loading_target import snapshot_bounds, timestamp_bounds, witness, binomial_interval, drift_bounds, drift_witness
 
 
 class LoadingTargetTests(unittest.TestCase):
+    def test_loading_drift_bounds_recover_endpoints_and_contain_true_target(self):
+        ell, mu, delta, ratio = .8, .3, .1, .9
+        means = [ell*.3/(.3+mu+delta), ratio*ell*.3/(.3+2*mu+delta)]
+        result = drift_bounds([(p, p) for p in means])
+        target = 1-ell*.3/(.3+3*mu+delta)
+        self.assertLessEqual(result['interval'][0], target)
+        self.assertGreaterEqual(result['interval'][1], target)
+        for i, certificate in enumerate(result['certificates']):
+            point = drift_witness(certificate['primal'])
+            self.assertGreaterEqual(point['delta'], -1e-12)
+            self.assertGreaterEqual(point['loading_ratio'], .8-1e-12)
+            self.assertLessEqual(point['loading_ratio'], 1+1e-12)
+            a = point['mu']+point['delta']
+            self.assertAlmostEqual(.3/(.3+a), means[0])
+            self.assertAlmostEqual(point['loading_ratio']*.3/(.3+a+(point['factor']-1)*point['mu']), means[1])
+            self.assertAlmostEqual(point['target_absence'], result['interval'][i])
+
+    def test_common_loading_is_a_special_case_of_drift_polytope(self):
+        intervals = [(.3, .35), (.2, .25)]
+        np.testing.assert_allclose(snapshot_bounds(intervals)['interval'], drift_bounds(intervals, ratio=(1., 1.))['interval'], atol=1e-12)
+
     def test_loading_cancellation_agrees_with_full_generator(self):
         for loading in [.6, .8, 1.]:
             p = (1.1, .9, .3, .4, .7, 1., .15)
