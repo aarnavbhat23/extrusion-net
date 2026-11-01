@@ -1,5 +1,15 @@
 # Extrusion Net
 
+**Target-specific uncertainty update:** a [loading-uncertain intervention study](docs/LOADING_RESEARCH_RESULTS.md)
+derives sharp interval images for a restricted survival target and checks them
+with endpoint mechanisms and LP dual certificates. Unknown common loading can
+cancel from the target; loading drift breaks that guarantee. A separately frozen
+drift-robust follow-up restores coverage, while a supplied narrow loading-ratio
+calibration restores the declared pilot precision. Stronger timestamp intervals
+are retained as a control. [Theory and failure boundaries](docs/LOADING_TARGET_THEORY.md)
+separate these h=1 results from general kinetic or biological claims. Submission
+requires independent priority/proof feedback and validation matched to scope.
+
 **Next-direction audit:** a [passive-memory counterexample](docs/PASSIVE_MEMORY_DIRECTIONS.md)
 shows that equal current observations can precede different futures without any
 ongoing active force. A two-mode contrast is defeated by an extra passive mode

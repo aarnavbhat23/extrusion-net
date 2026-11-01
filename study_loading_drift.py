@@ -1,5 +1,6 @@
 """Frozen loading-drift comparison, keeping common-loading failures visible."""
 import gzip
+import hashlib
 import itertools
 import json
 from pathlib import Path
@@ -51,6 +52,11 @@ def run():
                   settings=summaries, gates=gates, experiments=rows, draws=draws,
                   accurate_loading_reference_is_extra_information=True, loading_reference_measured=False,
                   biological_validation=False, unchanged_target_loading_required=True)
+    details = {key:result.pop(key) for key in ['experiments', 'draws']}
+    detail_path = ROOT/'results/loading_drift_details.json.gz'
+    detail_path.write_bytes(gzip.compress(json.dumps(details, separators=(',', ':'), allow_nan=False).encode(), mtime=0))
+    result['details_file'] = detail_path.name
+    result['details_sha256'] = hashlib.sha256(detail_path.read_bytes()).hexdigest()
     (ROOT/'results/loading_drift.json').write_text(json.dumps(result, indent=2, allow_nan=False)+'\n')
     (ROOT/'results/loading_drift_certificates.json.gz').write_bytes(gzip.compress(json.dumps(certificates, separators=(',', ':'), allow_nan=False).encode(), mtime=0))
     print(json.dumps(dict(gates=gates, summary=summaries), indent=2))

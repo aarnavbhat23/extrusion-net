@@ -36,6 +36,7 @@ def refine(original, bins=16):
 
 def run():
     source = json.loads((ROOT/'results/loading_target.json').read_text())
+    source.update(json.loads(gzip.decompress((ROOT/'results'/source['details_file']).read_bytes())))
     originals = json.loads(gzip.decompress((ROOT/'results/loading_target_certificates.json.gz').read_bytes()))
     chosen = {r['key']:r for r in source['experiments'] if not r['stress'] and r['n'] == 24000 and r['method'] == 'timestamp_outer'}
     rows, certificates = [], []
@@ -57,7 +58,7 @@ def run():
                               median_width=float(np.median([r['width'] for r in subset])),
                               previous_median_width=float(np.median([r['previous_width'] for r in subset])),
                               maximum_one_sided_slack=max(r['slack'] for r in subset if r['slack'] is not None)))
-    output = dict(protocol_commit='recorded_before_refinement', reused_development_counts=True, sharp=False,
+    output = dict(protocol_commit='63ff2fb', reused_development_counts=True, sharp=False,
                   settings=summaries, experiments=rows, unchanged_acquisition_times=True)
     (ROOT/'results/timestamp_refinement.json').write_text(json.dumps(output, indent=2)+'\n')
     (ROOT/'results/timestamp_refinement_certificates.json.gz').write_bytes(gzip.compress(json.dumps(certificates, separators=(',', ':')).encode(), mtime=0))

@@ -1,5 +1,6 @@
 """Frozen finite-data common-loading target screen with saved LP certificates."""
 import gzip
+import hashlib
 import itertools
 import json
 from pathlib import Path
@@ -84,6 +85,11 @@ def run():
                                    absolute_expected_duration_per_episode=1/.3, timestamp_mean_duration_per_episode=1.5/.3,
                                    fixed_loading_plugin_is_bias_diagnostic=True, known_factor_is_extra_information=True),
                   biological_validation=False, general_hidden_generator_guarantee=False)
+    details = {key:result.pop(key) for key in ['experiments', 'draws']}
+    detail_path = ROOT/'results/loading_target_details.json.gz'
+    detail_path.write_bytes(gzip.compress(json.dumps(details, separators=(',', ':'), allow_nan=False).encode(), mtime=0))
+    result['details_file'] = detail_path.name
+    result['details_sha256'] = hashlib.sha256(detail_path.read_bytes()).hexdigest()
     (ROOT/'results/loading_target.json').write_text(json.dumps(result, indent=2, allow_nan=False)+'\n')
     (ROOT/'results/loading_target_certificates.json.gz').write_bytes(gzip.compress(json.dumps(certificates, separators=(',', ':'), allow_nan=False).encode(), mtime=0))
     print(json.dumps(dict(gates=gates, primary=[r for r in summaries if not r['stress'] and r['n'] == 24000]), indent=2))

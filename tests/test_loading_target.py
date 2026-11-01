@@ -37,6 +37,14 @@ class LoadingTargetTests(unittest.TestCase):
                 observed = loading*reference(p, f)[:, :-1].sum(axis=1)
                 np.testing.assert_allclose(observed, loading*np.exp(-(f*.3+.15)*np.array(TIMES)), atol=1e-12)
 
+    def test_reciprocal_prediction_does_not_extend_to_state_dependent_hazards(self):
+        p = (1.1, .9, .3, .8, .8, .2, .1)
+        r0 = .8*reference(p, 1., .3)[:-1].sum()
+        r1 = .8*reference(p, 2., .3)[:-1].sum()
+        predicted = 1/(2/r1-1/r0)
+        actual = .8*reference(p, 3., .3)[:-1].sum()
+        self.assertNotAlmostEqual(predicted, actual, places=5)
+
     def test_exact_data_sharp_endpoints_have_feasible_mechanisms(self):
         r0, r1 = .8*.3/(.3+.4), .8*.3/(.3+.7)
         result = snapshot_bounds([(r0, r0), (r1, r1)])

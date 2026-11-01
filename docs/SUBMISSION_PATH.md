@@ -1,5 +1,12 @@
 # Extrusion submission path — 2026-11-01
 
+Progress: [the target-bound round](LOADING_RESEARCH_RESULTS.md) now supplies sharp
+interval images, finite-count uncertainty, a loading-drift failure and reference-
+calibration follow-up in the restricted h=1 class. General state-dependent loss,
+measured loading calibration and independent priority/proof feedback remain open.
+The assessment below is the pre-round starting point; the focused artifact is now
+near 7.5 overall, with roughly one-point judgment uncertainty.
+
 Decision: keep Extrusion separate from spatial and maintain a bounded theory
 track. The present assessment is approximately 7/10 overall with roughly
 one-point judgment uncertainty. The target is a defensible 7.5-8 research paper;

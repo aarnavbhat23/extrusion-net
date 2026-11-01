@@ -1,0 +1,551 @@
+{
+  "protocol_commit": "868f4da",
+  "seed": 2026110103,
+  "mechanisms": [
+    [
+      0.2,
+      0.2,
+      0.75
+    ],
+    [
+      0.4,
+      0.1,
+      0.85
+    ],
+    [
+      0.65,
+      0.12,
+      0.95
+    ]
+  ],
+  "settings": [
+    {
+      "mechanism": 0,
+      "ratio": 1.0,
+      "method": "common_assumption",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06136175794937743,
+      "exact_identified_width": 0.030241935483870996,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 1.0,
+      "method": "broad_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.1522921755314438,
+      "exact_identified_width": 0.11931818181818177,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 1.0,
+      "method": "calibrated_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06856272092002513,
+      "exact_identified_width": 0.03675249169435224,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 1.0,
+      "method": "exact_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06136175794937743,
+      "exact_identified_width": 0.030241935483870996,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 0.9,
+      "method": "common_assumption",
+      "coverage": 0.14,
+      "coverage_wilson": [
+        0.08526343659939134,
+        0.22137188210963837
+      ],
+      "median_width": 0.057620093941500194,
+      "exact_identified_width": 0.032327586206896575,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 0.9,
+      "method": "broad_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.137829577772692,
+      "exact_identified_width": 0.10444297082228116,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 0.9,
+      "method": "calibrated_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07760205913723084,
+      "exact_identified_width": 0.04500000000000004,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 0.9,
+      "method": "exact_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06290603050680488,
+      "exact_identified_width": 0.030241935483870996,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 0.8,
+      "method": "common_assumption",
+      "coverage": 0.0,
+      "coverage_wilson": [
+        3.469446951953614e-18,
+        0.03699349820698568
+      ],
+      "median_width": 0.03938109989034805,
+      "exact_identified_width": 0.02339967724583114,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 0.8,
+      "method": "broad_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.10336602045399368,
+      "exact_identified_width": 0.08137829912023464,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 0.8,
+      "method": "calibrated_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.07208353312741989,
+      "exact_identified_width": 0.038637457871930625,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 0,
+      "ratio": 0.8,
+      "method": "exact_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06495824507679193,
+      "exact_identified_width": 0.030241935483870996,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 1.0,
+      "method": "common_assumption",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.052195486470555774,
+      "exact_identified_width": 0.032196969696969724,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 1.0,
+      "method": "broad_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.1242587270308409,
+      "exact_identified_width": 0.09739583333333324,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 1.0,
+      "method": "calibrated_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.05749693297898373,
+      "exact_identified_width": 0.037071651090342606,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 1.0,
+      "method": "exact_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.052195486470555774,
+      "exact_identified_width": 0.032196969696969724,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 0.9,
+      "method": "common_assumption",
+      "coverage": 0.63,
+      "coverage_wilson": [
+        0.5322052958094291,
+        0.7181763946567546
+      ],
+      "median_width": 0.030822293814557866,
+      "exact_identified_width": 0.016066207184628256,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 0.9,
+      "method": "broad_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.09025065446912811,
+      "exact_identified_width": 0.06999007936507917,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 0.9,
+      "method": "calibrated_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.0619448840378265,
+      "exact_identified_width": 0.042689732142857095,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 0.9,
+      "method": "exact_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.05313324056324037,
+      "exact_identified_width": 0.03219696969696961,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 0.8,
+      "method": "common_assumption",
+      "coverage": 0.05,
+      "coverage_wilson": [
+        0.02154367915436796,
+        0.11175046923191913
+      ],
+      "median_width": 0.009654163421086326,
+      "exact_identified_width": null,
+      "exact_status": "incompatible",
+      "incompatible": 5
+    },
+    {
+      "mechanism": 1,
+      "ratio": 0.8,
+      "method": "broad_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.0579306027012752,
+      "exact_identified_width": 0.038943001443001446,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 0.8,
+      "method": "calibrated_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.0579306027012752,
+      "exact_identified_width": 0.03786363636363643,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 1,
+      "ratio": 0.8,
+      "method": "exact_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.05513519407121281,
+      "exact_identified_width": 0.032196969696969724,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 1.0,
+      "method": "common_assumption",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.03828027382204935,
+      "exact_identified_width": 0.024398395721925148,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 1.0,
+      "method": "broad_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.091886262443512,
+      "exact_identified_width": 0.07242520138089759,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 1.0,
+      "method": "calibrated_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04230357912422866,
+      "exact_identified_width": 0.028018736988202675,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 1.0,
+      "method": "exact_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.03828027382204935,
+      "exact_identified_width": 0.024398395721925148,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 0.9,
+      "method": "common_assumption",
+      "coverage": 0.86,
+      "coverage_wilson": [
+        0.7786281178903616,
+        0.9147365634006086
+      ],
+      "median_width": 0.020563154776911674,
+      "exact_identified_width": 0.007343626556242655,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 0.9,
+      "method": "broad_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.06531830819727769,
+      "exact_identified_width": 0.04737448159430402,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 0.9,
+      "method": "calibrated_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04428819565244829,
+      "exact_identified_width": 0.028433260288099005,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 0.9,
+      "method": "exact_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.039760552865746035,
+      "exact_identified_width": 0.024398395721925148,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 0.8,
+      "method": "common_assumption",
+      "coverage": 0.24,
+      "coverage_wilson": [
+        0.16691325556948772,
+        0.33232336349814473
+      ],
+      "median_width": 0.006167660505301431,
+      "exact_identified_width": null,
+      "exact_status": "incompatible",
+      "incompatible": 24
+    },
+    {
+      "mechanism": 2,
+      "ratio": 0.8,
+      "method": "broad_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04032120544685952,
+      "exact_identified_width": 0.024398395721925148,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 0.8,
+      "method": "calibrated_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04032120544685952,
+      "exact_identified_width": 0.024398395721925148,
+      "exact_status": "ok",
+      "incompatible": 0
+    },
+    {
+      "mechanism": 2,
+      "ratio": 0.8,
+      "method": "exact_ratio",
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9630065017930143,
+        1.0
+      ],
+      "median_width": 0.04032120544685952,
+      "exact_identified_width": 0.024398395721925148,
+      "exact_status": "ok",
+      "incompatible": 0
+    }
+  ],
+  "gates": {
+    "common_assumption": {
+      "coverage": false,
+      "precision": true
+    },
+    "broad_ratio": {
+      "coverage": true,
+      "precision": false
+    },
+    "calibrated_ratio": {
+      "coverage": true,
+      "precision": true
+    },
+    "exact_ratio": {
+      "coverage": true,
+      "precision": true
+    }
+  },
+  "accurate_loading_reference_is_extra_information": true,
+  "loading_reference_measured": false,
+  "biological_validation": false,
+  "unchanged_target_loading_required": true,
+  "details_file": "loading_drift_details.json.gz",
+  "details_sha256": "217298e54c68ede754826917764195cf25af82a981a67058ed3b5299483aa135"
+}

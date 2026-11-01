@@ -1,5 +1,16 @@
 # Paper decision after the competing-loss finite-data round
 
+**2026-11-01 executed target-bound round:** [sharp loading/ratio target bounds](LOADING_RESEARCH_RESULTS.md)
+now have constructive endpoint mechanisms, finite-count intervals, a strong
+timestamp refinement and 23,460 replayed LP certificates. Matched common-loading
+and supplied narrow-ratio contracts pass the pilot gates; unmodeled loading drift
+and broad-ratio precision failures remain explicit. The focused theory artifact
+is now around 7.5 overall (roughly one-point uncertainty), with novelty about
+6.5-7 and research quality around 8. This is not a general architecture claim or
+a completed biological validation. Defer submission pending independent proof/
+priority feedback and evidence appropriate to the final headline. Earlier grades
+below are retained as dated history.
+
 **2026-11-01 submission path:** the [focused evidence ledger](SUBMISSION_PATH.md)
 selects normalized-snapshot intervention information as the strongest current
 paper candidate. Finish a substantial target-specific identification/uncertainty
