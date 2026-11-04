@@ -1,4 +1,4 @@
-"""Draw results/generalization.{png,svg} and results/motors.{png,svg}."""
+"""Draw results/generalization, results/generality and results/motors (png and svg)."""
 
 import json
 from collections import defaultdict
@@ -14,6 +14,7 @@ from matplotlib.colors import LinearSegmentedColormap
 SURFACE, INK, INK_2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e4e3df"
 SERIES = {  # fixed categorical order; marker shape is a second, color-free cue
     "extrusion": ("Extrusion (two-arm)", "#2a78d6", "o"),
+    "extrusion_linear": ("Extrusion, linear O(n)", "#008300", "X"),
     "one_arm": ("One-arm ablation", "#eb6834", "s"),
     "attn_rope": ("Attention + RoPE", "#1baf7a", "^"),
     "attn_alibi": ("Attention + ALiBi", "#eda100", "D"),
@@ -21,10 +22,15 @@ SERIES = {  # fixed categorical order; marker shape is a second, color-free cue
 }
 BLUES = ["#fcfcfb", "#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
 PANELS = [
-    ((4000, 3), "4,000 training sequences, 3 layers"),
-    ((300, 3), "300 training sequences, 3 layers"),
-    ((4000, 1), "4,000 training sequences, 1 layer"),
+    (("genome", 4000, 3), "4,000 training sequences, 3 layers"),
+    (("genome", 300, 3), "300 training sequences, 3 layers"),
+    (("genome", 4000, 1), "4,000 training sequences, 1 layer"),
 ]
+GENERALITY = [
+    (("dyck", 4000, 3), "Nested brackets (Dyck): innermost open bracket", (0.8, 1.005), None),
+    (("recall", 4000, 3), "Associative recall: value of the queried key", (0.0, 1.02), 0.125),
+]
+LENGTHS = [64, 128, 256, 512]
 
 plt.rcParams.update({
     "font.size": 10, "axes.edgecolor": INK_2, "axes.labelcolor": INK_2, "xtick.color": INK_2,
@@ -39,38 +45,72 @@ def save(fig, stem):
     plt.close(fig)
 
 
-def generalization():
+def load_groups():
     runs = [json.loads(l) for l in Path("results/runs.jsonl").read_text().splitlines() if l.strip()]
     groups = defaultdict(list)
     for r in runs:
-        groups[(r["mixer"], r["n_train"], r.get("layers", 3))].append(r)
-    lengths = [64, 128, 256, 512]
-    fig, axes = plt.subplots(1, 3, figsize=(12, 3.8), sharey=True)
+        groups[(r["mixer"], r.get("task", "genome"), r["n_train"], r.get("layers", 3))].append(r)
+    return groups
+
+
+def draw_panel(ax, groups, setting, title):
+    for mixer, (label, color, marker) in SERIES.items():
+        rs = groups.get((mixer, *setting))
+        if not rs:
+            continue
+        acc = np.array([[r["test_acc"][str(n)] for n in LENGTHS] for r in rs])
+        ax.fill_between(LENGTHS, acc.min(0), acc.max(0), color=color, alpha=0.18, linewidth=0)
+        dashed = (0, (5, 2.5)) if mixer == "extrusion_linear" else "-"  # it often sits on top of extrusion
+        ax.plot(LENGTHS, acc.mean(0), color=color, linewidth=2, linestyle=dashed, marker=marker, markersize=6,
+                markeredgecolor=SURFACE, markeredgewidth=1.5, label=label)
+    ax.set_xscale("log", base=2)
+    ax.set_xticks(LENGTHS, [str(n) for n in LENGTHS])
+    ax.minorticks_off()
+    ax.set_title(title, fontsize=10, color=INK, loc="left")
+    ax.grid(axis="y", color=GRID, linewidth=0.8)
+    ax.set_axisbelow(True)
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    ax.set_xlabel("Test length (trained on 24-64)")
+
+
+def shared_legend(fig, axes):
+    seen = {}
+    for ax in axes:
+        for h, l in zip(*ax.get_legend_handles_labels()):
+            seen.setdefault(l, h)
+    order = [v[0] for v in SERIES.values() if v[0] in seen]
+    fig.legend([seen[l] for l in order], order, loc="upper center", ncol=len(order), frameon=False,
+               bbox_to_anchor=(0.5, 1.07), fontsize=9)
+
+
+def generalization():
+    groups = load_groups()
+    fig, axes = plt.subplots(1, 3, figsize=(13, 3.9), sharey=True)
     for ax, (setting, title) in zip(axes, PANELS):
-        for mixer, (label, color, marker) in SERIES.items():
-            rs = groups.get((mixer, *setting))
-            if not rs:
-                continue
-            acc = np.array([[r["test_acc"][str(n)] for n in lengths] for r in rs])
-            ax.fill_between(lengths, acc.min(0), acc.max(0), color=color, alpha=0.18, linewidth=0)
-            ax.plot(lengths, acc.mean(0), color=color, linewidth=2, marker=marker, markersize=6,
-                    markeredgecolor=SURFACE, markeredgewidth=1.5, label=label)
-        ax.set_xscale("log", base=2)
-        ax.set_xticks(lengths, [str(n) for n in lengths])
-        ax.minorticks_off()
-        ax.set_ylim(0.5, 1.01)
-        ax.set_title(title, fontsize=10, color=INK, loc="left")
-        ax.grid(axis="y", color=GRID, linewidth=0.8)
-        ax.set_axisbelow(True)
-        for side in ("top", "right"):
-            ax.spines[side].set_visible(False)
-        ax.set_xlabel("Test length (trained on 24-64)")
+        draw_panel(ax, groups, setting, title)
+    axes[0].set_ylim(0.5, 1.01)
     axes[0].set_ylabel("Promoter accuracy")
-    handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper center", ncol=5, frameon=False, bbox_to_anchor=(0.5, 1.06))
-    fig.text(0.5, -0.04, "Lines: mean of 3 seeds. Bands: min-max across seeds. The 1-layer panel compares only the two extrusion variants.",
+    shared_legend(fig, axes)
+    fig.text(0.5, -0.04, "Toy genome task. Lines: mean of 3 seeds. Bands: min-max across seeds. Panels show only the mixers run in that setting.",
              ha="center", color=INK_2, fontsize=9)
     save(fig, "generalization")
+
+
+def generality():
+    groups = load_groups()
+    fig, axes = plt.subplots(1, 2, figsize=(11, 3.9))
+    for ax, (setting, title, ylim, chance) in zip(axes, GENERALITY):
+        draw_panel(ax, groups, setting, title)
+        ax.set_ylim(*ylim)
+        if chance:
+            ax.axhline(chance, color=INK_2, linewidth=1, linestyle=(0, (4, 3)))
+            ax.text(LENGTHS[0], chance + 0.02, "chance (1 in 8)", ha="left", color=INK_2, fontsize=8.5)
+    axes[0].set_ylabel("Accuracy")
+    shared_legend(fig, axes)
+    fig.text(0.5, -0.04, "Tasks the model was not designed for. 4,000 training sequences, 3 layers, 3 seeds; bands show min-max across seeds.",
+             ha="center", color=INK_2, fontsize=9)
+    save(fig, "generality")
 
 
 def motors():
@@ -106,4 +146,5 @@ def motors():
 
 if __name__ == "__main__":
     generalization()
+    generality()
     motors()

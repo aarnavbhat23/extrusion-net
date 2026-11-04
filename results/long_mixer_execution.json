@@ -1,0 +1,15 @@
+{
+  "length": 65536,
+  "batch": 1,
+  "width": 32,
+  "heads": 2,
+  "threads": 1,
+  "forward_seconds": 0.8527091670002847,
+  "finite": true,
+  "output_shape": [
+    1,
+    65536,
+    32
+  ],
+  "scope": "Complete unsaturated mixer, inference only, one timing; not full-network training."
+}

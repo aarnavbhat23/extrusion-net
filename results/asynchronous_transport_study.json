@@ -1,0 +1,3773 @@
+{
+  "scope": "Conditional reach model, not polymer contacts or measured biological transfer.",
+  "protocol_commit": "0c2d447",
+  "rows": [
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 4.4895927008882736e-34,
+        "synchronized": 2.7345905493505526e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 1.904016779158511e-16,
+        "synchronized": 0.003466454477350205,
+        "static_oracle": 0.018417055147493727
+      },
+      "selected_heldout_rmse": 1.904016779158511e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.4999999999999966,
+        "synchronized": 0.7499999999999983
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.789762153196937e-09,
+        "synchronized": 2.7855277537909586e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00011387820235702695,
+        "synchronized": 0.0034888017903632407,
+        "static_oracle": 0.018417055147493727
+      },
+      "selected_heldout_rmse": 0.00011387820235702695,
+      "estimated_survivals": {
+        "asynchronous": 0.50231422517133,
+        "synchronized": 0.751157112585665
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.790499649044023e-07,
+        "synchronized": 4.0894430651437745e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.001134560731202812,
+        "synchronized": 0.003814693647853827,
+        "static_oracle": 0.018417055147493727
+      },
+      "selected_heldout_rmse": 0.001134560731202812,
+      "estimated_survivals": {
+        "asynchronous": 0.5233853807445124,
+        "synchronized": 0.7616926903722562
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.74188390159519e-05,
+        "synchronized": 0.00010084831524505949
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.010775419492801261,
+        "synchronized": 0.011271228372085662,
+        "static_oracle": 0.018417055147493727
+      },
+      "selected_heldout_rmse": 0.010775419492801261,
+      "estimated_survivals": {
+        "asynchronous": 0.7462777800362099,
+        "synchronized": 0.873138890018105
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.0187169974491588e-07,
+        "synchronized": 9.780112998841432e-35
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01520296024460941,
+        "synchronized": 1.355289076283736e-16,
+        "static_oracle": 0.04613113564991396
+      },
+      "selected_heldout_rmse": 1.355289076283736e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.2981605625023763,
+        "synchronized": 0.4999999999999991
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1490207763181236e-07,
+        "synchronized": 6.6816962666966694e-09
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01519863538647373,
+        "synchronized": 0.0001707321055443703,
+        "static_oracle": 0.04613113564991396
+      },
+      "selected_heldout_rmse": 0.0001707321055443703,
+      "estimated_survivals": {
+        "asynchronous": 0.2980581489659976,
+        "synchronized": 0.5001851220676431
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.147915495307224e-07,
+        "synchronized": 6.674515643910438e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.015237520870562331,
+        "synchronized": 0.0017041908535642214,
+        "static_oracle": 0.04613113564991396
+      },
+      "selected_heldout_rmse": 0.0017041908535642214,
+      "estimated_survivals": {
+        "asynchronous": 0.29713642713858857,
+        "synchronized": 0.5017975202262148
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 6.720623142734004e-05,
+        "synchronized": 6.610054678639381e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02344744938048759,
+        "synchronized": 0.01681628439940615,
+        "static_oracle": 0.04613113564991396
+      },
+      "selected_heldout_rmse": 0.01681628439940615,
+      "estimated_survivals": {
+        "asynchronous": 0.3190728507851352,
+        "synchronized": 0.5126013260123778
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.901531745332138e-32,
+        "synchronized": 3.540032123303238e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 4.130736500991809e-16,
+        "synchronized": 0.005175695259169246,
+        "static_oracle": 0.022010766691980033
+      },
+      "selected_heldout_rmse": 4.130736500991809e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.7999999999999935,
+        "synchronized": 0.8999999999999967
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.4766582977448297e-08,
+        "synchronized": 3.466093793990195e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00021365612137102857,
+        "synchronized": 0.005090785796963746,
+        "static_oracle": 0.022010766691980033
+      },
+      "selected_heldout_rmse": 0.00021365612137102857,
+      "estimated_survivals": {
+        "asynchronous": 0.7995946759243979,
+        "synchronized": 0.899797337962199
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.4787113366352774e-06,
+        "synchronized": 4.092922060270145e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0021406131750279496,
+        "synchronized": 0.004676082252539375,
+        "static_oracle": 0.022010766691980033
+      },
+      "selected_heldout_rmse": 0.0021406131750279496,
+      "estimated_survivals": {
+        "asynchronous": 0.7959447809330726,
+        "synchronized": 0.8979723904665363
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.0001500767514133654,
+        "synchronized": 0.00013976962776810398
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0218419349235883,
+        "synchronized": 0.019249463757285465,
+        "static_oracle": 0.022010766691980033
+      },
+      "selected_heldout_rmse": 0.019249463757285465,
+      "estimated_survivals": {
+        "asynchronous": 0.7590412283930317,
+        "synchronized": 0.8795206141965157
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.2681787852535024e-05,
+        "synchronized": 6.820847565061814e-33
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.013975433748755399,
+        "synchronized": 3.599212899037781e-16,
+        "static_oracle": 0.03860651496798734
+      },
+      "selected_heldout_rmse": 3.599212899037781e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.5999999999999943,
+        "synchronized": 0.7999999999999972
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.230606906152926e-05,
+        "synchronized": 1.0227266391378947e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.013872339720193461,
+        "synchronized": 0.00015860198473003923,
+        "static_oracle": 0.03860651496798734
+      },
+      "selected_heldout_rmse": 0.00015860198473003923,
+      "estimated_survivals": {
+        "asynchronous": 0.6012732910399964,
+        "synchronized": 0.8006366455199982
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.9939152135694447e-05,
+        "synchronized": 1.0234498468592935e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.013022537030814357,
+        "synchronized": 0.0015855227991267836,
+        "static_oracle": 0.03860651496798734
+      },
+      "selected_heldout_rmse": 0.0015855227991267836,
+      "estimated_survivals": {
+        "asynchronous": 0.6128845333285451,
+        "synchronized": 0.8064422666642725
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.8711641020753e-05,
+        "synchronized": 0.00010272769740414665
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01565745348668937,
+        "synchronized": 0.015699015615379477,
+        "static_oracle": 0.03860651496798734
+      },
+      "selected_heldout_rmse": 0.01565745348668937,
+      "estimated_survivals": {
+        "asynchronous": 0.7415079865962929,
+        "synchronized": 0.8707539932981464
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.101302767178177e-32,
+        "synchronized": 4.504436874354507e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 6.037064453379232e-16,
+        "synchronized": 0.002113743172513726,
+        "static_oracle": 0.008535108693219544
+      },
+      "selected_heldout_rmse": 6.037064453379232e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.9499999999999934,
+        "synchronized": 0.9749999999999968
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1524439065061347e-08,
+        "synchronized": 4.3586880441432463e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00018864172047168828,
+        "synchronized": 0.0020665201064610757,
+        "static_oracle": 0.008535108693219544
+      },
+      "selected_heldout_rmse": 0.00018864172047168828,
+      "estimated_survivals": {
+        "asynchronous": 0.9485472445233217,
+        "synchronized": 0.9742736222616608
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1540954227783354e-06,
+        "synchronized": 1.2369281505311149e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.001896151727444235,
+        "synchronized": 0.002164180059687646,
+        "static_oracle": 0.008535108693219544
+      },
+      "selected_heldout_rmse": 0.001896151727444235,
+      "estimated_survivals": {
+        "asynchronous": 0.9355172930232648,
+        "synchronized": 0.9677586465116325
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00011722819668385126,
+        "synchronized": 0.00010194437749209987
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.020020774707763218,
+        "synchronized": 0.015369229795419827,
+        "static_oracle": 0.008535108693219544
+      },
+      "selected_heldout_rmse": 0.015369229795419827,
+      "estimated_survivals": {
+        "asynchronous": 0.8095243313284406,
+        "synchronized": 0.9047621656642203
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.9990540563396e-06,
+        "synchronized": 1.5987070394129815e-32
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.004522704696540614,
+        "synchronized": 4.994189191428574e-16,
+        "static_oracle": 0.013317721804316989
+      },
+      "selected_heldout_rmse": 4.994189191428574e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.8999999999999926,
+        "synchronized": 0.9499999999999963
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.8756053433033715e-06,
+        "synchronized": 1.3510999833544928e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00429004639827606,
+        "synchronized": 0.00024908520849807776,
+        "static_oracle": 0.013317721804316989
+      },
+      "selected_heldout_rmse": 0.00024908520849807776,
+      "estimated_survivals": {
+        "asynchronous": 0.9014540761775598,
+        "synchronized": 0.9507270380887798
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.1404427216631295e-06,
+        "synchronized": 1.3493909468621444e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0028747562671051865,
+        "synchronized": 0.002484148307881342,
+        "static_oracle": 0.013317721804316989
+      },
+      "selected_heldout_rmse": 0.002484148307881342,
+      "estimated_survivals": {
+        "asynchronous": 0.914608003910119,
+        "synchronized": 0.9573040019550596
+      }
+    },
+    {
+      "size": 16,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00012859343530136354,
+        "synchronized": 0.00012859343530136354
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02069237407831436,
+        "synchronized": 0.02069237407831436,
+        "static_oracle": 0.013317721804316989
+      },
+      "selected_heldout_rmse": 0.02069237407831436,
+      "estimated_survivals": {
+        "asynchronous": 1.0,
+        "synchronized": 1.0
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.785029904077655e-34,
+        "synchronized": 2.4174974977457078e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 1.826268738080948e-16,
+        "synchronized": 0.0032348220279786112,
+        "static_oracle": 0.017275460600500735
+      },
+      "selected_heldout_rmse": 1.826268738080948e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.49999999999999634,
+        "synchronized": 0.7499999999999982
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.421594992456272e-09,
+        "synchronized": 2.407491197716473e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00011860509331541995,
+        "synchronized": 0.0032328045095264815,
+        "static_oracle": 0.017275460600500735
+      },
+      "selected_heldout_rmse": 0.00011860509331541995,
+      "estimated_survivals": {
+        "asynchronous": 0.5002142692888468,
+        "synchronized": 0.7501071346444234
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.424766531288538e-07,
+        "synchronized": 3.064254340919221e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.001185775809301136,
+        "synchronized": 0.0033955215700309446,
+        "static_oracle": 0.017275460600500735
+      },
+      "selected_heldout_rmse": 0.001185775809301136,
+      "estimated_survivals": {
+        "asynchronous": 0.5020030323790005,
+        "synchronized": 0.7510015161895002
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.472914252604012e-05,
+        "synchronized": 8.39077320088713e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.011907076369012386,
+        "synchronized": 0.01189507437471954,
+        "static_oracle": 0.017275460600500735
+      },
+      "selected_heldout_rmse": 0.01189507437471954,
+      "estimated_survivals": {
+        "asynchronous": 0.5048635228428088,
+        "synchronized": 0.7524317614214043
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 7.02073706358749e-10,
+        "synchronized": 1.1736135598609718e-34
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.012690547303587542,
+        "synchronized": 1.751971359555245e-16,
+        "static_oracle": 0.04312990489211111
+      },
+      "selected_heldout_rmse": 1.751971359555245e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.27927217630686063,
+        "synchronized": 0.4999999999999991
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.4387734050228909e-08,
+        "synchronized": 1.2504172789341413e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.012663509892057811,
+        "synchronized": 0.00014990819674763262,
+        "static_oracle": 0.04312990489211111
+      },
+      "selected_heldout_rmse": 0.00014990819674763262,
+      "estimated_survivals": {
+        "asynchronous": 0.2791252165367472,
+        "synchronized": 0.49986887533794255
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.2591807625548214e-06,
+        "synchronized": 1.2509150243487227e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.012490474734911723,
+        "synchronized": 0.00150011857424942,
+        "static_oracle": 0.04312990489211111
+      },
+      "selected_heldout_rmse": 0.00150011857424942,
+      "estimated_survivals": {
+        "asynchronous": 0.27780257860572655,
+        "synchronized": 0.49870458654859856
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00012349794272042156,
+        "synchronized": 0.0001256008699881391
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01795414574142653,
+        "synchronized": 0.015109599890128908,
+        "static_oracle": 0.04312990489211111
+      },
+      "selected_heldout_rmse": 0.01795414574142653,
+      "estimated_survivals": {
+        "asynchronous": 0.2832582397281146,
+        "synchronized": 0.48843839460346944
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.3488011970803372e-32,
+        "synchronized": 3.129543032340804e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 4.761311123214898e-16,
+        "synchronized": 0.004787078804886848,
+        "static_oracle": 0.020579616276425426
+      },
+      "selected_heldout_rmse": 4.761311123214898e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.799999999999993,
+        "synchronized": 0.8999999999999966
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.87074319234769e-09,
+        "synchronized": 3.138581545468233e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00016433579765218906,
+        "synchronized": 0.00481647900767806,
+        "static_oracle": 0.020579616276425426
+      },
+      "selected_heldout_rmse": 0.00016433579765218906,
+      "estimated_survivals": {
+        "asynchronous": 0.8000630815311666,
+        "synchronized": 0.9000315407655832
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.864631418683083e-07,
+        "synchronized": 4.107615301610268e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0016437520190400198,
+        "synchronized": 0.005304455432865903,
+        "static_oracle": 0.020579616276425426
+      },
+      "selected_heldout_rmse": 0.0016437520190400198,
+      "estimated_survivals": {
+        "asynchronous": 0.8006471118453041,
+        "synchronized": 0.900323555922652
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.803791750270251e-05,
+        "synchronized": 0.00010108755782496142
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.016471609487088007,
+        "synchronized": 0.017768667903572812,
+        "static_oracle": 0.020579616276425426
+      },
+      "selected_heldout_rmse": 0.016471609487088007,
+      "estimated_survivals": {
+        "asynchronous": 0.8079712547180118,
+        "synchronized": 0.9039856273590059
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.0051691245303667e-05,
+        "synchronized": 5.3703815756951766e-33
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01290865752803464,
+        "synchronized": 3.6756237216580324e-16,
+        "static_oracle": 0.036113981244449166
+      },
+      "selected_heldout_rmse": 3.6756237216580324e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.5999999999999943,
+        "synchronized": 0.7999999999999972
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.007450998770968e-05,
+        "synchronized": 6.714987908382464e-09
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01294838915469097,
+        "synchronized": 0.00014711005830960751,
+        "static_oracle": 0.036113981244449166
+      },
+      "selected_heldout_rmse": 0.00014711005830960751,
+      "estimated_survivals": {
+        "asynchronous": 0.6001837741611346,
+        "synchronized": 0.8000918870805673
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.0882738372104365e-05,
+        "synchronized": 6.713269988285268e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.013371402556682132,
+        "synchronized": 0.0014707933187824466,
+        "static_oracle": 0.036113981244449166
+      },
+      "selected_heldout_rmse": 0.0014707933187824466,
+      "estimated_survivals": {
+        "asynchronous": 0.6018357659643887,
+        "synchronized": 0.8009178829821944
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.848535350396154e-05,
+        "synchronized": 6.69675123050056e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02182376808750303,
+        "synchronized": 0.014679089897334692,
+        "static_oracle": 0.036113981244449166
+      },
+      "selected_heldout_rmse": 0.014679089897334692,
+      "estimated_survivals": {
+        "asynchronous": 0.618161458318272,
+        "synchronized": 0.809080729159136
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.074450859299701e-32,
+        "synchronized": 3.9821189593052055e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 6.833271914074903e-16,
+        "synchronized": 0.0019456025924511622,
+        "static_oracle": 0.007955545215506399
+      },
+      "selected_heldout_rmse": 6.833271914074903e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.9499999999999934,
+        "synchronized": 0.9749999999999968
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.81284907274637e-09,
+        "synchronized": 4.0323044837417334e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00022007906414547217,
+        "synchronized": 0.0020295972831035746,
+        "static_oracle": 0.007955545215506399
+      },
+      "selected_heldout_rmse": 0.00022007906414547217,
+      "estimated_survivals": {
+        "asynchronous": 0.9497337950747908,
+        "synchronized": 0.9748668975373954
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.815043247655759e-07,
+        "synchronized": 1.2372457247811675e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.002200515920360588,
+        "synchronized": 0.003405397889881065,
+        "static_oracle": 0.007955545215506399
+      },
+      "selected_heldout_rmse": 0.002200515920360588,
+      "estimated_survivals": {
+        "asynchronous": 0.9473360022261033,
+        "synchronized": 0.9736680011130516
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.837074590564133e-05,
+        "synchronized": 8.780048570299259e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.021978602879424772,
+        "synchronized": 0.022966570066081833,
+        "static_oracle": 0.007955545215506399
+      },
+      "selected_heldout_rmse": 0.022966570066081833,
+      "estimated_survivals": {
+        "asynchronous": 0.9231699626451696,
+        "synchronized": 0.9615849813225847
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.7672511082902935e-06,
+        "synchronized": 1.9492633264057736e-32
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.004161610725065982,
+        "synchronized": 6.42493997959083e-16,
+        "static_oracle": 0.01243815718828358
+      },
+      "selected_heldout_rmse": 6.42493997959083e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.8999999999999918,
+        "synchronized": 0.9499999999999958
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.6469203748365493e-06,
+        "synchronized": 1.305613474889174e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.004054750346800738,
+        "synchronized": 0.00017683809044781733,
+        "static_oracle": 0.01243815718828358
+      },
+      "selected_heldout_rmse": 0.00017683809044781733,
+      "estimated_survivals": {
+        "asynchronous": 0.9011496411882881,
+        "synchronized": 0.950574820594144
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.870645546998627e-06,
+        "synchronized": 1.3048180652345049e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0034961475532256383,
+        "synchronized": 0.0017655348559644257,
+        "static_oracle": 0.01243815718828358
+      },
+      "selected_heldout_rmse": 0.0017655348559644257,
+      "estimated_survivals": {
+        "asynchronous": 0.9115135672195029,
+        "synchronized": 0.9557567836097515
+      }
+    },
+    {
+      "size": 16,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.0001272394866556089,
+        "synchronized": 0.0001272394866556089
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01690865388339455,
+        "synchronized": 0.01690865388339455,
+        "static_oracle": 0.01243815718828358
+      },
+      "selected_heldout_rmse": 0.01690865388339455,
+      "estimated_survivals": {
+        "asynchronous": 1.0,
+        "synchronized": 1.0
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 5.166677446961911e-34,
+        "synchronized": 3.708765314976196e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 2.2095347004200745e-16,
+        "synchronized": 0.004202985188306815,
+        "static_oracle": 0.02097255059339514
+      },
+      "selected_heldout_rmse": 2.2095347004200745e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.49999999999999684,
+        "synchronized": 0.7499999999999984
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.136547375337773e-08,
+        "synchronized": 3.6682363202025937e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00010880088439162007,
+        "synchronized": 0.0042420069525945375,
+        "static_oracle": 0.02097255059339514
+      },
+      "selected_heldout_rmse": 0.00010880088439162007,
+      "estimated_survivals": {
+        "asynchronous": 0.5023947726456073,
+        "synchronized": 0.7511973863228036
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1361242293198292e-06,
+        "synchronized": 4.334802779901092e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0010753633951044103,
+        "synchronized": 0.004646965379798521,
+        "static_oracle": 0.02097255059339514
+      },
+      "selected_heldout_rmse": 0.0010753633951044103,
+      "estimated_survivals": {
+        "asynchronous": 0.5240687210994834,
+        "synchronized": 0.7620343605497418
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.0001134153899418997,
+        "synchronized": 0.00011342293604024075
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.009702090738403068,
+        "synchronized": 0.010630625661876775,
+        "static_oracle": 0.02097255059339514
+      },
+      "selected_heldout_rmse": 0.009702090738403068,
+      "estimated_survivals": {
+        "asynchronous": 0.7536195015081237,
+        "synchronized": 0.8768097507540619
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.3610337075203116e-07,
+        "synchronized": 4.826398959191571e-35
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01618365184624683,
+        "synchronized": 1.6452585374858684e-16,
+        "static_oracle": 0.05157625367320362
+      },
+      "selected_heldout_rmse": 1.6452585374858684e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.29802810233021243,
+        "synchronized": 0.4999999999999992
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.692760609554206e-07,
+        "synchronized": 1.2932887707867784e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.016274394977102532,
+        "synchronized": 0.00015072157900995536,
+        "static_oracle": 0.05157625367320362
+      },
+      "selected_heldout_rmse": 0.00015072157900995536,
+      "estimated_survivals": {
+        "asynchronous": 0.29804958441386015,
+        "synchronized": 0.5000725297016946
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.6191657518955527e-06,
+        "synchronized": 1.293506056461371e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.017117583689581165,
+        "synchronized": 0.0015094630307815775,
+        "static_oracle": 0.05157625367320362
+      },
+      "selected_heldout_rmse": 0.0015094630307815775,
+      "estimated_survivals": {
+        "asynchronous": 0.29824292316668954,
+        "synchronized": 0.5007458172759109
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00013001867808154567,
+        "synchronized": 0.0001291926871978876
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.027144538317366605,
+        "synchronized": 0.015052697046174705,
+        "static_oracle": 0.05157625367320362
+      },
+      "selected_heldout_rmse": 0.015052697046174705,
+      "estimated_survivals": {
+        "asynchronous": 0.3001763106949832,
+        "synchronized": 0.5077665993204061
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.0751895150772466e-32,
+        "synchronized": 4.8011386406374855e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 4.684552020523039e-16,
+        "synchronized": 0.006213083828529002,
+        "static_oracle": 0.025504565760325094
+      },
+      "selected_heldout_rmse": 4.684552020523039e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.7999999999999942,
+        "synchronized": 0.8999999999999971
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.486119340660427e-08,
+        "synchronized": 4.776825083587974e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0002461477223615954,
+        "synchronized": 0.00609161818087709,
+        "static_oracle": 0.025504565760325094
+      },
+      "selected_heldout_rmse": 0.0002461477223615954,
+      "estimated_survivals": {
+        "asynchronous": 0.7997370420146508,
+        "synchronized": 0.8998685210073254
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.4870589533185782e-06,
+        "synchronized": 5.886988186543432e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0024633408590895123,
+        "synchronized": 0.00536428097555354,
+        "static_oracle": 0.025504565760325094
+      },
+      "selected_heldout_rmse": 0.0024633408590895123,
+      "estimated_survivals": {
+        "asynchronous": 0.7973740150540866,
+        "synchronized": 0.8986870075270432
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00014966807518524745,
+        "synchronized": 0.00014942268197721623
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.024820281623042135,
+        "synchronized": 0.021428383511423732,
+        "static_oracle": 0.025504565760325094
+      },
+      "selected_heldout_rmse": 0.021428383511423732,
+      "estimated_survivals": {
+        "asynchronous": 0.7741230789478805,
+        "synchronized": 0.8870615394739403
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.0761983028540824e-05,
+        "synchronized": 6.648162019567477e-33
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01672011152134221,
+        "synchronized": 3.0622525471544137e-16,
+        "static_oracle": 0.044072173501337436
+      },
+      "selected_heldout_rmse": 3.0622525471544137e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.5999999999999946,
+        "synchronized": 0.7999999999999973
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.0262026556320662e-05,
+        "synchronized": 9.729236109224921e-09
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.016696330473865553,
+        "synchronized": 0.00015675984562332754,
+        "static_oracle": 0.044072173501337436
+      },
+      "selected_heldout_rmse": 0.00015675984562332754,
+      "estimated_survivals": {
+        "asynchronous": 0.6002970664785559,
+        "synchronized": 0.8001485332392779
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.6708828135758772e-05,
+        "synchronized": 9.729196856472096e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.016551741990980803,
+        "synchronized": 0.0015671198147232397,
+        "static_oracle": 0.044072173501337436
+      },
+      "selected_heldout_rmse": 0.0015671198147232397,
+      "estimated_survivals": {
+        "asynchronous": 0.6029680448033506,
+        "synchronized": 0.8014840224016753
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.44533248942895e-05,
+        "synchronized": 9.73062416623453e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02134099143204551,
+        "synchronized": 0.015624294555214724,
+        "static_oracle": 0.044072173501337436
+      },
+      "selected_heldout_rmse": 0.02134099143204551,
+      "estimated_survivals": {
+        "asynchronous": 0.6294223000116985,
+        "synchronized": 0.8147111500058493
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 6.01260513791969e-32,
+        "synchronized": 6.109104431401259e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 7.927053983174577e-16,
+        "synchronized": 0.002534917144203941,
+        "static_oracle": 0.00995215925953599
+      },
+      "selected_heldout_rmse": 7.927053983174577e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.9499999999999929,
+        "synchronized": 0.9749999999999965
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.766357774271217e-09,
+        "synchronized": 6.157690976149433e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0001804800813141903,
+        "synchronized": 0.002593634525781397,
+        "static_oracle": 0.00995215925953599
+      },
+      "selected_heldout_rmse": 0.0001804800813141903,
+      "estimated_survivals": {
+        "asynchronous": 0.9506041818907053,
+        "synchronized": 0.9753020909453526
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.755234051661134e-07,
+        "synchronized": 1.5315662261025706e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0017994924277600496,
+        "synchronized": 0.003451196198900935,
+        "static_oracle": 0.00995215925953599
+      },
+      "selected_heldout_rmse": 0.0017994924277600496,
+      "estimated_survivals": {
+        "asynchronous": 0.9560321332735767,
+        "synchronized": 0.9780160666367884
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.637062546212528e-05,
+        "synchronized": 9.637062546212528e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01676000981955788,
+        "synchronized": 0.01676000981955788,
+        "static_oracle": 0.00995215925953599
+      },
+      "selected_heldout_rmse": 0.01676000981955788,
+      "estimated_survivals": {
+        "asynchronous": 1.0,
+        "synchronized": 1.0
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.7112001643812827e-06,
+        "synchronized": 1.4518548811534548e-32
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.005420372142729154,
+        "synchronized": 6.454963227123125e-16,
+        "static_oracle": 0.01533260690279478
+      },
+      "selected_heldout_rmse": 6.454963227123125e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.8999999999999926,
+        "synchronized": 0.9499999999999963
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.0151352336193615e-06,
+        "synchronized": 2.112203116136154e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.005509566698244824,
+        "synchronized": 0.0002522604960235366,
+        "static_oracle": 0.01533260690279478
+      },
+      "selected_heldout_rmse": 0.0002522604960235366,
+      "estimated_survivals": {
+        "asynchronous": 0.8992750217512163,
+        "synchronized": 0.9496375108756081
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 7.844311991287587e-06,
+        "synchronized": 2.112571867347346e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.006739550838137976,
+        "synchronized": 0.002524824194502622,
+        "static_oracle": 0.01533260690279478
+      },
+      "selected_heldout_rmse": 0.002524824194502622,
+      "estimated_survivals": {
+        "asynchronous": 0.8927715710967391,
+        "synchronized": 0.9463857855483695
+      }
+    },
+    {
+      "size": 16,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 84,
+      "fitting_scalars": 58,
+      "selection_scalars": 26,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00026490857359524384,
+        "synchronized": 0.0002116411081495847
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02894087018614788,
+        "synchronized": 0.025475037371650987,
+        "static_oracle": 0.01533260690279478
+      },
+      "selected_heldout_rmse": 0.025475037371650987,
+      "estimated_survivals": {
+        "asynchronous": 0.8296944688908877,
+        "synchronized": 0.9148472344454439
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.655117481510716e-34,
+        "synchronized": 3.4690475150264336e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 1.5940647223162134e-16,
+        "synchronized": 0.005305845713921192,
+        "static_oracle": 0.024645640478724622
+      },
+      "selected_heldout_rmse": 1.5940647223162134e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.49999999999999595,
+        "synchronized": 0.7499999999999979
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.11986153931404e-09,
+        "synchronized": 3.467613484183263e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00011935789602713234,
+        "synchronized": 0.00532773164640165,
+        "static_oracle": 0.024645640478724622
+      },
+      "selected_heldout_rmse": 0.00011935789602713234,
+      "estimated_survivals": {
+        "asynchronous": 0.5002961098967694,
+        "synchronized": 0.7501480549483847
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.119632529861053e-07,
+        "synchronized": 4.2764988230431344e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0011937329625972312,
+        "synchronized": 0.005632514249863119,
+        "static_oracle": 0.024645640478724622
+      },
+      "selected_heldout_rmse": 0.0011937329625972312,
+      "estimated_survivals": {
+        "asynchronous": 0.5029981647843232,
+        "synchronized": 0.7514990823921616
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.117994879308811e-05,
+        "synchronized": 9.373070210916169e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.011955565178677366,
+        "synchronized": 0.013747141141235665,
+        "static_oracle": 0.024645640478724622
+      },
+      "selected_heldout_rmse": 0.011955565178677366,
+      "estimated_survivals": {
+        "asynchronous": 0.5344049573341377,
+        "synchronized": 0.7672024786670688
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.3250421518478428e-07,
+        "synchronized": 5.937132910015467e-35
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.017719755153928436,
+        "synchronized": 1.9097689615444473e-16,
+        "static_oracle": 0.0596617205001666
+      },
+      "selected_heldout_rmse": 1.9097689615444473e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.29838340185635953,
+        "synchronized": 0.4999999999999992
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.3407471131341826e-07,
+        "synchronized": 1.1248710681989271e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.017642634701321252,
+        "synchronized": 0.00019092924281365883,
+        "static_oracle": 0.0596617205001666
+      },
+      "selected_heldout_rmse": 0.00019092924281365883,
+      "estimated_survivals": {
+        "asynchronous": 0.29828526919842063,
+        "synchronized": 0.49985064460981615
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1570415849687179e-06,
+        "synchronized": 1.1253403324818227e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.017068346708570263,
+        "synchronized": 0.0019119670603114213,
+        "static_oracle": 0.0596617205001666
+      },
+      "selected_heldout_rmse": 0.0019119670603114213,
+      "estimated_survivals": {
+        "asynchronous": 0.2979791002646184,
+        "synchronized": 0.49850736812630464
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00011011213641465754,
+        "synchronized": 0.00011302090607708697
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01943869881147608,
+        "synchronized": 0.019395547325015885,
+        "static_oracle": 0.0596617205001666
+      },
+      "selected_heldout_rmse": 0.01943869881147608,
+      "estimated_survivals": {
+        "asynchronous": 0.31151471236803285,
+        "synchronized": 0.4851653607581563
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.578841901712161e-32,
+        "synchronized": 4.490814774217465e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 7.054000186916475e-16,
+        "synchronized": 0.008251938004626409,
+        "static_oracle": 0.031643757193118474
+      },
+      "selected_heldout_rmse": 7.054000186916475e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.7999999999999935,
+        "synchronized": 0.8999999999999967
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1878550000453453e-08,
+        "synchronized": 4.533967681917727e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00016937925020180512,
+        "synchronized": 0.008250546014344806,
+        "static_oracle": 0.031643757193118474
+      },
+      "selected_heldout_rmse": 0.00016937925020180512,
+      "estimated_survivals": {
+        "asynchronous": 0.7994758036865031,
+        "synchronized": 0.8997379018432515
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.188397735861589e-06,
+        "synchronized": 5.990123308246306e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0016955758416749656,
+        "synchronized": 0.008386037626018519,
+        "static_oracle": 0.031643757193118474
+      },
+      "selected_heldout_rmse": 0.0016955758416749656,
+      "estimated_survivals": {
+        "asynchronous": 0.7947641278346385,
+        "synchronized": 0.8973820639173193
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00011940654802122841,
+        "synchronized": 0.00012660036727013958
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.017140440338566647,
+        "synchronized": 0.018448274373025916,
+        "static_oracle": 0.031643757193118474
+      },
+      "selected_heldout_rmse": 0.017140440338566647,
+      "estimated_survivals": {
+        "asynchronous": 0.7482205328882693,
+        "synchronized": 0.8741102664441346
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.8773667708637754e-05,
+        "synchronized": 8.745714969284271e-33
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.022550453681221657,
+        "synchronized": 4.804611855193256e-16,
+        "static_oracle": 0.05351146841664248
+      },
+      "selected_heldout_rmse": 4.804611855193256e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.5999999999999944,
+        "synchronized": 0.7999999999999972
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.8715907558248844e-05,
+        "synchronized": 1.1596744714491482e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.022608033893999704,
+        "synchronized": 0.00022502019183786302,
+        "static_oracle": 0.05351146841664248
+      },
+      "selected_heldout_rmse": 0.00022502019183786302,
+      "estimated_survivals": {
+        "asynchronous": 0.6001903240406427,
+        "synchronized": 0.8000951620203213
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.9260454751811556e-05,
+        "synchronized": 1.1596503992594846e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02321974829284999,
+        "synchronized": 0.0022497791385250178,
+        "static_oracle": 0.05351146841664248
+      },
+      "selected_heldout_rmse": 0.0022497791385250178,
+      "estimated_survivals": {
+        "asynchronous": 0.6019074248308783,
+        "synchronized": 0.8009537124154392
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00013993951028805503,
+        "synchronized": 0.000115958380352764
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.035694934391445846,
+        "synchronized": 0.02245730650649919,
+        "static_oracle": 0.05351146841664248
+      },
+      "selected_heldout_rmse": 0.02245730650649919,
+      "estimated_survivals": {
+        "asynchronous": 0.619510713642401,
+        "synchronized": 0.8097553568212005
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 5.657419211637505e-33,
+        "synchronized": 5.714239577580701e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 3.6950455776800505e-16,
+        "synchronized": 0.003461903673966688,
+        "static_oracle": 0.012744125260390149
+      },
+      "selected_heldout_rmse": 3.6950455776800505e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.9499999999999968,
+        "synchronized": 0.9749999999999984
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1083076413059905e-08,
+        "synchronized": 5.90285475551783e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00026207415544319743,
+        "synchronized": 0.0034844896733588937,
+        "static_oracle": 0.012744125260390149
+      },
+      "selected_heldout_rmse": 0.00026207415544319743,
+      "estimated_survivals": {
+        "asynchronous": 0.9499454087894337,
+        "synchronized": 0.9749727043947167
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1082967269847849e-06,
+        "synchronized": 1.7559962888116402e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0026206027531984,
+        "synchronized": 0.004438639348717507,
+        "static_oracle": 0.012744125260390149
+      },
+      "selected_heldout_rmse": 0.0026206027531984,
+      "estimated_survivals": {
+        "asynchronous": 0.9494600433679393,
+        "synchronized": 0.9747300216839696
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.0001108142998241795,
+        "synchronized": 0.0001119704792911399
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.026189477562547494,
+        "synchronized": 0.02650747255596852,
+        "static_oracle": 0.012744125260390149
+      },
+      "selected_heldout_rmse": 0.026189477562547494,
+      "estimated_survivals": {
+        "asynchronous": 0.9452268380853404,
+        "synchronized": 0.9726134190426702
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.5359604596723546e-06,
+        "synchronized": 1.597969332955721e-33
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.007431384516398073,
+        "synchronized": 3.99743544430676e-16,
+        "static_oracle": 0.019171354463892017
+      },
+      "selected_heldout_rmse": 3.99743544430676e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.8999999999999969,
+        "synchronized": 0.9499999999999984
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.5238143362608914e-06,
+        "synchronized": 1.5605488375393736e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.007424765879082388,
+        "synchronized": 0.00019498571111316548,
+        "static_oracle": 0.019171354463892017
+      },
+      "selected_heldout_rmse": 0.00019498571111316548,
+      "estimated_survivals": {
+        "asynchronous": 0.9001831074406849,
+        "synchronized": 0.9500915537203425
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.82776489958527e-06,
+        "synchronized": 1.5602951246498e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00759513384476433,
+        "synchronized": 0.0019491861665852052,
+        "static_oracle": 0.019171354463892017
+      },
+      "selected_heldout_rmse": 0.0019491861665852052,
+      "estimated_survivals": {
+        "asynchronous": 0.9018373692402382,
+        "synchronized": 0.9509186846201191
+      }
+    },
+    {
+      "size": 64,
+      "seed": 0,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00015642574555657605,
+        "synchronized": 0.00015577491524002644
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02051980423358761,
+        "synchronized": 0.019424699723203907,
+        "static_oracle": 0.019171354463892017
+      },
+      "selected_heldout_rmse": 0.019424699723203907,
+      "estimated_survivals": {
+        "asynchronous": 0.9190358139966174,
+        "synchronized": 0.9595179069983087
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 5.015668669525634e-34,
+        "synchronized": 4.2573204192336764e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 1.5761197071748748e-16,
+        "synchronized": 0.006379913309693336,
+        "static_oracle": 0.028062970787053436
+      },
+      "selected_heldout_rmse": 1.5761197071748748e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.49999999999999734,
+        "synchronized": 0.7499999999999987
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.420871276979195e-09,
+        "synchronized": 4.310546415048673e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00014125058997749285,
+        "synchronized": 0.0064047609669346155,
+        "static_oracle": 0.028062970787053436
+      },
+      "selected_heldout_rmse": 0.00014125058997749285,
+      "estimated_survivals": {
+        "asynchronous": 0.499346382858489,
+        "synchronized": 0.7496731914292445
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.421410954630075e-07,
+        "synchronized": 5.644802401904636e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.001413716551021762,
+        "synchronized": 0.006761359239643179,
+        "static_oracle": 0.028062970787053436
+      },
+      "selected_heldout_rmse": 0.001413716551021762,
+      "estimated_survivals": {
+        "asynchronous": 0.4935294974232909,
+        "synchronized": 0.7467647487116454
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.413326813912608e-05,
+        "synchronized": 0.00010331896920331036
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.014228975636045709,
+        "synchronized": 0.01644004528813166,
+        "static_oracle": 0.028062970787053436
+      },
+      "selected_heldout_rmse": 0.014228975636045709,
+      "estimated_survivals": {
+        "asynchronous": 0.4347004794591597,
+        "synchronized": 0.7173502397295798
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.6785439572741222e-07,
+        "synchronized": 8.517824770050233e-35
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.019053441338288936,
+        "synchronized": 1.828608609300781e-16,
+        "static_oracle": 0.06707492461954839
+      },
+      "selected_heldout_rmse": 1.828608609300781e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.2986703358350141,
+        "synchronized": 0.4999999999999992
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.7838158734509792e-07,
+        "synchronized": 9.487292966115567e-09
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.019030826912795836,
+        "synchronized": 0.00010233086273354028,
+        "static_oracle": 0.06707492461954839
+      },
+      "selected_heldout_rmse": 0.00010233086273354028,
+      "estimated_survivals": {
+        "asynchronous": 0.2987601968020492,
+        "synchronized": 0.5001192209021714
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1259366977072553e-06,
+        "synchronized": 9.487063789118494e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.018850885823608894,
+        "synchronized": 0.0010228348367381335,
+        "static_oracle": 0.06707492461954839
+      },
+      "selected_heldout_rmse": 0.0010228348367381335,
+      "estimated_survivals": {
+        "asynchronous": 0.2995689455053648,
+        "synchronized": 0.5011917713542555
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.501691447201646e-05,
+        "synchronized": 9.485595727485829e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.019478982020471932,
+        "synchronized": 0.010182861526690349,
+        "static_oracle": 0.06707492461954839
+      },
+      "selected_heldout_rmse": 0.010182861526690349,
+      "estimated_survivals": {
+        "asynchronous": 0.30765643253852065,
+        "synchronized": 0.5119985851366592
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.2511476842791009e-32,
+        "synchronized": 5.511264217182858e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 7.312705869428259e-16,
+        "synchronized": 0.010246534021831798,
+        "static_oracle": 0.03745433948823283
+      },
+      "selected_heldout_rmse": 7.312705869428259e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.7999999999999939,
+        "synchronized": 0.8999999999999969
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.2113456253453892e-08,
+        "synchronized": 5.530917018851467e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00023321908479371852,
+        "synchronized": 0.010271015011077902,
+        "static_oracle": 0.03745433948823283
+      },
+      "selected_heldout_rmse": 0.00023321908479371852,
+      "estimated_survivals": {
+        "asynchronous": 0.7998816472743023,
+        "synchronized": 0.8999408236371511
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.2109416299916353e-06,
+        "synchronized": 6.787707629927305e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0023318223763907067,
+        "synchronized": 0.01071180971830941,
+        "static_oracle": 0.03745433948823283
+      },
+      "selected_heldout_rmse": 0.0023318223763907067,
+      "estimated_survivals": {
+        "asynchronous": 0.7988045638164664,
+        "synchronized": 0.8994022819082331
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00012072603595811367,
+        "synchronized": 0.00012585898187476247
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02329602499867699,
+        "synchronized": 0.02595190794557412,
+        "static_oracle": 0.03745433948823283
+      },
+      "selected_heldout_rmse": 0.02329602499867699,
+      "estimated_survivals": {
+        "asynchronous": 0.7870044262693607,
+        "synchronized": 0.8935022131346804
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.5311918485293886e-05,
+        "synchronized": 3.90504002402164e-33
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.028212219254773067,
+        "synchronized": 4.050841664238673e-16,
+        "static_oracle": 0.0623154806715195
+      },
+      "selected_heldout_rmse": 4.050841664238673e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.5999999999999954,
+        "synchronized": 0.7999999999999977
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.553883120836643e-05,
+        "synchronized": 1.1410316617056053e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.028367626410161897,
+        "synchronized": 0.00021911660850815827,
+        "static_oracle": 0.0623154806715195
+      },
+      "selected_heldout_rmse": 0.00021911660850815827,
+      "estimated_survivals": {
+        "asynchronous": 0.599575398982243,
+        "synchronized": 0.7997876994911215
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.871492922089488e-05,
+        "synchronized": 1.142118753261507e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.029854089404570818,
+        "synchronized": 0.0022006141823110404,
+        "static_oracle": 0.0623154806715195
+      },
+      "selected_heldout_rmse": 0.0022006141823110404,
+      "estimated_survivals": {
+        "asynchronous": 0.5956834732108012,
+        "synchronized": 0.7978417366054006
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00018390388926709046,
+        "synchronized": 0.00011530640965072568
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.05031402521116415,
+        "synchronized": 0.022757931654448286,
+        "static_oracle": 0.0623154806715195
+      },
+      "selected_heldout_rmse": 0.022757931654448286,
+      "estimated_survivals": {
+        "asynchronous": 0.5525896032190214,
+        "synchronized": 0.7762948016095107
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 6.120037056065931e-32,
+        "synchronized": 7.01268827499309e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 1.2728703532205353e-15,
+        "synchronized": 0.004368301281019171,
+        "static_oracle": 0.015392912643249606
+      },
+      "selected_heldout_rmse": 1.2728703532205353e-15,
+      "estimated_survivals": {
+        "asynchronous": 0.9499999999999931,
+        "synchronized": 0.9749999999999965
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.6556601117309787e-08,
+        "synchronized": 6.821097965321695e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00027316224654704127,
+        "synchronized": 0.004209089950502074,
+        "static_oracle": 0.015392912643249606
+      },
+      "selected_heldout_rmse": 0.00027316224654704127,
+      "estimated_survivals": {
+        "asynchronous": 0.9496221029814962,
+        "synchronized": 0.9748110514907481
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.6564007244664117e-06,
+        "synchronized": 1.9673056278771708e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0027335457926345257,
+        "synchronized": 0.003309202039597091,
+        "static_oracle": 0.015392912643249606
+      },
+      "selected_heldout_rmse": 0.0027335457926345257,
+      "estimated_survivals": {
+        "asynchronous": 0.9462326340736287,
+        "synchronized": 0.9731163170368143
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00016658747491629067,
+        "synchronized": 0.00015962591310602042
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.027681057964481028,
+        "synchronized": 0.02232841477272651,
+        "static_oracle": 0.015392912643249606
+      },
+      "selected_heldout_rmse": 0.02232841477272651,
+      "estimated_survivals": {
+        "asynchronous": 0.9128671270319407,
+        "synchronized": 0.9564335635159703
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.1122076594712205e-06,
+        "synchronized": 2.484054970484045e-32
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.009393767080013963,
+        "synchronized": 8.765733640085765e-16,
+        "static_oracle": 0.022767627615325893
+      },
+      "selected_heldout_rmse": 8.765733640085765e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.8999999999999925,
+        "synchronized": 0.9499999999999963
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.106045117843666e-06,
+        "synchronized": 1.0123611614917814e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.009354617940590268,
+        "synchronized": 0.0002733417125366036,
+        "static_oracle": 0.022767627615325893
+      },
+      "selected_heldout_rmse": 0.0002733417125366036,
+      "estimated_survivals": {
+        "asynchronous": 0.9003005375484652,
+        "synchronized": 0.9501502687742326
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.967473775694208e-06,
+        "synchronized": 1.0120431237031795e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.009373036271876656,
+        "synchronized": 0.002732301593758826,
+        "static_oracle": 0.022767627615325893
+      },
+      "selected_heldout_rmse": 0.002732301593758826,
+      "estimated_survivals": {
+        "asynchronous": 0.9030074901391162,
+        "synchronized": 0.9515037450695581
+      }
+    },
+    {
+      "size": 64,
+      "seed": 1,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.0001029172944985355,
+        "synchronized": 0.00010091441688186838
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.027761326981264305,
+        "synchronized": 0.02721468378477526,
+        "static_oracle": 0.022767627615325893
+      },
+      "selected_heldout_rmse": 0.02721468378477526,
+      "estimated_survivals": {
+        "asynchronous": 0.9302914012198801,
+        "synchronized": 0.96514570060994
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 2.3198477365473813e-34,
+        "synchronized": 5.020342541675508e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 2.159837637930316e-16,
+        "synchronized": 0.007260106577034421,
+        "static_oracle": 0.0312104474136214
+      },
+      "selected_heldout_rmse": 2.159837637930316e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.4999999999999976,
+        "synchronized": 0.7499999999999988
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1145835660951445e-08,
+        "synchronized": 5.097905457384439e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00013415445218342917,
+        "synchronized": 0.007247040360514958,
+        "static_oracle": 0.0312104474136214
+      },
+      "selected_heldout_rmse": 0.00013415445218342917,
+      "estimated_survivals": {
+        "asynchronous": 0.5001326541935842,
+        "synchronized": 0.7500663270967921
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.1146010548306976e-06,
+        "synchronized": 6.788876219833804e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0013413439086750563,
+        "synchronized": 0.007240153329710976,
+        "static_oracle": 0.0312104474136214
+      },
+      "selected_heldout_rmse": 0.0013413439086750563,
+      "estimated_survivals": {
+        "asynchronous": 0.5013447353857797,
+        "synchronized": 0.7506723676928899
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00011188516202500454,
+        "synchronized": 0.00012256477435757706
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.013344745362969063,
+        "synchronized": 0.014719436787672404,
+        "static_oracle": 0.0312104474136214
+      },
+      "selected_heldout_rmse": 0.013344745362969063,
+      "estimated_survivals": {
+        "asynchronous": 0.5241763869235946,
+        "synchronized": 0.7620881934617973
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.6436499807765807e-07,
+        "synchronized": 1.1891532097708586e-34
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02049124773403927,
+        "synchronized": 1.790180836524724e-16,
+        "static_oracle": 0.07426334220077961
+      },
+      "selected_heldout_rmse": 1.790180836524724e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.29705443101691353,
+        "synchronized": 0.4999999999999992
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.7079060870010986e-07,
+        "synchronized": 8.142301001481984e-09
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.020483823283094605,
+        "synchronized": 0.00017833563475299025,
+        "static_oracle": 0.07426334220077961
+      },
+      "selected_heldout_rmse": 0.00017833563475299025,
+      "estimated_survivals": {
+        "asynchronous": 0.297219931458058,
+        "synchronized": 0.5001983096995155
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 9.607129381455862e-07,
+        "synchronized": 8.142509172260748e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02047846339476582,
+        "synchronized": 0.001781416533097991,
+        "static_oracle": 0.07426334220077961
+      },
+      "selected_heldout_rmse": 0.001781416533097991,
+      "estimated_survivals": {
+        "asynchronous": 0.29870943542835815,
+        "synchronized": 0.5019862116470332
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.5,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 8.146450104345472e-05,
+        "synchronized": 8.146291385279212e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.025792653485124762,
+        "synchronized": 0.017554979068101415,
+        "static_oracle": 0.07426334220077961
+      },
+      "selected_heldout_rmse": 0.017554979068101415,
+      "estimated_survivals": {
+        "asynchronous": 0.3136044751313606,
+        "synchronized": 0.5176855679472564
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.048267592767775e-32,
+        "synchronized": 6.499025556765022e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 8.602690153156441e-16,
+        "synchronized": 0.012065935504679461,
+        "static_oracle": 0.0428264712244181
+      },
+      "selected_heldout_rmse": 8.602690153156441e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.799999999999994,
+        "synchronized": 0.8999999999999971
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.3851745475364535e-08,
+        "synchronized": 6.511431428756753e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00020780114424313485,
+        "synchronized": 0.012065934277313515,
+        "static_oracle": 0.0428264712244181
+      },
+      "selected_heldout_rmse": 0.00020780114424313485,
+      "estimated_survivals": {
+        "asynchronous": 0.7996713505081887,
+        "synchronized": 0.8998356752540944
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.3851449439467933e-06,
+        "synchronized": 7.859475049915982e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0020791928953195512,
+        "synchronized": 0.012218796794594438,
+        "static_oracle": 0.0428264712244181
+      },
+      "selected_heldout_rmse": 0.0020791928953195512,
+      "estimated_survivals": {
+        "asynchronous": 0.7967081388545338,
+        "synchronized": 0.8983540694272669
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.0001385069463048298,
+        "synchronized": 0.00014355703420418188
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.020920075454719956,
+        "synchronized": 0.023579923724972512,
+        "static_oracle": 0.0428264712244181
+      },
+      "selected_heldout_rmse": 0.020920075454719956,
+      "estimated_survivals": {
+        "asynchronous": 0.766545753808334,
+        "synchronized": 0.883272876904167
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 4.164072917767623e-05,
+        "synchronized": 1.1004637411740509e-32
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.033583250905950324,
+        "synchronized": 6.004580652230415e-16,
+        "static_oracle": 0.07056908747082109
+      },
+      "selected_heldout_rmse": 6.004580652230415e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.5999999999999946,
+        "synchronized": 0.7999999999999973
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 4.1718421860447755e-05,
+        "synchronized": 9.816065790393769e-09
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.03367042689900556,
+        "synchronized": 0.00020482260949092738,
+        "static_oracle": 0.07056908747082109
+      },
+      "selected_heldout_rmse": 0.00020482260949092738,
+      "estimated_survivals": {
+        "asynchronous": 0.6000433927125155,
+        "synchronized": 0.8000216963562577
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 4.33061121726237e-05,
+        "synchronized": 9.816062611429038e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.034499815278295945,
+        "synchronized": 0.0020479743170642136,
+        "static_oracle": 0.07056908747082109
+      },
+      "selected_heldout_rmse": 0.0020479743170642136,
+      "estimated_survivals": {
+        "asynchronous": 0.6004459999706945,
+        "synchronized": 0.8002229999853473
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.8,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00014737679000398097,
+        "synchronized": 9.817252641046845e-05
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.04622082046853558,
+        "synchronized": 0.020486403751874955,
+        "static_oracle": 0.07056908747082109
+      },
+      "selected_heldout_rmse": 0.020486403751874955,
+      "estimated_survivals": {
+        "asynchronous": 0.6053099892670373,
+        "synchronized": 0.8026549946335186
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.5278853208753975e-32,
+        "synchronized": 8.2695437062731e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 1.0383207133646375e-15,
+        "synchronized": 0.0052607350646077505,
+        "static_oracle": 0.017976178185127183
+      },
+      "selected_heldout_rmse": 1.0383207133646375e-15,
+      "estimated_survivals": {
+        "asynchronous": 0.9499999999999946,
+        "synchronized": 0.9749999999999973
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.29469632416029e-08,
+        "synchronized": 8.262125455467386e-07
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.00022235365225427886,
+        "synchronized": 0.00517300241259057,
+        "static_oracle": 0.017976178185127183
+      },
+      "selected_heldout_rmse": 0.00022235365225427886,
+      "estimated_survivals": {
+        "asynchronous": 0.9496928306605086,
+        "synchronized": 0.9748464153302543
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 1.2952878211775657e-06,
+        "synchronized": 1.970759617754588e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.0022268356079292685,
+        "synchronized": 0.0047164555744019995,
+        "static_oracle": 0.017976178185127183
+      },
+      "selected_heldout_rmse": 0.0022268356079292685,
+      "estimated_survivals": {
+        "asynchronous": 0.9469212803886432,
+        "synchronized": 0.9734606401943217
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "asynchronous",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00013016302951872745,
+        "synchronized": 0.00012769913819078317
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02262297158888183,
+        "synchronized": 0.01875038089949152,
+        "static_oracle": 0.017976178185127183
+      },
+      "selected_heldout_rmse": 0.01875038089949152,
+      "estimated_survivals": {
+        "asynchronous": 0.9185047820754325,
+        "synchronized": 0.9592523910377163
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.6699959065288367e-06,
+        "synchronized": 8.526975897219389e-33
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.011346452440941396,
+        "synchronized": 5.359349571648039e-16,
+        "static_oracle": 0.02626555553236224
+      },
+      "selected_heldout_rmse": 5.359349571648039e-16,
+      "estimated_survivals": {
+        "asynchronous": 0.8999999999999948,
+        "synchronized": 0.9499999999999974
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.0001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 3.5687803767577455e-06,
+        "synchronized": 1.5245660658244928e-08
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01129184353494091,
+        "synchronized": 0.0002689856315650313,
+        "static_oracle": 0.02626555553236224
+      },
+      "selected_heldout_rmse": 0.0002689856315650313,
+      "estimated_survivals": {
+        "asynchronous": 0.9002368394273669,
+        "synchronized": 0.9501184197136835
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.001,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "synchronized",
+      "selected_correct": true,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 4.080518826281964e-06,
+        "synchronized": 1.5224330530242245e-06
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.01113731331470158,
+        "synchronized": 0.0026864874889681607,
+        "static_oracle": 0.02626555553236224
+      },
+      "selected_heldout_rmse": 0.0026864874889681607,
+      "estimated_survivals": {
+        "asynchronous": 0.9022824408686166,
+        "synchronized": 0.9511412204343084
+      }
+    },
+    {
+      "size": 64,
+      "seed": 2,
+      "true_family": "synchronized",
+      "true_survival": 0.95,
+      "noise_sd": 0.01,
+      "observed_scalars": 372,
+      "fitting_scalars": 250,
+      "selection_scalars": 122,
+      "selected_family": "asynchronous",
+      "selected_correct": false,
+      "fourth_band_mean_squared_residual": {
+        "asynchronous": 0.00014728721383915663,
+        "synchronized": 0.0001516187906948436
+      },
+      "heldout_rmse": {
+        "asynchronous": 0.02766277824526113,
+        "synchronized": 0.026768435071445988,
+        "static_oracle": 0.02626555553236224
+      },
+      "selected_heldout_rmse": 0.02766277824526113,
+      "estimated_survivals": {
+        "asynchronous": 0.9218013006389183,
+        "synchronized": 0.9609006503194591
+      }
+    }
+  ],
+  "sampler_checks": [
+    {
+      "removal": 0.1,
+      "samples_per_source": 200000,
+      "max_absolute_error": 0.002456801099214756,
+      "simultaneous_hoeffding_radius": 0.006961596986762619,
+      "all_within_bound": true
+    },
+    {
+      "removal": 0.5,
+      "samples_per_source": 200000,
+      "max_absolute_error": 0.0013308875065216608,
+      "simultaneous_hoeffding_radius": 0.006961596986762619,
+      "all_within_bound": true
+    },
+    {
+      "removal": 2.0,
+      "samples_per_source": 200000,
+      "max_absolute_error": 0.0012879437532608562,
+      "simultaneous_hoeffding_radius": 0.006961596986762619,
+      "all_within_bound": true
+    }
+  ]
+}

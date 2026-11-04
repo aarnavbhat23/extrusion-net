@@ -1,0 +1,133 @@
+{
+  "scope": "Untrained CPU resource screen, two threads. Saved entries can count aliases and are not peak memory.",
+  "rows": [
+    {
+      "length": 64,
+      "variant": "static",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.001335416003712453,
+      "tokens_per_second": 95850.28159327156,
+      "saved_nonparameter_tensor_entries": 151936
+    },
+    {
+      "length": 64,
+      "variant": "shared",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.0043727919983211905,
+      "tokens_per_second": 29271.915986203316,
+      "saved_nonparameter_tensor_entries": 533008
+    },
+    {
+      "length": 64,
+      "variant": "independent",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.0016837500006658956,
+      "tokens_per_second": 76020.78690386226,
+      "saved_nonparameter_tensor_entries": 213904
+    },
+    {
+      "length": 64,
+      "variant": "attention",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.0006621250067837536,
+      "tokens_per_second": 193316.9698902553,
+      "saved_nonparameter_tensor_entries": 76672
+    },
+    {
+      "length": 256,
+      "variant": "static",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.002468499995302409,
+      "tokens_per_second": 207413.40934751605,
+      "saved_nonparameter_tensor_entries": 705280
+    },
+    {
+      "length": 256,
+      "variant": "shared",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.008455082992441021,
+      "tokens_per_second": 60555.289694700354,
+      "saved_nonparameter_tensor_entries": 2229136
+    },
+    {
+      "length": 256,
+      "variant": "independent",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.003864707992761396,
+      "tokens_per_second": 132480.90178067188,
+      "saved_nonparameter_tensor_entries": 953104
+    },
+    {
+      "length": 256,
+      "variant": "attention",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.0017467909929109737,
+      "tokens_per_second": 293108.9077501869,
+      "saved_nonparameter_tensor_entries": 305920
+    },
+    {
+      "length": 1024,
+      "variant": "static",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.0073315000045113266,
+      "tokens_per_second": 279342.56274156645,
+      "saved_nonparameter_tensor_entries": 3213568
+    },
+    {
+      "length": 1024,
+      "variant": "shared",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.022096041997428983,
+      "tokens_per_second": 92686.28292063791,
+      "saved_nonparameter_tensor_entries": 9308560
+    },
+    {
+      "length": 1024,
+      "variant": "independent",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.009738749999087304,
+      "tokens_per_second": 210293.92891201997,
+      "saved_nonparameter_tensor_entries": 4204816
+    },
+    {
+      "length": 1024,
+      "variant": "attention",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.009430250007426366,
+      "tokens_per_second": 217173.4575846017,
+      "saved_nonparameter_tensor_entries": 1222912
+    },
+    {
+      "length": 4096,
+      "variant": "static",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.024786374997347593,
+      "tokens_per_second": 330504.158065737,
+      "saved_nonparameter_tensor_entries": 14426368
+    },
+    {
+      "length": 4096,
+      "variant": "shared",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.06877408400760032,
+      "tokens_per_second": 119114.63625011261,
+      "saved_nonparameter_tensor_entries": 38805904
+    },
+    {
+      "length": 4096,
+      "variant": "independent",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.03564637499221135,
+      "tokens_per_second": 229812.98944955645,
+      "saved_nonparameter_tensor_entries": 18391312
+    },
+    {
+      "length": 4096,
+      "variant": "attention",
+      "batch": 2,
+      "median_forward_backward_seconds": 0.0883390000090003,
+      "tokens_per_second": 92733.67367940965,
+      "saved_nonparameter_tensor_entries": 4890880
+    }
+  ]
+}

@@ -1,0 +1,1629 @@
+{
+  "refinement_protocol_commit": "437c8b0",
+  "fresh_confirmation": false,
+  "null": [
+    {
+      "case": 0,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.116
+    },
+    {
+      "case": 0,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.052
+    },
+    {
+      "case": 0,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0475
+    },
+    {
+      "case": 1,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0685
+    },
+    {
+      "case": 1,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0365
+    },
+    {
+      "case": 1,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0375
+    },
+    {
+      "case": 2,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1505
+    },
+    {
+      "case": 2,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 2,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 3,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1575
+    },
+    {
+      "case": 3,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0415
+    },
+    {
+      "case": 3,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.048
+    },
+    {
+      "case": 4,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.038
+    },
+    {
+      "case": 4,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0375
+    },
+    {
+      "case": 4,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0435
+    },
+    {
+      "case": 5,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0485
+    },
+    {
+      "case": 5,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0335
+    },
+    {
+      "case": 5,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.046
+    },
+    {
+      "case": 6,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 6,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 6,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 7,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0575
+    },
+    {
+      "case": 7,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0375
+    },
+    {
+      "case": 7,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.04
+    },
+    {
+      "case": 8,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.8045
+    },
+    {
+      "case": 8,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 8,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 9,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.049
+    },
+    {
+      "case": 9,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.047
+    },
+    {
+      "case": 9,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0365
+    },
+    {
+      "case": 10,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0645
+    },
+    {
+      "case": 10,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 10,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0415
+    },
+    {
+      "case": 11,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.195
+    },
+    {
+      "case": 11,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 11,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 12,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.06
+    },
+    {
+      "case": 12,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.043
+    },
+    {
+      "case": 12,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 13,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1695
+    },
+    {
+      "case": 13,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0375
+    },
+    {
+      "case": 13,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.032
+    },
+    {
+      "case": 14,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.194
+    },
+    {
+      "case": 14,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.05
+    },
+    {
+      "case": 14,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0555
+    },
+    {
+      "case": 15,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0385
+    },
+    {
+      "case": 15,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 15,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0465
+    },
+    {
+      "case": 16,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.085
+    },
+    {
+      "case": 16,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.048
+    },
+    {
+      "case": 16,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.044
+    },
+    {
+      "case": 17,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0645
+    },
+    {
+      "case": 17,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.043
+    },
+    {
+      "case": 17,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.042
+    },
+    {
+      "case": 18,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.124
+    },
+    {
+      "case": 18,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 18,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0475
+    },
+    {
+      "case": 19,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.058
+    },
+    {
+      "case": 19,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0455
+    },
+    {
+      "case": 19,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 20,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.23
+    },
+    {
+      "case": 20,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 20,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0415
+    },
+    {
+      "case": 21,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1685
+    },
+    {
+      "case": 21,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0365
+    },
+    {
+      "case": 21,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.036
+    },
+    {
+      "case": 22,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.049
+    },
+    {
+      "case": 22,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.05
+    },
+    {
+      "case": 22,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0475
+    },
+    {
+      "case": 23,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.42
+    },
+    {
+      "case": 23,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0475
+    },
+    {
+      "case": 23,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0415
+    },
+    {
+      "case": 24,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.092
+    },
+    {
+      "case": 24,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0385
+    },
+    {
+      "case": 24,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.041
+    },
+    {
+      "case": 25,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.059
+    },
+    {
+      "case": 25,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.041
+    },
+    {
+      "case": 25,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 26,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 26,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 26,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.048
+    },
+    {
+      "case": 27,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0735
+    },
+    {
+      "case": 27,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0525
+    },
+    {
+      "case": 27,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 28,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1005
+    },
+    {
+      "case": 28,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 28,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 29,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0845
+    },
+    {
+      "case": 29,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 29,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 30,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0575
+    },
+    {
+      "case": 30,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.041
+    },
+    {
+      "case": 30,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.043
+    },
+    {
+      "case": 31,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0815
+    },
+    {
+      "case": 31,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0355
+    },
+    {
+      "case": 31,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 32,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.125
+    },
+    {
+      "case": 32,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.044
+    },
+    {
+      "case": 32,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0495
+    },
+    {
+      "case": 33,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.055
+    },
+    {
+      "case": 33,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.038
+    },
+    {
+      "case": 33,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.037
+    },
+    {
+      "case": 34,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.094
+    },
+    {
+      "case": 34,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.047
+    },
+    {
+      "case": 34,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0365
+    },
+    {
+      "case": 35,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0485
+    },
+    {
+      "case": 35,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.034
+    },
+    {
+      "case": 35,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0465
+    },
+    {
+      "case": 36,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1
+    },
+    {
+      "case": 36,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 36,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.041
+    },
+    {
+      "case": 37,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1495
+    },
+    {
+      "case": 37,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 37,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0385
+    },
+    {
+      "case": 38,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0545
+    },
+    {
+      "case": 38,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 38,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.038
+    },
+    {
+      "case": 39,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.097
+    },
+    {
+      "case": 39,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0385
+    },
+    {
+      "case": 39,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0495
+    },
+    {
+      "case": 40,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.058
+    },
+    {
+      "case": 40,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 40,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0455
+    },
+    {
+      "case": 41,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.036
+    },
+    {
+      "case": 41,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.036
+    },
+    {
+      "case": 41,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.041
+    },
+    {
+      "case": 42,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.111
+    },
+    {
+      "case": 42,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.042
+    },
+    {
+      "case": 42,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0375
+    },
+    {
+      "case": 43,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.057
+    },
+    {
+      "case": 43,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0465
+    },
+    {
+      "case": 43,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.042
+    },
+    {
+      "case": 44,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 44,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 44,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 45,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.077
+    },
+    {
+      "case": 45,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0475
+    },
+    {
+      "case": 45,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 46,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.06
+    },
+    {
+      "case": 46,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.041
+    },
+    {
+      "case": 46,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 47,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.201
+    },
+    {
+      "case": 47,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0455
+    },
+    {
+      "case": 47,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.036
+    },
+    {
+      "case": 48,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.05
+    },
+    {
+      "case": 48,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 48,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0355
+    },
+    {
+      "case": 49,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0765
+    },
+    {
+      "case": 49,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.047
+    },
+    {
+      "case": 49,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 50,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1015
+    },
+    {
+      "case": 50,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0495
+    },
+    {
+      "case": 50,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0335
+    },
+    {
+      "case": 51,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.054
+    },
+    {
+      "case": 51,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.037
+    },
+    {
+      "case": 51,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.038
+    },
+    {
+      "case": 52,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.054
+    },
+    {
+      "case": 52,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0475
+    },
+    {
+      "case": 52,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.045
+    },
+    {
+      "case": 53,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0745
+    },
+    {
+      "case": 53,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0385
+    },
+    {
+      "case": 53,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.044
+    },
+    {
+      "case": 54,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0605
+    },
+    {
+      "case": 54,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.048
+    },
+    {
+      "case": 54,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 55,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.448
+    },
+    {
+      "case": 55,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 55,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.038
+    },
+    {
+      "case": 56,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0575
+    },
+    {
+      "case": 56,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.04
+    },
+    {
+      "case": 56,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 57,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0575
+    },
+    {
+      "case": 57,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.044
+    },
+    {
+      "case": 57,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 58,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0845
+    },
+    {
+      "case": 58,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0455
+    },
+    {
+      "case": 58,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 59,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.197
+    },
+    {
+      "case": 59,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 59,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0415
+    },
+    {
+      "case": 60,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0375
+    },
+    {
+      "case": 60,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0455
+    },
+    {
+      "case": 60,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0285
+    },
+    {
+      "case": 61,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.064
+    },
+    {
+      "case": 61,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0415
+    },
+    {
+      "case": 61,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 62,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0415
+    },
+    {
+      "case": 62,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 62,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0465
+    },
+    {
+      "case": 63,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.124
+    },
+    {
+      "case": 63,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0435
+    },
+    {
+      "case": 63,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.044
+    },
+    {
+      "case": 64,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1385
+    },
+    {
+      "case": 64,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.042
+    },
+    {
+      "case": 64,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.046
+    },
+    {
+      "case": 65,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 65,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0335
+    },
+    {
+      "case": 65,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 66,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.396
+    },
+    {
+      "case": 66,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.036
+    },
+    {
+      "case": 66,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.044
+    },
+    {
+      "case": 67,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.7365
+    },
+    {
+      "case": 67,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.036
+    },
+    {
+      "case": 67,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0355
+    },
+    {
+      "case": 68,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0575
+    },
+    {
+      "case": 68,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 68,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0345
+    },
+    {
+      "case": 69,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1175
+    },
+    {
+      "case": 69,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0345
+    },
+    {
+      "case": 69,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.033
+    },
+    {
+      "case": 70,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0765
+    },
+    {
+      "case": 70,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0485
+    },
+    {
+      "case": 70,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 71,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0915
+    },
+    {
+      "case": 71,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0375
+    },
+    {
+      "case": 71,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0375
+    },
+    {
+      "case": 72,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1055
+    },
+    {
+      "case": 72,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 72,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 73,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.049
+    },
+    {
+      "case": 73,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0465
+    },
+    {
+      "case": 73,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.035
+    },
+    {
+      "case": 74,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.1595
+    },
+    {
+      "case": 74,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 74,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.03
+    },
+    {
+      "case": 75,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.087
+    },
+    {
+      "case": 75,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.046
+    },
+    {
+      "case": 75,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.042
+    },
+    {
+      "case": 76,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 76,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0435
+    },
+    {
+      "case": 76,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0455
+    },
+    {
+      "case": 77,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.17
+    },
+    {
+      "case": 77,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0435
+    },
+    {
+      "case": 77,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0335
+    },
+    {
+      "case": 78,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.256
+    },
+    {
+      "case": 78,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0435
+    },
+    {
+      "case": 78,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.047
+    },
+    {
+      "case": 79,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.117
+    },
+    {
+      "case": 79,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0355
+    },
+    {
+      "case": 79,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.038
+    },
+    {
+      "case": 80,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.054
+    },
+    {
+      "case": 80,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.049
+    },
+    {
+      "case": 80,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.055
+    },
+    {
+      "case": 81,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0575
+    },
+    {
+      "case": 81,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0445
+    },
+    {
+      "case": 81,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 82,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.059
+    },
+    {
+      "case": 82,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.045
+    },
+    {
+      "case": 82,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.041
+    },
+    {
+      "case": 83,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0475
+    },
+    {
+      "case": 83,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0365
+    },
+    {
+      "case": 83,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 84,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.056
+    },
+    {
+      "case": 84,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0415
+    },
+    {
+      "case": 84,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0355
+    },
+    {
+      "case": 85,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.045
+    },
+    {
+      "case": 85,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0405
+    },
+    {
+      "case": 85,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.039
+    },
+    {
+      "case": 86,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0925
+    },
+    {
+      "case": 86,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.038
+    },
+    {
+      "case": 86,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.035
+    },
+    {
+      "case": 87,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.398
+    },
+    {
+      "case": 87,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0485
+    },
+    {
+      "case": 87,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.046
+    },
+    {
+      "case": 88,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0435
+    },
+    {
+      "case": 88,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.043
+    },
+    {
+      "case": 88,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 89,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.2205
+    },
+    {
+      "case": 89,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0485
+    },
+    {
+      "case": 89,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.032
+    },
+    {
+      "case": 90,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.095
+    },
+    {
+      "case": 90,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0495
+    },
+    {
+      "case": 90,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.041
+    },
+    {
+      "case": 91,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.0535
+    },
+    {
+      "case": 91,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.034
+    },
+    {
+      "case": 91,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.045
+    },
+    {
+      "case": 92,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.048
+    },
+    {
+      "case": 92,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.041
+    },
+    {
+      "case": 92,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.042
+    },
+    {
+      "case": 93,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.072
+    },
+    {
+      "case": 93,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 93,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.034
+    },
+    {
+      "case": 94,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.5135
+    },
+    {
+      "case": 94,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.047
+    },
+    {
+      "case": 94,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.037
+    },
+    {
+      "case": 95,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.103
+    },
+    {
+      "case": 95,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0425
+    },
+    {
+      "case": 95,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0375
+    },
+    {
+      "case": 96,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.091
+    },
+    {
+      "case": 96,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.043
+    },
+    {
+      "case": 96,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0505
+    },
+    {
+      "case": 97,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.066
+    },
+    {
+      "case": 97,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.049
+    },
+    {
+      "case": 97,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0385
+    },
+    {
+      "case": 98,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.2535
+    },
+    {
+      "case": 98,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.043
+    },
+    {
+      "case": 98,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0395
+    },
+    {
+      "case": 99,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.058
+    },
+    {
+      "case": 99,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.038
+    },
+    {
+      "case": 99,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.036
+    }
+  ],
+  "memory": [
+    {
+      "capture": 0.15,
+      "protection": 0.1,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 1.0
+    },
+    {
+      "capture": 0.15,
+      "protection": 0.1,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.1315
+    },
+    {
+      "capture": 0.15,
+      "protection": 0.1,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.001
+    },
+    {
+      "capture": 0.15,
+      "protection": 0.4,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.361
+    },
+    {
+      "capture": 0.15,
+      "protection": 0.4,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0015
+    },
+    {
+      "capture": 0.15,
+      "protection": 0.4,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0005
+    },
+    {
+      "capture": 0.5,
+      "protection": 0.1,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 1.0
+    },
+    {
+      "capture": 0.5,
+      "protection": 0.1,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.4365
+    },
+    {
+      "capture": 0.5,
+      "protection": 0.1,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0125
+    },
+    {
+      "capture": 0.5,
+      "protection": 0.4,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.9665
+    },
+    {
+      "capture": 0.5,
+      "protection": 0.4,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0065
+    },
+    {
+      "capture": 0.5,
+      "protection": 0.4,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0015
+    },
+    {
+      "capture": 1.5,
+      "protection": 0.1,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 1.0
+    },
+    {
+      "capture": 1.5,
+      "protection": 0.1,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.009
+    },
+    {
+      "capture": 1.5,
+      "protection": 0.1,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.1195
+    },
+    {
+      "capture": 1.5,
+      "protection": 0.4,
+      "degree_balanced": 0,
+      "robust_fisher_rejection": 0.5145
+    },
+    {
+      "capture": 1.5,
+      "protection": 0.4,
+      "degree_balanced": 1,
+      "robust_fisher_rejection": 0.0005
+    },
+    {
+      "capture": 1.5,
+      "protection": 0.4,
+      "degree_balanced": 2,
+      "robust_fisher_rejection": 0.0065
+    }
+  ],
+  "summary": {
+    "original_count_draws_reproduced": true,
+    "primary_exact_robust_power": [
+      0.1315,
+      0.0015,
+      0.4365,
+      0.0065,
+      0.009,
+      0.0005
+    ],
+    "primary_cases_at_least_80pct_power": 0,
+    "primary_max_robust_null_rejection": 0.0525
+  }
+}

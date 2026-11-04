@@ -1,0 +1,224 @@
+{
+  "verified_rows": 90,
+  "verified_starts": 270,
+  "maximum_likelihood_discrepancy": 5.4569682106375694e-12,
+  "summary": [
+    {
+      "stress": "matched",
+      "initiated_episodes": 6000,
+      "method": "three_normalized",
+      "fits": 9,
+      "median_absence_error": 0.051835286111566736,
+      "median_total_variation": 0.05183528611156678,
+      "case_median_absence_errors": [
+        0.01723450332322085,
+        0.051835286111566736,
+        0.06872108056850179
+      ],
+      "passing_cases": 1,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 9,
+      "expected_sum_observation_duration": 33333.333333333336
+    },
+    {
+      "stress": "matched",
+      "initiated_episodes": 6000,
+      "method": "absolute_retention",
+      "fits": 9,
+      "median_absence_error": 0.01001054415474234,
+      "median_total_variation": 0.010231937011545574,
+      "case_median_absence_errors": [
+        0.012924243843790206,
+        0.01001054415474234,
+        0.006044382180483754
+      ],
+      "passing_cases": 3,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 9,
+      "expected_sum_observation_duration": 20000.0
+    },
+    {
+      "stress": "matched",
+      "initiated_episodes": 6000,
+      "method": "scheduled_timestamps",
+      "fits": 9,
+      "median_absence_error": 0.005558500879758177,
+      "median_total_variation": 0.005559547190406125,
+      "case_median_absence_errors": [
+        0.010632861184580178,
+        0.005558500879758177,
+        0.002315565260340713
+      ],
+      "passing_cases": 3,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 9,
+      "expected_sum_observation_duration": 11250.0
+    },
+    {
+      "stress": "matched",
+      "initiated_episodes": 24000,
+      "method": "three_normalized",
+      "fits": 9,
+      "median_absence_error": 0.02500809548753724,
+      "median_total_variation": 0.025011719693677215,
+      "case_median_absence_errors": [
+        0.02500809548753724,
+        0.04949120983179822,
+        0.01776287107685992
+      ],
+      "passing_cases": 1,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 9,
+      "expected_sum_observation_duration": 133333.33333333334
+    },
+    {
+      "stress": "matched",
+      "initiated_episodes": 24000,
+      "method": "absolute_retention",
+      "fits": 9,
+      "median_absence_error": 0.003115453131237622,
+      "median_total_variation": 0.004087711532204457,
+      "case_median_absence_errors": [
+        0.003115453131237622,
+        0.0040893925610411275,
+        0.0017553693890365318
+      ],
+      "passing_cases": 3,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 9,
+      "expected_sum_observation_duration": 80000.0
+    },
+    {
+      "stress": "matched",
+      "initiated_episodes": 24000,
+      "method": "scheduled_timestamps",
+      "fits": 9,
+      "median_absence_error": 0.002984108937880925,
+      "median_total_variation": 0.0030602462269816487,
+      "case_median_absence_errors": [
+        0.0024932800716110926,
+        0.002984108937880925,
+        0.004119650925171858
+      ],
+      "passing_cases": 3,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 9,
+      "expected_sum_observation_duration": 45000.0
+    },
+    {
+      "stress": "turnover_error",
+      "initiated_episodes": 24000,
+      "method": "three_normalized",
+      "fits": 6,
+      "median_absence_error": 0.027553034836871437,
+      "median_total_variation": 0.027769034217088234,
+      "case_median_absence_errors": [
+        0.041891596819730204,
+        0.03325112508230005,
+        0.01813807784301047
+      ],
+      "passing_cases": 1,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 6,
+      "expected_sum_observation_duration": 133333.33333333334
+    },
+    {
+      "stress": "turnover_error",
+      "initiated_episodes": 24000,
+      "method": "absolute_retention",
+      "fits": 6,
+      "median_absence_error": 0.014952296032769818,
+      "median_total_variation": 0.014952296032769822,
+      "case_median_absence_errors": [
+        0.030075629256930525,
+        0.010439860492057806,
+        0.014952296032769818
+      ],
+      "passing_cases": 2,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 1,
+      "expected_sum_observation_duration": 80000.0
+    },
+    {
+      "stress": "turnover_error",
+      "initiated_episodes": 24000,
+      "method": "scheduled_timestamps",
+      "fits": 6,
+      "median_absence_error": 0.01590360938229679,
+      "median_total_variation": 0.015903609382296784,
+      "case_median_absence_errors": [
+        0.02506768408335669,
+        0.012038859637826693,
+        0.01474968065333715
+      ],
+      "passing_cases": 2,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 0,
+      "expected_sum_observation_duration": 45000.0
+    },
+    {
+      "stress": "state_dropout",
+      "initiated_episodes": 24000,
+      "method": "three_normalized",
+      "fits": 6,
+      "median_absence_error": 0.014285507786204465,
+      "median_total_variation": 0.014336969779121772,
+      "case_median_absence_errors": [
+        0.033338355570006306,
+        0.011522517773831398,
+        0.011310530306511302
+      ],
+      "passing_cases": 2,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 5,
+      "expected_sum_observation_duration": 133333.33333333334
+    },
+    {
+      "stress": "state_dropout",
+      "initiated_episodes": 24000,
+      "method": "absolute_retention",
+      "fits": 6,
+      "median_absence_error": 0.0040996271146537255,
+      "median_total_variation": 0.004183675406081876,
+      "case_median_absence_errors": [
+        0.004179690966049032,
+        0.004604655301834071,
+        0.0022477928383387025
+      ],
+      "passing_cases": 3,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 5,
+      "expected_sum_observation_duration": 80000.0
+    },
+    {
+      "stress": "state_dropout",
+      "initiated_episodes": 24000,
+      "method": "scheduled_timestamps",
+      "fits": 6,
+      "median_absence_error": 0.0013160995508519902,
+      "median_total_variation": 0.002738712251818835,
+      "case_median_absence_errors": [
+        0.004529540332246118,
+        0.0036906783700282886,
+        0.0007498016553507125
+      ],
+      "passing_cases": 3,
+      "selected_optimizer_failures": 0,
+      "all_start_failures": 0,
+      "base_parameter_memberships": 5,
+      "expected_sum_observation_duration": 45000.0
+    }
+  ],
+  "scope": "Independent probability backend replay; same mathematical model, not biological validation."
+}

@@ -1,0 +1,13 @@
+{
+  "engine": "lefsim",
+  "version": "0.1.0",
+  "wheel_filename": "lefsim-0.1.0-cp39-abi3-macosx_11_0_arm64.whl",
+  "wheel_url": "https://files.pythonhosted.org/packages/fd/61/5ad6f425ac29aaeab9ba912fd0efd46ecd464d8f0b46b40cfd5036bfe702/lefsim-0.1.0-cp39-abi3-macosx_11_0_arm64.whl",
+  "wheel_sha256": "afc3013a418fd6da62f3016a52fedf5039f82f33b39d96ca1635eefe9e3cc47c",
+  "installed_extension_sha256": "1c231e759897edcc413029869f0f6a465cb6e89161f317b4b9c65ac32948561e",
+  "installed_extension_matches_verified_wheel": true,
+  "publisher_source_commit": "db4f5dadd28d16d0c76911202ff9d1b6205bd70e",
+  "license": "MIT",
+  "author": "Nezar Abdennur",
+  "source_url": "https://github.com/abdenlab/lefsim"
+}

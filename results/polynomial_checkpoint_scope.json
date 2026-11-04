@@ -1,0 +1,28 @@
+{
+  "input": "One seeded length-128 synthetic test sequence, released saturated checkpoint, first mixer only.",
+  "max_actual_arguments": [
+    [
+      3.906811022505937,
+      8.243310497429244,
+      2.6407064223249512,
+      12.934371846403973
+    ]
+  ],
+  "argument_bounds": [
+    [
+      110.21241187875479,
+      181.21560388378424,
+      24.747113432977752,
+      293.7086682016288
+    ]
+  ],
+  "degree8_entry_error_bounds_exact_arithmetic": [
+    [
+      6611675436311.5625,
+      580760783925586.2,
+      9593076.50735982,
+      4.482165033472476e+16
+    ]
+  ],
+  "conclusion": "The weak-argument demonstration does not justify applying degree 8 to this checkpoint."
+}

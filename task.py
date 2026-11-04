@@ -19,6 +19,7 @@ DOT, E1, E2, E3, PROM, FWD, REV = range(7)
 STRENGTH = {E1: 1, E2: 2, E3: 3}
 # Tuned so no label exceeds ~45% at any test length.
 PROBS = np.array([0.63, 0.02, 0.02, 0.02, 0.07, 0.12, 0.12])
+N_CLASSES = 4
 IGNORE = -100
 
 
