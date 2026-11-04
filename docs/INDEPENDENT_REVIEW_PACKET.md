@@ -5,6 +5,11 @@ priority or experimental feedback has been obtained or requested by this
 repository**. Computational replay is not external peer review. Do not submit
 biological-identification claims on the current evidence.
 
+2026-11-03 follow-up: an [exact-arithmetic audit and measurement contract](MEASUREMENT_CONTRACT_AUDIT.md)
+confirms the counterexample and the sharpness proof within scope, corrects three scope statements,
+shows that the current calibration contract cannot beat naive dose extrapolation at any count, and
+freezes go/no-go criteria for a reconstitution feasibility pilot. No pilot data exist.
+
 ## Proposed paper core
 
 Question: when do retained/initiated observations and a separately calibrated
