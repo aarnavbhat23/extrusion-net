@@ -73,3 +73,27 @@ The next experiments are listed in the README. These rules hold for all of them:
 2. At least 3 seeds per setting. Report every run, including failures.
 3. **Stop rule.** If extrusion does not beat both attention variants and the one-arm ablation on the out-of-genomics generality tasks or on the real enhancer-gene benchmark, report that result and pause before adding mechanisms or tuning.
 4. No retuning of the extrusion parameterization after seeing test results on a new task without reporting the untuned result alongside.
+
+## 8. Generality and linear-variant experiments (rules written before any result)
+
+These runs started before this section was written, but it was written before any of them finished. The order deviates from section 7's list: generality (stage 3 in `ROADMAP.md`) was moved ahead of the stochastic-simulation test, because it decides whether extrusion is a general operator or a domain-specific one.
+
+**Tasks.** `task_dyck.py`: prefixes of two-bracket Dyck words with depth at most 6; label at every position is the innermost open bracket type (none, round, square). `task_recall.py`: up to 8 key-value pairs, then queries; label is the queried key's value. Same splits, lengths, backbone, training and selection as sections 2-4. All five mixers plus `extrusion_linear`, 3 seeds, 4000 sequences, 3 layers.
+
+**Linear variant.** `extrusion_linear` uses `W = beta D` without saturation, so it can be computed by the O(n) scan. Toy genome, 3 seeds, in the two settings where extrusion separated from the controls: 4000 sequences with 1 layer, and 300 sequences with 3 layers.
+
+**How results will be read.**
+1. *Dyck.* Extrusion is expected to struggle, since one motor cannot skip matched pairs (`ROADMAP.md`, A2). If it is below BiLSTM at length 512, the result is reported as a limitation, and loop traversal (A2) becomes the next mechanism to test. If it matches or beats BiLSTM, that is unexpected and will be checked for a shortcut before being claimed.
+2. *Recall.* Extrusion has no query-key matching and is expected to lose to attention. A loss is reported as a scope boundary and motivates A3. A win would be checked for a shortcut (for example, decoding a superposition of all pairs) before being claimed.
+3. *Linear variant.* If `extrusion_linear` stays within 1 point of `extrusion` at length 512 in both genome settings, the O(n) form is adopted for genome-scale work (A1). If it drops by more, saturation is kept and a chunked algorithm is needed.
+4. No hyperparameter changes for any mixer on these tasks, and no reruns except to replace a crashed run.
+
+### Outcome (written after the results)
+
+All 42 runs finished; none crashed or was rerun. Mean of 3 seeds at length 512:
+
+1. *Dyck.* Extrusion 0.987, BiLSTM 0.991, one-arm 0.980, ALiBi 0.963, RoPE 0.861. Extrusion is below BiLSTM (by 0.41 points), so per rule 1 this is reported as a limitation, and loop traversal is next. Simple rules ("last opener seen") score about 0.70 and 32-38% of positions require skipping matched pairs, so the high scores are not a shortcut. A per-depth breakdown is in `results/dyck_skip_depth.json` (seed-0 checkpoints retrained with `--save`, logged outside `runs.jsonl`).
+2. *Recall.* Extrusion 0.261, linear 0.199, one-arm 0.178, BiLSTM 0.343, RoPE 0.649, ALiBi 0.990. Extrusion loses to attention, as expected; per rule 2 this is the scope boundary that motivates A3. BiLSTM fails too.
+3. *Linear variant.* Gap to full extrusion: -0.07 points (1 layer) and 0.90 points (300 sequences). Both are within 1 point, so per rule 3 the O(n) form is adopted for genome-scale work.
+
+**Exploratory follow-up, decided after the Dyck results.** To check the guess that each layer peels off one nesting level, extrusion and one-arm were retrained with 6 layers (seed 0 only, `--save`, logged outside `runs.jsonl`). Accuracy by skip depth barely changed (extrusion at depth 3: 0.955 with 3 layers, 0.957 with 6; at depth 5: 0.761 and 0.809), so the guess is not supported. Training sequences contain few deep skips (depth 5 is 0.6% of training positions vs 2.1% at test), so the depth failures mix mechanism and data coverage. Results: `results/dyck_skip_depth.json`, `results/dyck_skip_depth_6layer.json`. This is one seed and is not used for any claim beyond "more layers did not help".

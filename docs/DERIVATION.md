@@ -41,6 +41,38 @@ Numerics: stall logits are clamped at 12 (a barrier passes at most about 6e-6 of
 
 So with hard barriers and uniform loading, one extrusion layer computes exactly the insulation pattern of the convergent rule. The magnitude of `D` still depends on spacing, and `W = 1 - exp(-beta D)` approaches an indicator as `beta` grows. `tests/test_models.py` checks the claim on 200 random sequences.
 
+## Structured-matrix view and an O(n) algorithm
+
+Write `L[i, k] = prod_{m=i+1..k-1} (1 - sL_m)` for `k > i` and `R[k, j] = prod_{m=k..j-1} (1 - sR_m)` for `j >= k`. Both are one-sided transports with cumulative-product decay, which makes them 1-semiseparable matrices. The upper triangle of the contact matrix is then
+
+```
+D_upper = L diag(l) R
+```
+
+the product of two one-sided transports through the diagonal load gate. Any block of `D` whose rows all lie left of its columns has rank at most 2: split the load sum at the block boundary, and each part factors into a function of `i` times a function of `j`. So `D` is 2-quasiseparable. `tests/test_models.py` checks the rank numerically.
+
+This places the *linear* part of extrusion in a known family. Quasiseparable and semiseparable matrices are the structured matrices behind bidirectional state-space models (Hydra, Hwang et al., NeurIPS 2024) and Mamba-2's state-space duality (Dao and Gu, ICML 2024). The one-arm ablation is close to a single bidirectional selective scan. What is specific to extrusion is the parameterization:
+- the same stall sequences serve both arms, crossed between the two directions;
+- a load gate sits between the two scans;
+- the matrix is symmetric by construction;
+- the Poisson saturation `1 - exp(-beta D)` is applied elementwise, which leaves the structured family.
+
+It also gives a linear-time algorithm for the unsaturated contact. With `pR_m = 1 - sR_m` and `pL_m = 1 - sL_m`:
+
+```
+upper part, right to left:
+  Q_k = v_k + pR_k Q_{k+1}
+  U_i = l_{i+1} Q_{i+1} + pL_{i+1} U_{i+1}
+
+lower part, left to right:
+  G_k = v_{k-1} + pL_{k-1} G_{k-1}
+  H_i = l_i G_i + pR_{i-1} H_{i-1}
+
+sum_j D(i, j) v_j = U_i + H_i
+```
+
+Four multiply-add recurrences with factors in `[0, 1]`, so they are numerically stable without log space. `extrusion_linear_scan` implements them, and the tests check it against the dense matrix. `bench_scaling.py` shows the scan handles 65,536 positions on one CPU thread, where the dense matrix would need 16 GB (`results/scaling.json`). The `extrusion_linear` mixer trains with `W = beta D` (no saturation), so it can be computed this way. Whether dropping saturation costs accuracy is an experiment in `docs/PROTOCOL.md`.
+
 ## The one-arm ablation
 
 Arms start at the query position itself, with no separate load site:
@@ -51,3 +83,9 @@ W1(i, j) = prod_{m=j+1..i-1} (1 - sL_m)   for j < i
 ```
 
 A single such layer cannot represent the convergent rule. Whether a `<` blocks the path from `i` to `j` depends on whether a `>` lies between `i` and that `<`, but a per-position stall probability can't depend on where the query is. Depth can work around this: later layers see features computed by earlier ones. That is what the 1-layer vs 3-layer results show. The form is close to stick-breaking attention with per-position rather than per-pair break probabilities.
+
+## Execution status and saturation approximation
+
+The complete `extrusion_linear` forward path now uses the scan. Adding a constant value channel gives `sum_j D(i,j)` alongside messages, with the same learned beta scaling. Output and all parameter/input gradients match the dense reference in float64. Stacked recurrence states avoid repeatedly writing slices of a full output tensor during automatic differentiation.
+
+The elementwise saturated matrix is still dense in the standard model. [POLYNOMIAL_SCAN.md](POLYNOMIAL_SCAN.md) derives a tested symmetric-power approximation with an explicit bounded-argument remainder. The note records prior overlap, state growth, floating-point limitations, and a large-argument failure; it does not claim an exact scan for the full saturated kernel.

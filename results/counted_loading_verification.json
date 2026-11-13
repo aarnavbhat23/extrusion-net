@@ -1,0 +1,7 @@
+{
+  "regenerated_reference_datasets": 7200,
+  "interval_images": 10800,
+  "checked_optimality_certificates": 21600,
+  "optimizer_used_in_verification": false,
+  "biological_validation": false
+}

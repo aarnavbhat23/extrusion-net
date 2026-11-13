@@ -1,0 +1,862 @@
+{
+  "counterexample": {
+    "observed": [
+      "9/28",
+      "1/5",
+      "27/40",
+      "27/50"
+    ],
+    "targets": {
+      "A": "35/44",
+      "B": "43/52"
+    },
+    "gap": "9/286",
+    "gap_pp": 3.146853146853147,
+    "worlds_are_endpoints_of_exact_set_f_known_ratio_09_to_1": true,
+    "calibration_arm_hazards": {
+      "A": "3/5",
+      "B": "7/10"
+    }
+  },
+  "sharpness": {
+    "forward_mechanisms_checked": 4000,
+    "feasible_points_reconstructed": 4000,
+    "W_zero_boundary_points": 394,
+    "exact_rational": true
+  },
+  "combined_tolerance_pp": [
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "fg_tolerance_pct": 1,
+      "loading_tolerance_pct": 1,
+      "width": 1.1897976472942051
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "fg_tolerance_pct": 1,
+      "loading_tolerance_pct": 2,
+      "width": 1.859284551135509
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 1,
+      "width": 1.709873562894547
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 2,
+      "width": 2.377886382596127
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 3,
+      "width": 3.04665215025418
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 5,
+      "width": 4.390736107421433
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "fg_tolerance_pct": 4,
+      "loading_tolerance_pct": 3,
+      "width": 4.078120789252405
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "fg_tolerance_pct": 4,
+      "loading_tolerance_pct": 5,
+      "width": 5.4076288809846
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "fg_tolerance_pct": 1,
+      "loading_tolerance_pct": 1,
+      "width": 1.0357766256800147
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "fg_tolerance_pct": 1,
+      "loading_tolerance_pct": 2,
+      "width": 1.5141314119979143
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 1,
+      "width": 1.5930489882170062
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 2,
+      "width": 2.070587882062392
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 3,
+      "width": 2.5489128005258426
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 5,
+      "width": 3.5105051801395817
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "fg_tolerance_pct": 4,
+      "loading_tolerance_pct": 3,
+      "width": 3.657214468500535
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "fg_tolerance_pct": 4,
+      "loading_tolerance_pct": 5,
+      "width": 4.611237961166716
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "fg_tolerance_pct": 1,
+      "loading_tolerance_pct": 1,
+      "width": 0.8107250349371178
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "fg_tolerance_pct": 1,
+      "loading_tolerance_pct": 2,
+      "width": 1.1600335753470252
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 1,
+      "width": 1.2720753689865838
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 2,
+      "width": 1.6208744345274806
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 3,
+      "width": 1.9703026622255833
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "fg_tolerance_pct": 2,
+      "loading_tolerance_pct": 5,
+      "width": 2.6728156294998215
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "fg_tolerance_pct": 4,
+      "loading_tolerance_pct": 3,
+      "width": 2.8888069739110414
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "fg_tolerance_pct": 4,
+      "loading_tolerance_pct": 5,
+      "width": 3.350413347369913
+    }
+  ],
+  "tolerance_scan_pp": [
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 0,
+      "g_exact": 0.0,
+      "g_same_relative_error": 0.0
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 1,
+      "g_exact": 0.2975688623942391,
+      "g_same_relative_error": 0.5206886975840044
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 2,
+      "g_exact": 0.5954271197205462,
+      "g_same_relative_error": 1.0415426734912512
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 4,
+      "g_exact": 1.1931750387781888,
+      "g_same_relative_error": 2.0844086234962482
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 6,
+      "g_exact": 1.795594807405831,
+      "g_same_relative_error": 3.1299267365297228
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 10,
+      "g_exact": 3.024193548387097,
+      "g_same_relative_error": 5.234297108673978
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 1.0,
+      "width_f_exact": 0.0
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.99,
+      "width_f_exact": 0.3325942350332594
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.97,
+      "width_f_exact": 0.9853215473197632
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.95,
+      "width_f_exact": 1.6219463356027233
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.9,
+      "width_f_exact": 3.146853146853147
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 0,
+      "g_exact": 0.0,
+      "g_same_relative_error": 0.0
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 1,
+      "g_exact": 0.3187818781878188,
+      "g_same_relative_error": 0.5578159863499147
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 2,
+      "g_exact": 0.6377551020408163,
+      "g_same_relative_error": 1.1156528913222832
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 4,
+      "g_exact": 1.2770432692307692,
+      "g_same_relative_error": 2.2314731473147313
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 6,
+      "g_exact": 1.9194098755519873,
+      "g_same_relative_error": 3.3476282163486784
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 10,
+      "g_exact": 3.2196969696969697,
+      "g_same_relative_error": 5.581613508442777
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 1.0,
+      "width_f_exact": 0.0
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.99,
+      "width_f_exact": 0.2378731343283582
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.97,
+      "width_f_exact": 0.7065886699507389
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.95,
+      "width_f_exact": 1.166158536585366
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.9,
+      "width_f_exact": 2.276785714285714
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 0,
+      "g_exact": 0.0,
+      "g_same_relative_error": 0.0
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 1,
+      "g_exact": 0.2638681196111836,
+      "g_same_relative_error": 0.4617318568698042
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 2,
+      "g_exact": 0.527865364327118,
+      "g_same_relative_error": 0.9234654942836328
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 4,
+      "g_exact": 1.0567649944898476,
+      "g_same_relative_error": 1.846945233056786
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 6,
+      "g_exact": 1.5877399222868804,
+      "g_same_relative_error": 2.770453461541395
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "factor",
+      "tolerance_pct": 10,
+      "g_exact": 2.4398395721925135,
+      "g_same_relative_error": 4.4042934568170535
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 1.0,
+      "width_f_exact": 0.0
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.99,
+      "width_f_exact": 0.17376019073211635
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.97,
+      "width_f_exact": 0.5166365506131502
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.95,
+      "width_f_exact": 0.8534575739136567
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kind": "sensitivity_ratio_lower",
+      "r": 0.9,
+      "width_f_exact": 1.229861910241657
+    }
+  ],
+  "kappa_cap_dependence_pp": [
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kappa_cap": 1.0,
+      "width_f_exact_ratio_in_09_1": 0.0
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kappa_cap": 1.0526315789473684,
+      "width_f_exact_ratio_in_09_1": 1.6219463356027233
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kappa_cap": 1.0,
+      "width_f_exact_ratio_in_09_1": 0.0
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kappa_cap": 1.0526315789473684,
+      "width_f_exact_ratio_in_09_1": 1.166158536585366
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kappa_cap": 1.0,
+      "width_f_exact_ratio_in_09_1": 0.0
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kappa_cap": 1.0526315789473684,
+      "width_f_exact_ratio_in_09_1": 0.8534575739136567
+    }
+  ],
+  "lp_vertex_check": {
+    "exact_data_cases": 40,
+    "closed_form_equals_vertex_enumeration": true
+  },
+  "false_positive_boundary": {
+    "phi": "1/20",
+    "q": "53/60",
+    "kappa": "98/125",
+    "target": "839/1064",
+    "shift_vs_world_A_pp": 0.692071086807929,
+    "note": "naive ratio B1/B0 reads 4/5; true kappa is 98/125"
+  },
+  "kappa_above_one": {
+    "condition_used_by_proof": "kU*ell_max <= 1",
+    "example": {
+      "ell_max": "4/5",
+      "kU": "5/4",
+      "treated_loading": "1"
+    },
+    "when_violated": "LP remains a valid outer image (every constraint is still necessary) but the sharp set gains the bilinear constraint U*V >= J"
+  },
+  "state_resolved": {
+    "reversible_unknown_generator": "counterexample survives (exact matching world)",
+    "world_B_generator": {
+      "p": "3/4",
+      "r": "13/20"
+    },
+    "irreversible_or_calibrated_generator": "loading ratio identified internally; kappa=4/5 recovered",
+    "caveat": "requires the perturbation to leave state dynamics unchanged"
+  },
+  "structural_width_floor_pp": [
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kappa": "4/5",
+      "target_absence": 0.7954545454545454,
+      "f_uncertain_kappa_exact": 3.024193548387097,
+      "f_exact_sensitivity_ratio_uncertain": 3.146853146853147,
+      "both": 6.256952169076752,
+      "f_within_2pct_sensitivity_exact": 0.5954271197205462
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kappa": "9/10",
+      "target_absence": 0.7954545454545454,
+      "f_uncertain_kappa_exact": 3.024193548387097,
+      "f_exact_sensitivity_ratio_uncertain": 3.146853146853147,
+      "both": 6.256952169076752,
+      "f_within_2pct_sensitivity_exact": 0.5954271197205462
+    },
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "kappa": "1",
+      "target_absence": 0.7954545454545454,
+      "f_uncertain_kappa_exact": 3.024193548387097,
+      "f_exact_sensitivity_ratio_uncertain": 0.0,
+      "both": 3.024193548387097,
+      "f_within_2pct_sensitivity_exact": 0.5954271197205462
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kappa": "4/5",
+      "target_absence": 0.840625,
+      "f_uncertain_kappa_exact": 3.2196969696969697,
+      "f_exact_sensitivity_ratio_uncertain": 2.276785714285714,
+      "both": 3.8943001443001446,
+      "f_within_2pct_sensitivity_exact": 0.6377551020408163
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kappa": "9/10",
+      "target_absence": 0.840625,
+      "f_uncertain_kappa_exact": 3.2196969696969697,
+      "f_exact_sensitivity_ratio_uncertain": 2.276785714285714,
+      "both": 3.8943001443001446,
+      "f_within_2pct_sensitivity_exact": 0.6377551020408163
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "kappa": "1",
+      "target_absence": 0.840625,
+      "f_uncertain_kappa_exact": 3.2196969696969697,
+      "f_exact_sensitivity_ratio_uncertain": 0.0,
+      "both": 3.2196969696969697,
+      "f_within_2pct_sensitivity_exact": 0.6377551020408163
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kappa": "4/5",
+      "target_absence": 0.879746835443038,
+      "f_uncertain_kappa_exact": 2.4398395721925135,
+      "f_exact_sensitivity_ratio_uncertain": 1.229861910241657,
+      "both": 2.4398395721925135,
+      "f_within_2pct_sensitivity_exact": 0.527865364327118
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kappa": "9/10",
+      "target_absence": 0.879746835443038,
+      "f_uncertain_kappa_exact": 2.4398395721925135,
+      "f_exact_sensitivity_ratio_uncertain": 1.229861910241657,
+      "both": 2.4398395721925135,
+      "f_within_2pct_sensitivity_exact": 0.527865364327118
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "kappa": "1",
+      "target_absence": 0.879746835443038,
+      "f_uncertain_kappa_exact": 2.4398395721925135,
+      "f_exact_sensitivity_ratio_uncertain": 0.0,
+      "both": 2.4398395721925135,
+      "f_within_2pct_sensitivity_exact": 0.527865364327118
+    }
+  ],
+  "naive_extrapolation_gaps": [
+    {
+      "mechanism": [
+        "1/5",
+        "1/5",
+        "3/4"
+      ],
+      "baseline": 0.6785714285714286,
+      "calibration_arm": 0.75,
+      "target": 0.7954545454545454,
+      "gap_to_no_extra_effect_pp": 4.545454545454546,
+      "gap_to_linear_extrapolation_pp": 2.5974025974025974
+    },
+    {
+      "mechanism": [
+        "2/5",
+        "1/10",
+        "17/20"
+      ],
+      "baseline": 0.68125,
+      "calibration_arm": 0.7875,
+      "target": 0.840625,
+      "gap_to_no_extra_effect_pp": 5.3125,
+      "gap_to_linear_extrapolation_pp": 5.3125
+    },
+    {
+      "mechanism": [
+        "13/20",
+        "3/25",
+        "19/20"
+      ],
+      "baseline": 0.7336448598130841,
+      "calibration_arm": 0.8343023255813954,
+      "target": 0.879746835443038,
+      "gap_to_no_extra_effect_pp": 4.544450986164263,
+      "gap_to_linear_extrapolation_pp": 5.521295590666861
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "verified_rows": 72,
+  "independent_sparse_replay": true,
+  "summary": [
+    {
+      "initiated_episodes": 5000,
+      "method": "two_clocks",
+      "median_absence_error": 0.05514792747432995,
+      "median_total_variation": 0.05514792747432993,
+      "per_mechanism_median_absence_error": [
+        0.05514792747432995,
+        0.04584910155446181,
+        0.0637722841998053
+      ],
+      "successful_selected_fits": 12,
+      "unbounded_speed_intervals": 12
+    },
+    {
+      "initiated_episodes": 5000,
+      "method": "close_clocks",
+      "median_absence_error": 0.26511116559456677,
+      "median_total_variation": 0.26511116559456677,
+      "per_mechanism_median_absence_error": [
+        0.26511116559456677,
+        0.5059936219257721,
+        0.10602201566856329
+      ],
+      "successful_selected_fits": 12,
+      "unbounded_speed_intervals": 12
+    },
+    {
+      "initiated_episodes": 5000,
+      "method": "full_retention",
+      "median_absence_error": 0.005297038707274326,
+      "median_total_variation": 0.00685238165103005,
+      "per_mechanism_median_absence_error": [
+        0.007126835039296842,
+        0.004901091208788622,
+        0.004072763716377992
+      ],
+      "successful_selected_fits": 12,
+      "unbounded_speed_intervals": 0
+    },
+    {
+      "initiated_episodes": 20000,
+      "method": "two_clocks",
+      "median_absence_error": 0.020179210056750108,
+      "median_total_variation": 0.020179213212210896,
+      "per_mechanism_median_absence_error": [
+        0.02712114501558388,
+        0.03298098331278909,
+        0.01350289905506663
+      ],
+      "successful_selected_fits": 12,
+      "unbounded_speed_intervals": 12
+    },
+    {
+      "initiated_episodes": 20000,
+      "method": "close_clocks",
+      "median_absence_error": 0.0835748872874229,
+      "median_total_variation": 0.08357488728742293,
+      "per_mechanism_median_absence_error": [
+        0.1347834789536751,
+        0.052697974385335244,
+        0.05759532899357844
+      ],
+      "successful_selected_fits": 12,
+      "unbounded_speed_intervals": 12
+    },
+    {
+      "initiated_episodes": 20000,
+      "method": "full_retention",
+      "median_absence_error": 0.0011784002491924683,
+      "median_total_variation": 0.002982333204615116,
+      "per_mechanism_median_absence_error": [
+        0.0014894247614885558,
+        0.0008289108367449116,
+        0.0011784002491924683
+      ],
+      "successful_selected_fits": 12,
+      "unbounded_speed_intervals": 0
+    }
+  ],
+  "continuation_gate_passed": false,
+  "limitations": "No refit or global optimum certification; shared assumed family and floating-point libraries; no biological validation."
+}

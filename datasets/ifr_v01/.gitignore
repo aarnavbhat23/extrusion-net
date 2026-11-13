@@ -1,0 +1,6 @@
+source/combined_dataframe.csv
+source/*.partial
+extrusion/*.parquet
+extrusion/*.csv
+extrusion/*.json
+__pycache__/

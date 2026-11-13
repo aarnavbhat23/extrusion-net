@@ -1,0 +1,3 @@
+# Independent simulator and Arrow interchange used by the external-engine study.
+lefsim==0.1.0
+pyarrow==26.0.0

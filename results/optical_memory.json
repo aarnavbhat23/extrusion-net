@@ -1,0 +1,1631 @@
+{
+  "seed": 2026103001,
+  "replicates_per_setting": 2000,
+  "protocol": "docs/OPTICAL_MEMORY_PROTOCOL.md",
+  "protocol_commit": "f006846",
+  "synthetic": true,
+  "law_audit": {
+    "observation_strings": 340,
+    "maximum_law_difference": 0.0,
+    "maximum_probability_sum_error": 2.220446049250313e-16
+  },
+  "settings": [
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "primary_biological",
+      "true_target": 0.0469816859529337,
+      "plus_probability": 0.9194274634185493,
+      "minus_probability": 0.8912384518467891,
+      "rejection_rate": 0.001,
+      "rejection_wilson": [
+        0.0002742789176520342,
+        0.003638934269038394
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.9194274634185493,
+      "minus_probability": 0.8912384518467891,
+      "rejection_rate": 0.0025,
+      "rejection_wilson": [
+        0.0010683087284139143,
+        0.005839153316432755
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "reporter_biological",
+      "true_target": 0.0469816859529337,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.20400129267835915,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 0.9995,
+      "coverage_wilson": [
+        0.9971731374967338,
+        0.9999117322692944
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.20400129267835915,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "direct_A_biological",
+      "true_target": 0.18126924692201818,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.11,
+      "rejection_rate": 0.5405,
+      "rejection_wilson": [
+        0.5186021072597079,
+        0.5622426119105105
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "primary_biological",
+      "true_target": 0.0469816859529337,
+      "plus_probability": 0.9194274634185493,
+      "minus_probability": 0.8912384518467891,
+      "rejection_rate": 0.0615,
+      "rejection_wilson": [
+        0.05178817023412858,
+        0.07289308023153022
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.9194274634185493,
+      "minus_probability": 0.8912384518467891,
+      "rejection_rate": 0.0635,
+      "rejection_wilson": [
+        0.053626856130583093,
+        0.0750467261459507
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "reporter_biological",
+      "true_target": 0.0469816859529337,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.20400129267835915,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 0.9995,
+      "coverage_wilson": [
+        0.9971731374967338,
+        0.9999117322692944
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.20400129267835915,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "direct_A_biological",
+      "true_target": 0.18126924692201818,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "primary_biological",
+      "true_target": 0.12667199895142253,
+      "plus_probability": 0.9672416512176426,
+      "minus_probability": 0.8912384518467891,
+      "rejection_rate": 0.2795,
+      "rejection_wilson": [
+        0.26026989271326295,
+        0.2995755251377695
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.9672416512176426,
+      "minus_probability": 0.8912384518467891,
+      "rejection_rate": 0.2875,
+      "rejection_wilson": [
+        0.2680866483826091,
+        0.30772809671192325
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "reporter_biological",
+      "true_target": 0.12667199895142253,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.14821807357941696,
+      "rejection_rate": 0.059,
+      "rejection_wilson": [
+        0.04949422085016707,
+        0.070196614851898
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.14821807357941696,
+      "rejection_rate": 0.072,
+      "rejection_wilson": [
+        0.061473133317261355,
+        0.08416785915549115
+      ],
+      "coverage": 0.928,
+      "coverage_wilson": [
+        0.9158321408445089,
+        0.9385268666827387
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "direct_A_biological",
+      "true_target": 0.18126924692201818,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.11,
+      "rejection_rate": 0.5285,
+      "rejection_wilson": [
+        0.506588839183156,
+        0.5503018891218124
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "primary_biological",
+      "true_target": 0.12667199895142253,
+      "plus_probability": 0.9672416512176426,
+      "minus_probability": 0.8912384518467891,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.9672416512176426,
+      "minus_probability": 0.8912384518467891,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "reporter_biological",
+      "true_target": 0.12667199895142253,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.14821807357941696,
+      "rejection_rate": 0.6915,
+      "rejection_wilson": [
+        0.6709068092999975,
+        0.7113589615912825
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.14821807357941696,
+      "rejection_rate": 0.7065,
+      "rejection_wilson": [
+        0.6861624316103886,
+        0.7260458278624539
+      ],
+      "coverage": 0.2935,
+      "coverage_wilson": [
+        0.2739541721375461,
+        0.31383756838961124
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "direct_A_biological",
+      "true_target": 0.18126924692201818,
+      "plus_probability": 0.2168884728454127,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.2,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "primary_biological",
+      "true_target": 0.11693980296485479,
+      "plus_probability": 0.7994508634353288,
+      "minus_probability": 0.7292869816564159,
+      "rejection_rate": 0.2995,
+      "rejection_wilson": [
+        0.2798258590849356,
+        0.3199428768748467
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.7994508634353288,
+      "minus_probability": 0.7292869816564159,
+      "rejection_rate": 0.2865,
+      "rejection_wilson": [
+        0.2671091378312516,
+        0.3067094413578432
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "reporter_biological",
+      "true_target": 0.11693980296485479,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.34397399265878303,
+      "rejection_rate": 0.082,
+      "rejection_wilson": [
+        0.07076181688143124,
+        0.0948408346456962
+      ],
+      "coverage": 0.999,
+      "coverage_wilson": [
+        0.9963610657309615,
+        0.9997257210823479
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.34397399265878303,
+      "rejection_rate": 0.071,
+      "rejection_wilson": [
+        0.06054753478172682,
+        0.08309729178558818
+      ],
+      "coverage": 0.929,
+      "coverage_wilson": [
+        0.9169027082144119,
+        0.9394524652182732
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "direct_A_biological",
+      "true_target": 0.45118836390597344,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "primary_biological",
+      "true_target": 0.11693980296485479,
+      "plus_probability": 0.7994508634353288,
+      "minus_probability": 0.7292869816564159,
+      "rejection_rate": 0.981,
+      "rejection_wilson": [
+        0.974029585433736,
+        0.9861262150816985
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.7994508634353288,
+      "minus_probability": 0.7292869816564159,
+      "rejection_rate": 0.981,
+      "rejection_wilson": [
+        0.974029585433736,
+        0.9861262150816985
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "reporter_biological",
+      "true_target": 0.11693980296485479,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.34397399265878303,
+      "rejection_rate": 0.4725,
+      "rejection_wilson": [
+        0.45069374278170404,
+        0.4944116948187647
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.34397399265878303,
+      "rejection_rate": 0.4755,
+      "rejection_wilson": [
+        0.4536811651658317,
+        0.49741277015094953
+      ],
+      "coverage": 0.5245,
+      "coverage_wilson": [
+        0.5025872298490504,
+        0.5463188348341681
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "direct_A_biological",
+      "true_target": 0.45118836390597344,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0005,
+      "rejection_wilson": [
+        8.826773070546787e-05,
+        0.0028268625032662133
+      ],
+      "coverage": 0.9995,
+      "coverage_wilson": [
+        0.9971731374967338,
+        0.9999117322692944
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "primary_biological",
+      "true_target": 0.31529304021535787,
+      "plus_probability": 0.9184628057856307,
+      "minus_probability": 0.7292869816564159,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.9184628057856307,
+      "minus_probability": 0.7292869816564159,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "reporter_biological",
+      "true_target": 0.31529304021535787,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.2051267265834309,
+      "rejection_rate": 0.9995,
+      "rejection_wilson": [
+        0.9971731374967338,
+        0.9999117322692944
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.2051267265834309,
+      "rejection_rate": 0.999,
+      "rejection_wilson": [
+        0.9963610657309615,
+        0.9997257210823479
+      ],
+      "coverage": 0.001,
+      "coverage_wilson": [
+        0.0002742789176520342,
+        0.003638934269038394
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "direct_A_biological",
+      "true_target": 0.45118836390597344,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "primary_biological",
+      "true_target": 0.31529304021535787,
+      "plus_probability": 0.9184628057856307,
+      "minus_probability": 0.7292869816564159,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.9184628057856307,
+      "minus_probability": 0.7292869816564159,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "reporter_biological",
+      "true_target": 0.31529304021535787,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.2051267265834309,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.2051267265834309,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 0.0,
+      "coverage_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "direct_A_biological",
+      "true_target": 0.45118836390597344,
+      "plus_probability": 0.4058318547341814,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 0.6,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "primary_biological",
+      "true_target": 0.20135050739143878,
+      "plus_probability": 0.6546884005239213,
+      "minus_probability": 0.5338780960890579,
+      "rejection_rate": 0.8875,
+      "rejection_wilson": [
+        0.8729022885582233,
+        0.9006119997988055
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.6546884005239213,
+      "minus_probability": 0.5338780960890579,
+      "rejection_rate": 0.8835,
+      "rejection_wilson": [
+        0.8686986165721245,
+        0.8968310081631542
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "reporter_biological",
+      "true_target": 0.20135050739143878,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.512863532722092,
+      "rejection_rate": 0.679,
+      "rejection_wilson": [
+        0.6582128894948898,
+        0.6991008075784217
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.512863532722092,
+      "rejection_rate": 0.7015,
+      "rejection_wilson": [
+        0.6810743885505098,
+        0.7211530413951451
+      ],
+      "coverage": 0.2985,
+      "coverage_wilson": [
+        0.27884695860485476,
+        0.31892561144949005
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "direct_A_biological",
+      "true_target": 0.7768698398515701,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 500,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "primary_biological",
+      "true_target": 0.20135050739143878,
+      "plus_probability": 0.6546884005239213,
+      "minus_probability": 0.5338780960890579,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.6546884005239213,
+      "minus_probability": 0.5338780960890579,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "reporter_biological",
+      "true_target": 0.20135050739143878,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.512863532722092,
+      "rejection_rate": 0.999,
+      "rejection_wilson": [
+        0.9963610657309615,
+        0.9997257210823479
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.512863532722092,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 0.0,
+      "coverage_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "direct_A_biological",
+      "true_target": 0.7768698398515701,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 0.3,
+      "n_per_arm": 2000,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "primary_biological",
+      "true_target": 0.5428811406791177,
+      "plus_probability": 0.8596067804965286,
+      "minus_probability": 0.5338780960890579,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.8596067804965286,
+      "minus_probability": 0.5338780960890579,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "reporter_biological",
+      "true_target": 0.5428811406791177,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.27379208942071664,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.27379208942071664,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 0.0,
+      "coverage_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "direct_A_biological",
+      "true_target": 0.7768698398515701,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 500,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "primary_biological",
+      "true_target": 0.5428811406791177,
+      "plus_probability": 0.8596067804965286,
+      "minus_probability": 0.5338780960890579,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "primary_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.8596067804965286,
+      "minus_probability": 0.5338780960890579,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": null,
+      "coverage_wilson": null,
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "reporter_biological",
+      "true_target": 0.5428811406791177,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.27379208942071664,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "reporter_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "reporter_optical_crosstalk",
+      "true_target": 0.0,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.27379208942071664,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 0.0,
+      "coverage_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "outside_calibration_contract": true
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "direct_A_biological",
+      "true_target": 0.7768698398515701,
+      "plus_probability": 0.633808887896099,
+      "minus_probability": 0.11,
+      "rejection_rate": 1.0,
+      "rejection_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    },
+    {
+      "a": 1.5,
+      "b": 1.2,
+      "n_per_arm": 2000,
+      "method": "direct_A_optical",
+      "true_target": 0.0,
+      "plus_probability": 0.11,
+      "minus_probability": 0.09000000000000001,
+      "rejection_rate": 0.0,
+      "rejection_wilson": [
+        1.0842021724855044e-19,
+        0.001917047281252934
+      ],
+      "coverage": 1.0,
+      "coverage_wilson": [
+        0.9980829527187469,
+        0.9999999999999998
+      ],
+      "outside_calibration_contract": false
+    }
+  ],
+  "gates": {
+    "law_equivalence": true,
+    "minimum_coverage": true,
+    "null_control": true,
+    "power_cases": 3
+  },
+  "conditional_feasibility_pass": false,
+  "biological_validation": false,
+  "novel_method_established": false
+}

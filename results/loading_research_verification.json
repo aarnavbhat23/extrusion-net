@@ -1,0 +1,20 @@
+{
+  "verified": true,
+  "loading_target": {
+    "intervals": 2700,
+    "optimality_certificates": 6718,
+    "regenerated_experiments": 900
+  },
+  "loading_drift": {
+    "intervals": 3600,
+    "optimality_certificates": 7142,
+    "regenerated_experiments": 900
+  },
+  "timestamp_refinement": {
+    "intervals": 300,
+    "optimality_certificates": 9600,
+    "sharp": false
+  },
+  "full_generator_survival_checks": 18,
+  "independent_biological_validation": false
+}
