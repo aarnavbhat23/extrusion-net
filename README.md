@@ -178,7 +178,7 @@ Related results: [fixed-source ambiguity](docs/IDENTIFIABILITY.md),
 
 ## Original prediction study
 
-Extrusion Net uses a simulated DNA loop as the path for long-range information in a sequence model.
+Can a neural network route information the way chromatin does?
 
 In the nucleus, cohesin motors load onto DNA and reel it into loops from both sides. Each side stalls at a CTCF protein facing the right way, so a forward site (`>`) followed by a reverse site (`<`) anchors a loop that insulates genes from enhancers outside it. This repository turns that process into a sequence model's only long-range operator. Every position predicts, from its local context alone, how likely a motor is to load there and how likely each arm is to stall there. Two positions exchange information only if a simulated motor brings them into the same loop. There is no positional encoding and no query-key product.
 
@@ -188,9 +188,9 @@ Outside genomics, it **generalizes on nested brackets** (98.7% at 512; BiLSTM 99
 
 ![Accuracy by test length](results/generalization.png)
 
-## Accuracy on the synthetic task
+## What happened
 
-The study includes 36 runs. The table averages promoter accuracy over three seeds for each of five mixers on a shared backbone. Training sequences ranged from 24 to 64 tokens.
+36 runs: five long-range mixers on one shared backbone, 3 seeds each. Promoter accuracy, mean of 3 seeds; all models trained on lengths 24-64 only.
 
 | Mixer | Params | 4,000 seqs, len 64 | 4,000 seqs, len 512 | 300 seqs, len 64 | 300 seqs, len 512 |
 |---|---:|---:|---:|---:|---:|
